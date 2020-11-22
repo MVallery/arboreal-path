@@ -3,13 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Switch } from 'react-router';
-import About from './components/about';
-import Home from './components/home';
-import PressKit from './components/presskit';
-import ArborealPath from './components/arboreal-path';
-import Contact from './components/contact';
-import ErrorMessage from './components/error-message'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 
 ReactDOM.render(
   <BrowserRouter>
@@ -24,3 +19,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
