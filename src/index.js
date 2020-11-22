@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Switch } from 'react-router';
+import About from './components/about';
+import Home from './components/home';
+import PressKit from './components/presskit';
+import ArborealPath from './components/arboreal-path';
+import Contact from './components/contact';
+import ErrorMessage from './components/error-message'
 
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
