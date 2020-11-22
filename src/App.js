@@ -7,7 +7,7 @@ import PressKit from './components/presskit';
 import ArborealPath from './components/arboreal-path';
 import Contact from './components/contact';
 import ErrorMessage from './components/error-message'
-
+import BannerImage from './assets/images/ap-header.png'
 
 
 
@@ -45,7 +45,9 @@ var  NavBar = () => {
 
 
   return (
+    
     <main>
+      <img className ="img-header" src={BannerImage}></img>
       {NavBar()}
       <Switch>
           <Route path="/" component= {Home} exact />
