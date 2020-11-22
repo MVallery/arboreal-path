@@ -81,3 +81,20 @@ li a {
 li a:hover {
   background-color: lightblue;
 }
+.Book-cover {
+  padding: 50px 400px 20px 0px;
+  width:200px;
+}
+.pHome {
+  padding:0px 400px 0px 400px;
+}
+.hHome {
+  padding:0px 400px 0px 400px;
+}
+.social {
+  width:20px;
+  height:20px;
+  padding:10%;
+  display:block;
+  
+}

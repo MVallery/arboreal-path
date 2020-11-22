@@ -8,6 +8,8 @@ import ArborealPath from './components/arboreal-path';
 import Contact from './components/contact';
 import ErrorMessage from './components/error-message'
 import BannerImage from './assets/images/ap-header.png'
+import TwitterIcon from './assets/images/twitter.png'
+import InstagramIcon from './assets/images/instagram.png'
 
 
 
@@ -34,8 +36,25 @@ var  NavBar = () => {
         {/* <li>
         <Link to="/">ARBOREAL PATH</Link>
         </li> */}
-      </ul>
-  </div>)}
+                         
+        <li>  
+      <a href="https://twitter.com">
+      <img class="social" border="0" alt="facebook" src={TwitterIcon}></img></a>
+      </li>
+     
+     
+
+      <li>
+      <a href="https://instagram.com">
+      <img class="social" border="0" alt="facebook" src={InstagramIcon}></img></a>
+      </li>
+     
+     
+     
+             
+</ul>
+</div>
+)}
 
 
 
