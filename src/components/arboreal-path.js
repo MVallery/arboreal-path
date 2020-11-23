@@ -52,7 +52,7 @@ function ArborealPath() {
     }
 
     return (
-        <div><h1>Arboreal Path</h1>
+        <div><h1 style={{textAlign:"center"}}>Arboreal Path</h1>
         <div className="ap-container">
              
             <div className="character-container">
@@ -75,13 +75,13 @@ function ArborealPath() {
             <img className="character-content" src={Alim}></img></a>
             {alimSelect}
             </div>
-
+{/* 
             <div className="character-container">
             <h1>Map</h1>
             <a onClick= {() => {onCharacterClick("Map");}}>
             <img className="character-content" src={Map}></img></a>
             {mapSelect}
-            </div>
+            </div> */}
 
 
 

@@ -66,6 +66,8 @@ var  NavBar = () => {
   return (
     
     <main>
+      {/* {var content-scroll = document.getElementById("character-content");
+character-content.scrollIntoView({ behavior: "auto", block: "end" });} */}
       <img className ="img-header" src={BannerImage}></img>
       {NavBar()}
       <Switch>
@@ -77,6 +79,8 @@ var  NavBar = () => {
           <Route component= {ErrorMessage}/>
 
       </Switch>
+      <p className= "bottom">Copyright © 2020 |  Arcane Moose Production</p>
+
     </main>
       
   );
