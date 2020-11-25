@@ -8,10 +8,10 @@ function Home() {
     return (
         <div className= "paragraph-container">
           <div flex-content>
-        <h1>Arboreal Path</h1>  
+        <h1 >Arboreal Path</h1>  
         <div align="right" className="book-flex">
         {/* <p className= "book-banner">Coming Soon!</p> */}
-        <img className="book-cover" src={BookCover} align="right"></img>
+        <img className="book-cover" src={BookCover} align="left"></img>
         </div>
         
         <p className="paragraph">Dapibus ultrices in iaculis nunc sed. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Rutrum quisque non tellus orci ac auctor. 

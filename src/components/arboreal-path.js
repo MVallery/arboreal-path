@@ -93,32 +93,45 @@ function ArborealPath() {
     //         }
     //     };
     // })();
+        // const scroll = () => {
+        //     var div = document.getElementById('#expanded-text');
+        //     div.scrollTo(0,div.scrollHeight);
+        // }
     return (
+        
         <div><h1 style={{textAlign:"center"}}>Arboreal Path</h1>
+        
         <div className="ap-container">
-        {/* {document.getElementById('character-container').scrollIntoView()} */}
-
-            <div style={{opacity:haliSelect[1]}} >
-                <div className="character-container" style={{ height: haliSelect && haliSelect[0] ? '700px' : '450px' }}>
+                {/* {document.getElementById('expanded-text').scrollIntoView()} */}
+            
+            <div onClick= {() => {onCharacterClick("Hali");}} style={{opacity:haliSelect[1]}} >
+                <div className="character-container" style={{transition:haliSelect&&haliSelect[0] ? 'height 2s': 'height 0s',
+                                                            height: haliSelect && haliSelect[0] ? '700px' : '450px' }}>
             <h1>Hali</h1>
             <a onClick= {() => {onCharacterClick("Hali");}}>
             <img className="character-content" src={Hali}></img></a>
+            <div id= "expanded-text">
             {haliSelect[0]}
             </div>
             </div>
+            </div>
 
-            <div style={{opacity:tioSelect[1]}}>
-            <div className="character-container tio" style={{ height: tioSelect && tioSelect[0] ? '700px' : '450px' }}>
+            <div onClick={() => {onCharacterClick("Tio");}}style={{opacity:tioSelect[1]}}>
+            <div className="character-container tio" style={{transition:tioSelect&&tioSelect[0] ? 'height 2s': 'height 0s',
+                                                             height: tioSelect && tioSelect[0] ? '700px' : '450px' }}>
 
             <h1>Tio</h1>
             <a onClick= {() => {onCharacterClick("Tio");}}>
-            <img className="character-content" src={Tio}></img></a>.
+            <img className="character-content" src={Tio}></img></a>
+            <div id= "expanded-text">
             {tioSelect[0]}
             </div>
             </div>
+            </div>
 
-            <div style={{opacity:alimSelect[1]}}>
-            <div className="character-container" style={{ height: alimSelect && alimSelect[0] ? '700px' : '450px' }}>
+            <div onClick={() => {onCharacterClick("Alim");}} style={{opacity:alimSelect[1]}}>
+            <div className="character-container" style={{transition:alimSelect&&alimSelect[0] ? 'height 2s': 'height 0s',
+                                                         height: alimSelect && alimSelect[0] ? '700px' : '450px' }}>
 
             <h1>Alim</h1>
             <a onClick= {() => {onCharacterClick("Alim");}}>
@@ -126,7 +139,9 @@ function ArborealPath() {
             <img className="character-content" src={Alim}></img></a>
             <CSSTransition in={alimSelect[2]} timeout={300} classNames="alim">
                 <view>
+            <div id= "expanded-text">
             {alimSelect[0]}
+            </div>
             </view>
             </CSSTransition>
             </div>
