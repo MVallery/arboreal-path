@@ -7,13 +7,12 @@ function Home() {
 
     return (
         <div className= "paragraph-container">
-          <div flex-content>
-        <h1 >Arboreal Path</h1>  
-        <div align="right" className="book-flex">
+        
         {/* <p className= "book-banner">Coming Soon!</p> */}
         <img className="book-cover" src={BookCover} align="left"></img>
-        </div>
-        
+        <div className="paragraph">
+        <h1 style= {{textAlign:'left'}}>Arboreal Path</h1>  
+
         <p className="paragraph">Dapibus ultrices in iaculis nunc sed. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Rutrum quisque non tellus orci ac auctor. 
         Ut eu sem integer vitae justo eget magna fermentum. Odio tempor orci dapibus ultrices. Tempus iaculis urna id volutpat lacus. Massa tempor nec feugiat nisl pretium fusce id velit. <br/><br/>
         Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Augue ut lectus arcu bibendum at varius vel pharetra vel. Eget gravida cum sociis natoque penatibus et magnis.
@@ -25,6 +24,7 @@ function Home() {
         <Link className="linkAP" to="/arboreal-path">Learn more about Arboreal Path</Link>
         </p>
         </div>
+        
         <main>
         <Switch>
         <Route path="/arboreal-path" component= {ArborealPath} />

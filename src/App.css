@@ -28,8 +28,9 @@
 .paragraph-container {
   display:flex;
   width: 100%;
-  flex-direction:column;
-  padding-bottom: 50px;
+  /* flex-direction:column; */
+  padding: 200px 0px 50px 0px;
+  /* padding-bottom: 50px; */
 }
 .ap-container {
   justify-content:center;
@@ -59,7 +60,9 @@ a{
 }
 .giant-navbar-container {
   display:flex;
-  position:sticky;
+  position:fixed;
+  width:100vw;
+  top:0;
   flex-direction: column;
 }
 .navbar-header-container {
@@ -201,12 +204,12 @@ li a:hover {
   width: 100%;
   color:white;
   height:50px;
-  position:fixed;/*fixed= stays at bottom but scrolls up? relative= stays away from bottom*/
+  position:static;/*fixed= stays at bottom but scrolls up? relative= stays away from bottom*/
   bottom:0%;
   overflow:hidden;
   margin:auto;
   /* padding: 10px 0px 0px 0px; */
-  background-color:rgb(59, 59, 59);
+  background-color:rgb(36, 55, 73);
 }/*2 below dont seem to impact it at all got from online */
 .bottom-wrapper {
   min-height: 100%;
@@ -247,13 +250,14 @@ li a:hover {
 } */
 .book-cover {
   /* padding: 50px 20px 10px 15%; */
-  margin: 20px 40px 20px 20%;
-  width:300px;
+  margin: 40px 0px 20px 20%;
+  height:500px;
   box-shadow: 10px 10px 10px rgb(82, 100, 117);
 
 }
 .pic-title-combo{
   display:flex;
+  background-color:white;
   align-items:center;
   justify-content:center;
 
@@ -269,7 +273,7 @@ li a:hover {
 }
 
 h1 {
-  padding:20px 20% 0px 20%;
+  padding:10px 20% 0px 20px;
   text-align:center;
   font-family: "Eagle Lake";
 }
@@ -279,7 +283,8 @@ h2{
   margin:0px 0px 0px 0px;
 }
 .paragraph {
-  padding:2px 20% 10px 20%;
+  text-align:left;
+  padding:2px 20% 10px 20px;
 }
 
 
