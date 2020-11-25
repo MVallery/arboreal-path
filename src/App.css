@@ -70,7 +70,8 @@ a{
   /* height: 450px; */
   min-height:450px;
   max-height: 1000px;
-  transition: 5s
+  transition: height 2s;
+  overflow:hidden;
   /* transition-property: height;
   transition-duration: 5s;
   transition-delay: 0s; */

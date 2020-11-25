@@ -99,7 +99,7 @@ function ArborealPath() {
         {/* {document.getElementById('character-container').scrollIntoView()} */}
 
             <div style={{opacity:haliSelect[1]}} >
-                <div className="character-container" id="hali">
+                <div className="character-container" style={{ height: haliSelect && haliSelect[0] ? '700px' : '450px' }}>
             <h1>Hali</h1>
             <a onClick= {() => {onCharacterClick("Hali");}}>
             <img className="character-content" src={Hali}></img></a>
@@ -108,7 +108,7 @@ function ArborealPath() {
             </div>
 
             <div style={{opacity:tioSelect[1]}}>
-            <div className="character-container tio">
+            <div className="character-container tio" style={{ height: tioSelect && tioSelect[0] ? '700px' : '450px' }}>
 
             <h1>Tio</h1>
             <a onClick= {() => {onCharacterClick("Tio");}}>
@@ -118,7 +118,7 @@ function ArborealPath() {
             </div>
 
             <div style={{opacity:alimSelect[1]}}>
-            <div className="character-container" id="alim">
+            <div className="character-container" style={{ height: alimSelect && alimSelect[0] ? '700px' : '450px' }}>
 
             <h1>Alim</h1>
             <a onClick= {() => {onCharacterClick("Alim");}}>
