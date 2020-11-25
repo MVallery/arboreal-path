@@ -4,6 +4,7 @@ import ArborealPath from './arboreal-path';
 
 
 function Home() {
+
     return (
         <div className= "paragraph-container">
           <div flex-content>
