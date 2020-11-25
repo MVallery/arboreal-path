@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap');
 
+
 .App {
   text-align: center;
 }
@@ -32,6 +33,7 @@
 }
 .ap-container {
   justify-content:center;
+  height:800px;
   display:flex;
   cursor:hand;
 
@@ -60,17 +62,27 @@ a{
   flex-direction:column;
   box-shadow: 5px 10px 20px rgb(204, 203, 203);
   justify-content:space-between;
+  border-radius:20px;
+  border: 10px solid grey;
+  border-image: url(./assets/images/borderhali2.png) 70 repeat;
   margin: 10px;
   width: 300px;
-  /* height: auto; */
+  /* height: 450px; */
   min-height:450px;
-  max-height: 800px;
-  transition: min-height 5s;
+  max-height: 1000px;
+  transition: 5s
+  /* transition-property: height;
+  transition-duration: 5s;
+  transition-delay: 0s; */
+  /* opacity:0.5; */
 
 
 }
 .character-container:hover {
-  cursor:hand;
+  pointer-events:auto;
+  cursor:pointer;
+  /* height:700px */
+  /* opacity: 0.9; */
   /* background-color:grey; */
 }
 .tio {
@@ -80,9 +92,24 @@ a{
 .alim {
   background-color:white;
   width:300px;
-
 }
-
+.alim-enter {
+  opacity:0.2;
+  transform: scale(0.9) translateY(50%);
+}
+.alim-enter-active{
+  opacity:1;
+  transform: scale(1) translateY(0%);
+}
+.alim-exit {
+  opacity:1;
+  transform: scale(1) translateY(0%);
+}
+.alim-exit-active {
+  opacity: 0.2;
+  transform: scale(0.9) translateY(50%);
+  transition: all 300ms ease-out;
+}
 .hali {
   background-color:white;
   width:300px;
