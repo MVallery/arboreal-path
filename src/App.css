@@ -55,7 +55,7 @@ a{
   cursor:hand;
 
 }
-#character-container {
+.character-container {
   display:flex;
   flex-direction:column;
   box-shadow: 5px 10px 20px rgb(204, 203, 203);
@@ -75,15 +75,17 @@ a{
 }
 .tio {
   background-color:white;
+  width:300px;
 }
 .alim {
   background-color:white;
+  width:300px;
 
 }
 
 .hali {
   background-color:white;
-
+  width:300px;
 }
 
 .flex-content {
