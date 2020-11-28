@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap');
-
-
+/* @import url('/assets/fonts/Constantine.tff'); */
+@font-face {font-family: Constantine; src:url('Constantine.ttf');}
 .App {
   text-align: center;
 }
@@ -276,7 +276,8 @@ li a:hover {
 h1 {
   padding:10px 20% 0px 20px;
   text-align:center;
-  font-family: "Eagle Lake";
+  font-family: Constantine; 
+
 }
 h2{
   text-align:center;
