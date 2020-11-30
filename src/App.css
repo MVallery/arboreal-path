@@ -55,6 +55,9 @@
 
 
 }
+.main-div {
+  height: 100vh;
+}
 a{
   cursor:hand;
 
