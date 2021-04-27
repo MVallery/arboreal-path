@@ -1,306 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap");
 /* @import url('/assets/fonts/Constantine.tff'); */
-@font-face {font-family: Constantine; src:url('Constantine.ttf');}
+@font-face {
+  font-family: Constantine;
+  src: url("Constantine.ttf");
+}
+
 .App {
   text-align: center;
 }
 
 .img-header {
-  position:relative;
-  width:100%;
+  position: relative;
+  width: 100%;
   height: 300px;
   top: 0px;
-  left:0px;
+  left: 0px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.container {
-  display:flex;
-/*   height: 100vh; */
-/*   width: 100vw; */
-
-/*  justify-content:center; */
-/*  flex-direction:column; */
-}
-.paragraph-container {
-  display:flex;
-  height:100vh;
-  width: 100%;
-  /* flex-direction:column; */
-  padding: 200px 0px 50px 0px;
-  /* padding-bottom: 50px; */
-}
 .ap-container {
-  justify-content:center;
-  height:800px;
-  display:flex;
-  cursor:hand;
-
-  /* width:100%; */
-  /* justify-content:center; */
-  /* padding: 10px 10% 0px 10%; */
-  align-items:flex-start;
-  flex-wrap:wrap;
-
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: hand;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .character-content {
   width: 300px;
-  cursor:hand;
-
-
-  /* height: 300px; */
-
-
+  cursor: hand;
 }
+
 .main-div {
   height: 100vh;
 }
-a{
-  cursor:hand;
 
+a {
+  cursor: hand;
 }
-.giant-navbar-container {
-  display:flex;
-  position:fixed;
-  width:100vw;
-  top:0;
-  flex-direction: column;
-}
-.navbar-header-container {
-  display:flex;
-  flex-direction:column
-}
+
 .arcane-moose {
   width: 100px;
   height: 100px;
 }
-.character-container {
-  display:flex;
-  flex-direction:column;
-  box-shadow: 20px 20px 20px #888585;  /* background-image: linear-gradient(to right, red,indigo,blueviolet, indigo, red) */
-
-  /* box-shadow: 3px 8px 10px #e6e6e6; */
-  /* box-shadow: 5px 10px 20px rgb(204, 203, 203); */
-  justify-content:space-between;
-  border-radius:20px;
-  border: 10px solid grey;
-  border-image: url(./assets/images/borderhali2.png) 70 repeat;
-  margin: 10px;
-  width: 300px;
-  padding: 5px;
-  /* height: 450px; */
-  min-height:450px;
-  max-height: 1000px;
-  /* transition: height 2s; */
-  overflow:hidden;
-  /* transition-property: height;
-  transition-duration: 5s;
-  transition-delay: 0s; */
-  /* opacity:0.5; */
-
-
-}
-.character-container:hover {
-  pointer-events:auto;
-  cursor:pointer;
-  /* height:700px */
-  /* opacity: 0.9; */
-  /* background-color:grey; */
-}
-#expanded-text {
-
-}
-.tio {
-  background-color:white;
-  width:300px;
-}
-.alim {
-  background-color:white;
-  width:300px;
-}
-.alim-enter {
-  opacity:0.2;
-  transform: scale(0.9) translateY(50%);
-}
-.alim-enter-active{
-  opacity:1;
-  transform: scale(1) translateY(0%);
-}
-.alim-exit {
-  opacity:1;
-  transform: scale(1) translateY(0%);
-}
-.alim-exit-active {
-  opacity: 0.2;
-  transform: scale(0.9) translateY(50%);
-  transition: all 300ms ease-out;
-}
-.hali {
-  background-color:white;
-  width:300px;
-}
 
 .flex-content {
-  flex-grow:1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 60px
-}
-.ul-nav {
-  list-style-type: none;
-  position:relative;
-  top:0%;
-  margin: 0;
-  padding: 0;
-  left:0;
-  /* box-shadow: 5px 10px 20px rgb(204, 203, 203); */
-  height: 80px;
-  width:100%;
-  display:flex;
-  justify-content:center;
-  overflow:hidden;
-  background-color: rgb(46, 74, 100);
-  width:100%;
-  align-items:center;
-
-/*   width: 100%; */
-}
-li {
-  float:left;
-  padding: 0px 10px 0px 10px
-}
-li a {
-  font-family: Arial, Helvetica, sans-serif;
-  border-bottom:3px solid transparent;
-  padding: 0px 2px 0px 2px;
-  font-size: 20px;
-  display:block;
-  border-bottom:0;
-  transition: border-bottom 0.15s;
-
-  color:white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  cursor:hand;
+  padding-top: 60px;
 }
 
-li a:hover {
-  /* background-color: lightblue; */
-  /* border-bottom: 3px solid rgb(56, 85, 56); */
-  /* box-shadow: 5px 10px 10px rgb(204, 203, 203); */
-  /* box-shadow: 2px 2px 20px #d6d3d3; */
-  /* margin: 0px 0px 10px 0px; */
-  border-bottom: 4px solid white;
-  /* box-shadow: 2px 2px 20px black; */
-  color: #6490a0;
-  font-weight: bold;
-}
-.bottom {
-  text-align:center;
-  font-size:10px;
-  width: 100%;
-  color:white;
-  height:50px;
-  position:relative;/*fixed= stays at bottom but scrolls up? relative= stays away from bottom*/
-  bottom:0%;
-  overflow:hidden;
-  margin:auto;
-  /* padding: 10px 0px 0px 0px; */
-  background-color:rgb(36, 55, 73);
-}/*2 below dont seem to impact it at all got from online */
-.bottom-wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
-}
-.bottom, .push {
-  height: 50px; /* .push must be the same height as .footer */
-}
-.social {
-  width:20px;
-  height:20px;
-  padding:10%;
-  display:block;
-  cursor:hand;
-  
-}
-
-.linkAP {
-  text-decoration:none;
-  font-size: 25px;
-  cursor:hand;
-  text-align:right;
-}
-.linkAP:hover {
-  /* background-color:lightblue; */
-  border-bottom: 3px solid rgb(56, 85, 56);
-
-}
-
-/* .book-flex {
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  width: 200px;
-  
-} */
-.book-cover {
-  /* padding: 50px 20px 10px 15%; */
-  margin: 40px 0px 20px 20%;
-  height:500px;
-  box-shadow: 10px 10px 10px rgb(82, 100, 117);
-
-}
-.pic-title-combo{
-  display:flex;
-  background-color:white;
-  align-items:center;
-  justify-content:center;
-
-}
-.header-title{
-  padding:0px;
-  margin:0px;
-  font-size:45px;
-}
-.jason{
+.auther-pic {
   padding: 0px 20% 20px 20%;
-  width: 300px
+  width: 300px;
 }
 
 h1 {
-  padding:10px 20% 0px 20px;
-  text-align:center;
-  font-family: Constantine; 
 
 }
-h2{
-  text-align:center;
-  padding:0px 0px 10px 0px;
-  margin:0px 0px 0px 0px;
+
+h2 {
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
 }
-.paragraph {
-  text-align:left;
-  padding:2px 20% 10px 20px;
-}
-
-
-
-
-/* .book-banner {
-  /* padding: 50px 400px 20px 0px; */
-  /* width:200px;
-  text-align: right;
-  background-color:rgb(88, 110, 88);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-} */ 
+/*# sourceMappingURL=App.css.map */

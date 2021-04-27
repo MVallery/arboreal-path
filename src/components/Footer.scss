@@ -1,0 +1,12 @@
+.footer {
+  text-align:center;
+  font-size:10px;
+  width: 100%;
+  color:white;
+  height:50px;
+  position:relative;/*fixed= stays at bottom but scrolls up? relative= stays away from bottom*/
+  bottom:0%;
+  overflow:hidden;
+  margin:auto;
+  background-color:rgb(36, 55, 73);
+}

@@ -5,7 +5,7 @@ import {CSSTransition} from 'react-transition-group';
 
 import Map from '../assets/images/map.jpg';
 import React, { useState } from "react";
-
+import './ArborealPath.css';
 
 function ArborealPath() {
     const [haliSelect, setHaliSelect] = useState([])
@@ -21,15 +21,7 @@ function ArborealPath() {
             setAlimSelect(["", 0.2, false]);
             setTioSelect(["", 0.2]);
             setMapSelect(["", 0.2]);
-        //     let haliCSS = document.querySelectorAll("hali");
-        //     haliCSS.style.backgroundColor = Hali[1];
-        //     console.log(haliSelect[0])
-        //     console.log(haliCSS)
-        //     let tioCSS = document.querySelectorAll("tio");
-        //     tioCSS.style.backgroundColor = Tio[1];
 
-        //     let alimCSS = document.querySelectorAll("alim");
-        //     alimCSS.style.backgroundColor = Alim[1];
         }
         if (name === "Tio") {
             setTioSelect(["Tio's Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
@@ -41,14 +33,7 @@ function ArborealPath() {
             setAlimSelect(["", 0.2, false]);
             setHaliSelect(["", 0.2]);
             setMapSelect(["", 0.2]);
-            // let haliCSS = document.querySelectorAll("hali");
-            // haliCSS.style.backgroundColor = Hali[1];
 
-            // let tioCSS = document.querySelectorAll("tio");
-            // tioCSS.style.backgroundColor = Tio[1];
-
-            // let alimCSS = document.querySelectorAll("alim");
-            // alimCSS.style.backgroundColor = Alim[1];
         }
         if (name === "Alim") {
             setAlimSelect(["Alim's Lorem ipsum dolor sit amet, consectetur adipiscing elit," + 
@@ -60,49 +45,23 @@ function ArborealPath() {
             setHaliSelect(["", 0.2]);
             setTioSelect(["", 0.2]);
             setMapSelect("");
-        //     let haliCSS = document.querySelectorAll("hali");
-        //     haliCSS.style.backgroundColor = Hali[1];
 
-        //     let tioCSS = document.querySelectorAll("tio");
-        //     tioCSS.style.backgroundColor = Tio[1];
-
-        //     let alimCSS = document.querySelectorAll("alim");
-        //     alimCSS.style.backgroundColor = Alim[1];
         }
         if (name === "Map") {
             setMapSelect("World Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
             setAlimSelect("");
             setTioSelect("");
             setHaliSelect("");
-            // tioText = ""
-            // alimText = ""
-            // haliText = ""
+
         };
         
     };
-    // (function () {
-    //     var alim = document.getElementById('alim');
-    
-    //     alim.onclick = function () {
-    
-    //         if (alim.style.height === "450px") {
-    //             alim.style.height = "1000px";
-    
-    //         } else {
-    //             alim.style.height = "1000px";
-    //         }
-    //     };
-    // })();
-        // const scroll = () => {
-        //     var div = document.getElementById('#expanded-text');
-        //     div.scrollTo(0,div.scrollHeight);
-        // }
+
     return (
         
         <div><h1 style={{textAlign:"center"}}>Arboreal Path</h1>
         
         <div className="ap-container">
-                {/* {document.getElementById('expanded-text').scrollIntoView()} */}
             
             <div onClick= {() => {onCharacterClick("Hali");}} style={{opacity:haliSelect[1]}} >
                 <div className="character-container" style={{transition:haliSelect&&haliSelect[0] ? 'height 2s': 'height 0s',
@@ -146,32 +105,9 @@ function ArborealPath() {
             </CSSTransition>
             </div>
             </div>
-{/* 
-            <div className="character-container">
-            <h1>Map</h1>
-            <a onClick= {() => {onCharacterClick("Map");}}>
-            <img className="character-content" src={Map}></img></a>
-            {mapSelect}
-            </div> */}
-
             </div>
         </div>     
     );
   }
-{/* <CSSTransition
-  in={this.state.display}
-  timeout={350}
-  classNames="display"
-  unmountOnExit
->
-  <div className="menu">
-    <ul className="list">
-      <li className="list-item">Rajat</li>
-      <li className="list-item">Writes about React</li>
-      <li className="list-item">Loves Pizza</li>
-    </ul>
-  </div>
-</CSSTransition> */}
-
   export default ArborealPath;
 

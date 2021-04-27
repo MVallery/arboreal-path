@@ -5,68 +5,35 @@ import { StickyContainer, Sticky } from "react-sticky";
 import About from './components/about';
 import Home from './components/home';
 import PressKit from './components/presskit';
-import ArborealPath from './components/arboreal-path';
+import ArborealPath from './components/ArborealPath';
 import Contact from './components/contact';
-import ErrorMessage from './components/error-message'
-import BannerImage from './assets/images/ap-header.png'
-import TwitterIcon from './assets/images/twitter.png'
-import InstagramIcon from './assets/images/instagram.png'
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+
+
 import ArcaneMoose from './assets/images/arcanemooselogo.png'
+import React from "react";
 
+const App = () =>{
 
-
-
-
-function App() {
-var  NavBar = () => {
-    return (
-      <div className= "giant-navbar-container">
-      <div className="navbar-header-container">
-      <div className="pic-title-combo">
-      <img className= "arcane-moose" src={ArcaneMoose}></img>
-      
-      <div>
-      <header> <h1 className="header-title">Arboreal Path</h1> <h2>Jason M. Vallery</h2></header>
-      </div>
-      </div>
-        </div>
-      <div className="container">
-        {/* <Sticky> */}
-
-      <ul class="ul-nav">
-        <li>
-        <Link to="/">HOME</Link>
-        </li>
-        <li>
-        <Link to="/about">ABOUT</Link>
-        </li>
-        <li>
-        <Link to="/presskit">PRESSKIT</Link>
-        </li>
-        <li>
-        <Link to="/contact">CONTACT</Link>
-        </li>
-        {/* <li>
-        <Link to="/">ARBOREAL PATH</Link>
-        </li> */}
-                         
-        <li>  
-      <a href="https://twitter.com">
-      <img className="social" border="0" alt="facebook" src={TwitterIcon}></img></a>
-      </li>
+  return (
+    <React.Fragment>
      
-
-      <li>
-      <a href="https://instagram.com">
-      <img className="social" border="0" alt="facebook" src={InstagramIcon}></img></a>
-      </li>
-      
-</ul>
-{/* </Sticky> */}
-</div>
-</div>
-
-)}
+      <NavBar/>      
+      <Switch>
+          <Route path="/" component= {Home} exact />
+          <Route path="/about" component= {About} />
+          <Route path="/presskit" component= {PressKit} />
+          <Route path="/contact" component= {Contact} />
+          <Route path="/arboreal-path" component= {ArborealPath} />
+      </Switch>
+    
+    <About/>
+    <Footer/>
+    </React.Fragment>
+  );
+}
+export default App;
 
 // let navbar = document.querySelectorAll("ul-nav");
 // if 
@@ -113,47 +80,3 @@ var  NavBar = () => {
 
 
 
-
-
-
-
-  return (
-    // <StickyContainer>
-
-    <main>
-      {/* {var content-scroll = document.getElementById("character-content");
-character-content.scrollIntoView({ behavior: "auto", block: "end" });} */}
-      {/* <img className ="img-header" src={BannerImage}></img> */}
-
-      
-      {NavBar()}
-      
-      {/* {document.getElementById('expanded-text').scrollIntoView()} */}
-
-      {/* <Switch> */}
-          <Route path="/" component= {Home} exact />
-          <Route path="/about" component= {About} />
-          <Route path="/presskit" component= {PressKit} />
-          <Route path="/contact" component= {Contact} />
-          <Route path="/arboreal-path" component= {ArborealPath} />
-          {/* <Route path="" component= {ErrorMessage}/> */}
-
-      {/* </Switch> */}
-      <p className= "bottom">Copyright © 2020 |  Arcane Moose Production</p>
-{/* 
-      <div className="bottom-wrapper">
-        <div className="push">
-     
-        </div>
-      </div>
-        <div className="bottom">
-
-
-        </div> */}
-    </main>
-    // </StickyContainer>
-      
-  );
-}
-
-export default App;

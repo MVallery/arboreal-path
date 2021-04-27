@@ -1,0 +1,116 @@
+@font-face {font-family: Constantine; src:url('../Constantine.ttf');}
+
+.home-container {
+  display:flex;
+  background-image:url(../assets/images/empyrea-painting.jpg);
+  background-image:url(../assets/images/cover-zoom-characters.png);
+  background-attachment: fixed;
+  background-size: cover;
+  height:100vh;
+  position: relative;
+  width: 100vw;
+  img{
+    margin: 40px 0px 20px 20%;
+    height:500px;
+    border-radius:5px;
+    box-shadow: 10px 10px 10px rgb(13, 18, 23);
+    animation: moveInLeft 3s ease-out;
+
+  }
+
+}
+.home-gradient {
+  display:flex;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  // background-image:linear-gradient(45deg,rgba(46, 80, 60, 80%), rgba(0, 0, 0, 80%), rgba(144, 85, 144, 80%));
+  // background-image:linear-gradient(45deg,rgba(46, 80, 60, 0.8), rgba(0, 0, 0, 0.8), rgba(144, 85, 144, 0.8));
+  background-image:linear-gradient(45deg,
+    rgba(46, 80, 60, 0.8), 
+    rgba(23, 51, 35, 0.8), 
+    rgba(19, 19, 19, 0.8), 
+
+    rgba(0, 0, 0, 0.8), 
+    rgba(144, 85, 144, 0.8),
+    rgba(88, 25, 88, 0.8),
+
+    );
+  
+  background-size:  400%;
+  animation: gradientAnimation 20s infinite alternate;
+}
+.home-book-title-container{
+  display:flex;
+  width:100vw;
+  height: 70%;
+  justify-content: center;
+  padding: 10% 10% 0 10%;
+  align-content: center;
+}
+.home-book-title{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:left;
+  padding:2px 20% 10px 20px;
+  color:white;
+  height:auto;
+  animation: moveInUp 3s ease-out;
+
+
+  link{
+    text-decoration:none;
+    font-size: 25px;
+    color:white;
+    cursor:hand;
+    text-align:right;
+  }
+  link:hover{
+    border-bottom: 3px solid rgb(56, 85, 56);
+
+  }
+  h1{
+    text-align: "left";
+    font-size:3rem;
+    text-align: center;
+    font-family: Constantine;
+  }
+  h2{
+    font-size:1.2rem;
+  }
+
+}
+
+
+@keyframes moveInUp {
+  0% {
+     opacity: 0;
+     transform: translateY(100px);
+  }
+  /* 80% {
+     transform: translateX(10px);
+  } */
+  100% {
+     opacity:1;
+     transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+ 0% {
+    opacity: 0;
+    transform: translateX(-200px);
+ }
+ /* 80% {
+    transform: translateX(-10px);
+ } */
+ 100% {
+    opacity:1;
+    transform: translate(0);
+ }
+}
+
+@keyframes gradientAnimation {
+  0% {background-position: left}
+  100% {background-position: right}
+}
