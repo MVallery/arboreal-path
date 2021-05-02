@@ -1,15 +1,20 @@
-import React from "react";
+import React, {useRef} from "react";
 import { Link } from 'react-router-dom'
 import "./NavBar.css";
 import TwitterIcon from "../assets/images/twitter.png";
 import InstagramIcon from "../assets/images/instagram.png";
 import FancyUnderline from "../assets/images/fancy-underline.jpg";
-const NavBar = () => {
+const NavBar = props => {
+
+  const myRef = useRef(null)
+
+  
   return (
     <div className="navbar-container">
       <ul>
         <li>
-          <Link to="/about">ABOUT</Link>
+          <button onClick={props.executeAboutScroll()}>ABOUT</button>
+          {/* <Link to="/about">ABOUT</Link> */}
         </li>
         <li>
           <Link to="/presskit">PRESSKIT</Link>
@@ -24,10 +29,23 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/contact">CONTACT</Link>
+        <button onClick={props.executeHomeScroll()}>ARBOREAL PATH</button>
+
+          {/* <Link to="/contact">ARBOREAL PATH</Link> */}
+        </li>
+        <li>
+        <button onClick={props.executeArborealPathScroll()}>WORLD</button>
+
+          {/* <Link to="/contact">WORLD</Link> */}
         </li>
 
-        <li>
+      </ul>
+    </div>
+  );
+};
+export default NavBar;
+
+        {/* <li>
           <a href="https://twitter.com">
             <img
               className="social"
@@ -47,9 +65,4 @@ const NavBar = () => {
               src={InstagramIcon}
             ></img>
           </a>
-        </li>
-      </ul>
-    </div>
-  );
-};
-export default NavBar;
+        </li> */}

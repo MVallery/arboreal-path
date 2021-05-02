@@ -81,7 +81,29 @@
   }
 
 }
-
+.home-buy-now-container{
+  display:flex;
+  p{
+    font-size:1.2rem;
+  }
+  
+}
+.home-button-container{
+  display:flex;
+  button{
+    outline:none;
+    border:none;
+    background-color: rgba(243, 233, 233,0.4);
+    font-size:1.2rem;
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+  }
+  button:hover{
+    cursor:pointer;
+    background-color: rgba(243, 233, 233,0.6) ;
+  }
+}
 
 @keyframes moveInUp {
   0% {

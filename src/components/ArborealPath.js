@@ -7,7 +7,7 @@ import Map from '../assets/images/map.jpg';
 import React, { useState } from "react";
 import './ArborealPath.css';
 
-function ArborealPath() {
+const ArborealPath = props => {
     const [haliSelect, setHaliSelect] = useState([])
     const [tioSelect, setTioSelect] = useState([])
     const [alimSelect, setAlimSelect] = useState([])
@@ -59,7 +59,7 @@ function ArborealPath() {
 
     return (
         
-        <div><h1 style={{textAlign:"center"}}>Arboreal Path</h1>
+        <div id='world' ref={props.arborealPathRef}><h1 style={{textAlign:"center"}}>Arboreal Path</h1>
         
         <div className="ap-container">
             

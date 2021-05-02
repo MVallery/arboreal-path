@@ -1,4 +1,5 @@
-import {Router, Route, Link, Switch } from "react-router-dom";
+import React, {useRef} from "react";
+import {Router, Route, Link, Switch, useLocation } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import { StickyContainer, Sticky } from "react-sticky";
@@ -9,26 +10,79 @@ import ArborealPath from './components/ArborealPath';
 import Contact from './components/contact';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-
+import {Link as RSLink} from 'react-scroll';
+import FancyUnderline from "./assets/images/fancy-underline.jpg";
 
 import ArcaneMoose from './assets/images/arcanemooselogo.png'
-import React from "react";
 
 const App = () =>{
-
+  const location = useLocation();
   return (
     <React.Fragment>
      
-      <NavBar/>      
-      <Switch>
-          <Route path="/" component= {Home} exact />
-          <Route path="/about" component= {About} />
+      {/* <NavBar 
+      executeHomeScroll= {executeHomeScroll}
+      executeAboutScroll= {executeAboutScroll} 
+      executeArborealPathScroll= {executeArborealPathScroll}
+      homeRef ={homeRef} aboutRef={aboutRef} arborealPathRef={arborealPathRef} />     */}
+
+<div className="navbar-container">
+          {/* <Link to="/contact">WORLD</Link> */}
+
+      
+        
+          {location.pathname==='/'?
+          <ul>
+          <li>
+            <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>ABOUT</RSLink>
+          </li>
+          <li>
+            <Link to="/presskit">PRESSKIT</Link>
+          </li>
+
+          <li>
+            <Link to="/">
+              <div className="header-title-container">
+                <span className="header-title">Jason M. Vallery</span>
+                <img src={FancyUnderline}></img>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <RSLink to="home" spy={true} smooth={true} offset={0} duration={500}>ARBOREAL PATH</RSLink>
+          </li>
+          <li>
+            <RSLink to="world" spy={true} smooth={true} offset={0} duration={500}>WORLD</RSLink>
+          </li>
+        </ul>
+        :
+        <ul>
+        <li>
+          <Link to="/">
+            <div className="header-title-container">
+              <span className="header-title">Jason M. Vallery</span>
+              <img src={FancyUnderline}></img>
+            </div>
+          </Link>
+        </li>  
+        </ul>      
+        }
+        
+
+
+
+    </div>
+
+    <Switch>
+          <Route path="/" exact>
+            <Home/>
+            <About />
+            <ArborealPath/>
+          </Route>
           <Route path="/presskit" component= {PressKit} />
-          <Route path="/contact" component= {Contact} />
-          <Route path="/arboreal-path" component= {ArborealPath} />
+
       </Switch>
-    
-    <About/>
+
     <Footer/>
     </React.Fragment>
   );
