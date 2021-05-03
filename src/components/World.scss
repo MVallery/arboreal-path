@@ -1,0 +1,25 @@
+.world-main-container{
+  height:100vh;
+  position:relative;
+  background-image: url(../assets/images/background-middle-cover.png);
+  background-attachment: fixed;
+  background-size: cover;
+
+  box-shadow:inset 5px 5px 10px 4px black;
+
+
+}
+.world-main-container-gradient{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position:absolute;
+  background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.466), black)
+}
+.world-map{
+  width:80vw;
+  height:70vh;
+  box-shadow:5px 5px 10px 4px black;
+
+}

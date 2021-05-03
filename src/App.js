@@ -6,78 +6,23 @@ import { StickyContainer, Sticky } from "react-sticky";
 import About from './components/about';
 import Home from './components/home';
 import PressKit from './components/presskit';
-import ArborealPath from './components/ArborealPath';
-import Contact from './components/contact';
+import World from './components/World'
+import Characters from './components/Characters';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import {Link as RSLink} from 'react-scroll';
-import FancyUnderline from "./assets/images/fancy-underline.jpg";
-
 import ArcaneMoose from './assets/images/arcanemooselogo.png'
 
 const App = () =>{
-  const location = useLocation();
   return (
     <React.Fragment>
      
-      {/* <NavBar 
-      executeHomeScroll= {executeHomeScroll}
-      executeAboutScroll= {executeAboutScroll} 
-      executeArborealPathScroll= {executeArborealPathScroll}
-      homeRef ={homeRef} aboutRef={aboutRef} arborealPathRef={arborealPathRef} />     */}
-
-<div className="navbar-container">
-          {/* <Link to="/contact">WORLD</Link> */}
-
-      
-        
-          {location.pathname==='/'?
-          <ul>
-          <li>
-            <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>ABOUT</RSLink>
-          </li>
-          <li>
-            <Link to="/presskit">PRESSKIT</Link>
-          </li>
-
-          <li>
-            <Link to="/">
-              <div className="header-title-container">
-                <span className="header-title">Jason M. Vallery</span>
-                <img src={FancyUnderline}></img>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <RSLink to="home" spy={true} smooth={true} offset={0} duration={500}>ARBOREAL PATH</RSLink>
-          </li>
-          <li>
-            <RSLink to="world" spy={true} smooth={true} offset={0} duration={500}>WORLD</RSLink>
-          </li>
-        </ul>
-        :
-        <ul>
-        <li>
-          <Link to="/">
-            <div className="header-title-container">
-              <span className="header-title">Jason M. Vallery</span>
-              <img src={FancyUnderline}></img>
-            </div>
-          </Link>
-        </li>  
-        </ul>      
-        }
-        
-
-
-
-    </div>
-
     <Switch>
           <Route path="/" exact>
+            <NavBar/>
             <Home/>
+            <Characters/>
+            <World />
             <About />
-            <ArborealPath/>
           </Route>
           <Route path="/presskit" component= {PressKit} />
 

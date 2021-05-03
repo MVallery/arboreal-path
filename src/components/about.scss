@@ -1,0 +1,15 @@
+
+.about-container {
+  padding-top:100px;
+  height:100vh;
+  background-image: url(../assets/images/background-hali.png);
+  background-attachment: fixed;
+  background-size: cover;
+
+  p{
+    width:40%;
+    padding:50px;
+    border-radius:50%;
+    background-image:radial-gradient(ellipse at center, rgb(160, 148, 148),transparent )
+  }
+}

@@ -1,7 +1,9 @@
 import React from 'react';
 import {Router, Route, Link, Switch } from "react-router-dom";
 import BookCover from '../assets/images/cover-header.png';
-import ArborealPath from './ArborealPath';
+import ArborealPath from './Characters';
+import {Link as RSLink} from 'react-scroll';
+
 import './home.css'
 
 const Home= props=> {
@@ -23,9 +25,10 @@ const Home= props=> {
             </div>
             <div className='home-button-container'>
               <button>Preview</button>
-              <button>Learn More</button>
-              <button>Press Kit</button>
-
+              <RSLink to="characters" spy={true} smooth={true} offset={0} duration={500}>
+                <button>Learn More</button>
+              </RSLink>
+      
 
             </div>
               {/* <Link to="/arboreal-path">
@@ -33,11 +36,7 @@ const Home= props=> {
               </Link> */}
           </div>
           </div>
-          <main>
-            <Switch>
-              <Route path="/arboreal-path" component={ArborealPath} />
-            </Switch>
-          </main>
+
         </div>
       </div>
     );

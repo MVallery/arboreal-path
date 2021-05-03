@@ -60,6 +60,7 @@
 .navbar-container li a:hover {
   border-bottom: 4px solid white;
   color: #6490a0;
+  cursor: pointer;
 }
 
 .header-title {

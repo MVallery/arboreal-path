@@ -68,4 +68,29 @@
   background-color: white;
   width: 300px;
 }
+
+.ap-container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: hand;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ap-main-container {
+  padding-top: 100px;
+}
+
+.character-content {
+  width: 300px;
+  cursor: hand;
+}
 /*# sourceMappingURL=ArborealPath.css.map */
