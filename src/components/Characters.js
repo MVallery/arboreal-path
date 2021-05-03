@@ -5,7 +5,6 @@ import {CSSTransition} from 'react-transition-group';
 
 import Map from '../assets/images/map.jpg';
 import React, { useState } from "react";
-import './Characters.css';
 
 const ArborealPath = props => {
     const [haliSelect, setHaliSelect] = useState([])
@@ -18,9 +17,9 @@ const ArborealPath = props => {
     const onCharacterClick = (name) => {
        if (name === "Hali") {
             setHaliSelect(["Hali's Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",1]);
-            setAlimSelect(["", 0.2, false]);
-            setTioSelect(["", 0.2]);
-            setMapSelect(["", 0.2]);
+            setAlimSelect(["", 0.5, false]);
+            setTioSelect(["", 0.5]);
+            setMapSelect(["", 0.5]);
 
         }
         if (name === "Tio") {
@@ -30,9 +29,9 @@ const ArborealPath = props => {
             "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse" +
             "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non" +
             "proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",1]);
-            setAlimSelect(["", 0.2, false]);
-            setHaliSelect(["", 0.2]);
-            setMapSelect(["", 0.2]);
+            setAlimSelect(["", 0.5, false]);
+            setHaliSelect(["", 0.5]);
+            setMapSelect(["", 0.5]);
 
         }
         if (name === "Alim") {
@@ -42,8 +41,8 @@ const ArborealPath = props => {
             "commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse" +
             "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident," + 
             "sunt in culpa qui officia deserunt mollit anim id est laborum.", 1, true]);
-            setHaliSelect(["", 0.2]);
-            setTioSelect(["", 0.2]);
+            setHaliSelect(["", 0.5]);
+            setTioSelect(["", 0.5]);
             setMapSelect("");
 
         }
@@ -56,6 +55,9 @@ const ArborealPath = props => {
         };
         
     };
+    const haliStyle = haliSelect&&haliSelect[0] ? {height:'300px', display:'flex'}: {height:'0px', opacity:'0'}
+    const tioStyle = tioSelect&&tioSelect[0] ? {height:'300px', display:'flex'}: {height:'0px', opacity:'0'}
+    const alimStyle = alimSelect&&alimSelect[0] ? {height:'300px', display:'flex'}: {height:'0px', opacity:'0'}
 
     return (
         
@@ -65,33 +67,30 @@ const ArborealPath = props => {
         <div className="characters-container">
             
             <div onClick= {() => {onCharacterClick("Hali");}}  >
-                <div className="character-container hali" style={{transition:haliSelect&&haliSelect[0] ? 'height 2s': 'height 0s',
-                                                            height: haliSelect && haliSelect[0] ? '600px' : '350px' }}>
+                <div className="character-container hali">
             <h1>Hali</h1>
             <a onClick= {() => {onCharacterClick("Hali");}}>
             <img className="character-content" style={{opacity:haliSelect[1]}} src={Hali}></img></a>
-            <div id= "expanded-text">
+            <div id= "expanded-text" className="character-description character-description-hali" style={haliStyle}>
             {haliSelect[0]}
             </div>
             </div>
             </div>
 
             <div onClick={() => {onCharacterClick("Tio");}}>
-            <div className="character-container tio" style={{transition:tioSelect&&tioSelect[0] ? 'height 2s': 'height 0s',
-                                                             height: tioSelect && tioSelect[0] ? '600px' : '350px' }}>
+            <div className="character-container tio" >
 
             <h1>Tio</h1>
             <a onClick= {() => {onCharacterClick("Tio");}}>
             <img className="character-content" style={{opacity:tioSelect[1]}} src={Tio}></img></a>
-            <div id= "expanded-text">
+            <div id= "expanded-text" className="character-description character-description-tio" style={tioStyle}>
             {tioSelect[0]}
             </div>
             </div>
             </div>
 
             <div onClick={() => {onCharacterClick("Alim");}} >
-            <div className="character-container alim" style={{transition:alimSelect&&alimSelect[0] ? 'height 2s': 'height 0s',
-                                                         height: alimSelect && alimSelect[0] ? '600px' : '350px' }}>
+            <div className="character-container alim" >
 
             <h1>Alim</h1>
             <a onClick= {() => {onCharacterClick("Alim");}}>
@@ -99,7 +98,7 @@ const ArborealPath = props => {
             <img className="character-content" style={{opacity:alimSelect[1]}} src={Alim}></img></a>
             <CSSTransition in={alimSelect[2]} timeout={300} classNames="alim">
                 <view>
-            <div id= "expanded-text">
+            <div id= "expanded-text" className="character-description character-description-alim" style={alimStyle}>
             {alimSelect[0]}
             </div>
             </view>

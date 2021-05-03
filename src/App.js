@@ -1,17 +1,17 @@
 import React, {useRef} from "react";
 import {Router, Route, Link, Switch, useLocation } from "react-router-dom";
 import logo from './logo.svg';
-import './App.css';
 import { StickyContainer, Sticky } from "react-sticky";
-import About from './components/about';
-import Home from './components/home';
-import PressKit from './components/presskit';
+import About from './components/About';
+import Home from './components/Home';
+import PressKit from './components/PressKit';
 import World from './components/World'
+import HomeCharactersTransition from './components/HomeCharactersTransition'
 import Characters from './components/Characters';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import ArcaneMoose from './assets/images/arcanemooselogo.png'
-
+import './scss/main.css'
 const App = () =>{
   return (
     <React.Fragment>
@@ -20,6 +20,7 @@ const App = () =>{
           <Route path="/" exact>
             <NavBar/>
             <Home/>
+            <HomeCharactersTransition/>
             <Characters/>
             <World />
             <About />

@@ -4,7 +4,6 @@ import BookCover from '../assets/images/cover-header.png';
 import ArborealPath from './Characters';
 import {Link as RSLink} from 'react-scroll';
 
-import './home.css'
 
 const Home= props=> {
 

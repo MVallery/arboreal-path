@@ -1,6 +1,5 @@
 import React from 'react';
 import WorldMap from '../assets/images/world-map.jpg'
-import './World.css'
 const World = () => {
   return (
     <React.Fragment>

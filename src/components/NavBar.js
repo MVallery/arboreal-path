@@ -2,7 +2,6 @@ import React, {useRef} from "react";
 import { Link,  useLocation } from 'react-router-dom';
 import {Link as RSLink} from 'react-scroll';
 
-import "./NavBar.css";
 import TwitterIcon from "../assets/images/twitter.png";
 import InstagramIcon from "../assets/images/instagram.png";
 import FancyUnderline from "../assets/images/fancy-underline.jpg";

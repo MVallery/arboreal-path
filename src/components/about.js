@@ -1,7 +1,6 @@
 import React from 'react';
 import Jason from '../assets/images/jason.png';
 
-import './about.css'
 const About = props => {
     return (
         <div id='about' ref= {props.aboutRef} className="about-container">
