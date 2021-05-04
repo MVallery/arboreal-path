@@ -77,7 +77,7 @@ const ArborealPath = props => {
                 <div className="character-container hali" style={haliBackgroundStyle}>
             <h1>Hali</h1>
             <a onClick= {() => {onCharacterClick("Hali");}}>
-            <img className="character-content" style={{...haliPictureGlow,opacity:haliSelect[1]}} src={Hali}></img></a>
+            <img className="character-content" style={{...haliPictureGlow, opacity:haliSelect[1]}} src={Hali}></img></a>
             <div id= "expanded-text" className="character-description character-description-hali" style={haliStyle}>
             {haliSelect[0]}
             </div>
