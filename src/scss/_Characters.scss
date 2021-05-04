@@ -6,12 +6,13 @@
   border-radius:20px;
   border: 10px solid grey;
   // border-image: url(../assets/images/borderhali2.png) 70 repeat;
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
   width: 300px;
   padding: 5px;
+  padding-top:25px;
   min-height:450px;
   max-height: 1000px;
-  height:100vh;
+  height:102vh;
   align-items: center;
 
     border: none;
@@ -30,17 +31,19 @@
 }
 .tio {
   opacity:99;
+  background-image: radial-gradient(#00800054, #075d07a3);
   backdrop-filter: hue-rotate(80deg) contrast(2);
   width:300px;
 }
 .alim {
   // background-color: rgba(197, 139, 159, 0.85);
+  background-image: radial-gradient(#e817e2bf, #c737b68c);
   backdrop-filter: hue-rotate(220deg) contrast(2);
   width:300px;
 }
 .hali {
   width:300px;
-  
+  background-image: radial-gradient(#80008091, #80006aa8);
   // background-color: #825f82e6;
   backdrop-filter: hue-rotate(210deg) contrast(2);
 }
@@ -89,10 +92,10 @@
   border-image: url(../assets/images/borderhali2.png) 70 repeat;
 }
 .characters-main-container{
-  padding-top:100px;
   background-image: url(../assets/images/background-shadow-left.png);
   background-attachment: fixed;
   background-size: cover;
+  height:102vh;
 }
 .character-content {
   width: 300px;

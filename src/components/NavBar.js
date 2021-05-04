@@ -18,10 +18,10 @@ const NavBar = props => {
           {location.pathname==='/'?
           <ul>
           <li>
-            <RSLink to="characters" spy={true} smooth={true} offset={0} duration={500}>CHARACTERS</RSLink>
+            <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}>CHARACTERS</RSLink> 
           </li>
           <li>
-            <RSLink to="world" spy={true} smooth={true} offset={0} duration={500}>WORLD</RSLink>
+            <RSLink to="world" spy={true} smooth={true} offset={-50} duration={500}>WORLD</RSLink>
           </li>
 
 

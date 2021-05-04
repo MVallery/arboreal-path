@@ -1,4 +1,15 @@
 
 .transition-main-container{
-  
+  height: 40vh;
+  background-color: black;
+  background-image: radial-gradient(ellipse at top right, #710080, #3D8C46, #6c0080), radial-gradient(ellipse at bottom right, #349800e3, #27653d);
+  box-shadow:inset 5px 3px 10px 3px black;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  h1{
+    color:white;
+    padding:0;
+    margin:0;
+  }
 }

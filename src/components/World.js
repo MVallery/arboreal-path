@@ -5,7 +5,7 @@ const World = () => {
     <React.Fragment>
       <div id="world" className="world-main-container">
         <div className="world-main-container-gradient">
-      <h1>World</h1>
+      <h1>Explore The World</h1>
       <img className="world-map" src={WorldMap} />
       </div>
       </div>
