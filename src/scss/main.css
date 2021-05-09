@@ -240,7 +240,7 @@
           justify-content: flex-start;
   border-radius: 20px;
   border: 10px solid grey;
-  margin: 0px 10px 0px 10px;
+  margin: 100px 10px 0px 10px;
   width: 300px;
   padding: 5px;
   padding-top: 25px;
@@ -287,37 +287,35 @@
           backdrop-filter: hue-rotate(210deg) contrast(2);
 }
 
-.alim-enter {
-  opacity: 0.2;
-  -webkit-transform: scale(0.9) translateY(50%);
-          transform: scale(0.9) translateY(50%);
+.tio-container-style-active {
+  width: 500px;
 }
 
-.alim-enter-active {
-  opacity: 1;
-  -webkit-transform: scale(1) translateY(0%);
-          transform: scale(1) translateY(0%);
+.tio-container-style-inactive {
+  width: 30px;
 }
 
-.alim-exit {
-  opacity: 1;
-  -webkit-transform: scale(1) translateY(0%);
-          transform: scale(1) translateY(0%);
+.alim-container-style-active {
+  width: 500px;
 }
 
-.alim-exit-active {
-  opacity: 0.2;
-  -webkit-transform: scale(0.9) translateY(50%);
-          transform: scale(0.9) translateY(50%);
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+.alim-container-style-inactive {
+  width: 30px;
+}
+
+.hali-container-style-active {
+  width: 500px;
+}
+
+.hali-container-style-inactive {
+  width: 30px;
 }
 
 .characters-container {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 800px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +325,24 @@
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.alim-background-color {
+  background-image: radial-gradient(rgba(232, 23, 226, 0.44), rgba(171, 97, 162, 0.55));
+  backdrop-filter: hue-rotate(220deg) contrast(2);
+  -webkit-backdrop-filter: hue-rotate(220deg) contrast(2);
+}
+
+.tio-background-color {
+  background-image: radial-gradient(rgba(0, 128, 0, 0.329412), rgba(4, 35, 4, 0.64));
+  -webkit-backdrop-filter: hue-rotate(80deg) contrast(2);
+  backdrop-filter: hue-rotate(80deg) contrast(2);
+}
+
+.hali-background-color {
+  background-image: radial-gradient(#71008080, #710080a6);
+  -webkit-backdrop-filter: hue-rotate(210deg) contrast(2);
+  backdrop-filter: hue-rotate(195deg) contrast(2);
 }
 
 .character-description {
@@ -536,7 +552,6 @@
 }
 
 .world-map {
-  width: 80vw;
   height: 70vh;
   -webkit-box-shadow: 5px 5px 10px 4px black;
           box-shadow: 5px 5px 10px 4px black;
