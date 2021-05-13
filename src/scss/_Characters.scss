@@ -1,26 +1,21 @@
 @font-face {font-family: Constantine; src:url('../Constantine.ttf');}
 
 .character-container {
-  display:none;
   display:flex;
   flex-direction:column;
   box-shadow: 20px 20px 20px #1b1414; 
   justify-content:flex-start;
   position: relative;
-  border-radius:20px;
-  border: 10px solid grey;
   // border-image: url(../assets/images/borderhali2.png) 70 repeat;
   margin: 100px 10px 0px 10px;
-  width: 300px;
-  padding: 5px;
-  padding-top:25px;
+  width: 500px;
+  padding: 25px 5px 5px 5px;
   min-height:450px;
   max-height: 1000px;
   height: 70vh;
   align-items: center;
-
-    border: none;
-    border-radius: 0px;
+  border: none;
+  border-radius: 0px;
   h1{
     padding:5px;
     margin:0px;
@@ -28,84 +23,39 @@
   }
 
 }
+
+.inactive-style{
+  width:0px;
+  height:0px;
+  box-shadow:none;
+  transition:width 2s;
+
+}
 .character-container:hover {
   pointer-events:auto;
   cursor:pointer;
 
 }
-.tio {
+.tio-card-background {
   opacity:99;
-  // background-image: radial-gradient(#00800054, #075d07a3);
-  // backdrop-filter: hue-rotate(80deg) contrast(2);
+
   background-image: radial-gradient(#008000c7, #075d0724);
   -webkit-backdrop-filter: hue-rotate(80deg) contrast(2);
   backdrop-filter: hue-rotate(
 20deg
 ) contrast(2);
-  width:300px;
 }
-.alim {
-  // background-color: rgba(197, 139, 159, 0.85);
-  // background-image: radial-gradient(#e817e2bf, #c737b68c);
-  background-image: radial-gradient(#e817e205, #b11c9f63);
-  // backdrop-filter: hue-rotate(220deg) contrast(2);
-  width:300px;
+.alim-card-background {
+  // background-image: radial-gradient(#e817e205, #b11c9f63);
+  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #e8e5174d);
+
+
 }
-.hali {
-  width:300px;
-  // background-image: radial-gradient(#80008091, #80006aa8);
-  // background-color: #825f82e6;
-  // backdrop-filter: hue-rotate(210deg) contrast(2);
+.hali-card-background {
   backdrop-filter: hue-rotate(
     5deg
     ) contrast(1);
 }
-
-.tio-container-style-active{
-  width:500px;
-  display:flex;
-}
-.tio-container-style-inactive{
-  width:30px;
-  display:none;
-
-}
-.alim-container-style-active{
-  width:500px;
-  display:flex;
-
-}
-.alim-container-style-inactive{
-  width:30px;
-  display:none
-  
-}.hali-container-style-active{
-  width:500px;
-  display:flex;
-
-}
-.hali-container-style-inactive{
-  width:30px;
-  display:none;
-
-}
-// .alim-enter {
-//   opacity:0.2;
-//   transform: scale(0.9) translateY(50%);
-// }
-// .alim-enter-active{
-//   opacity:1;
-//   transform: scale(1) translateY(0%);
-// }
-// .alim-exit {
-//   opacity:1;
-//   transform: scale(1) translateY(0%);
-// }
-// .alim-exit-active {
-//   opacity: 0.2;
-//   transform: scale(0.9) translateY(50%);
-//   transition: all 300ms ease-out;
-// }
 
 .characters-container {
   -webkit-box-pack: center;
@@ -126,18 +76,31 @@
 
 }
 .alim-background-color{
-  background-image: radial-gradient(rgba(232, 23, 226,0.44),rgba(171, 97, 162, 0.55));
-  backdrop-filter: hue-rotate(220deg) contrast(2);
-  -webkit-backdrop-filter: hue-rotate(220deg) contrast(2);
+  //pink
+  // background-image: radial-gradient(rgba(232, 23, 226,0.44),rgba(171, 97, 162, 0.55));
+  // backdrop-filter: hue-rotate(260deg) contrast(2);
+  // -webkit-backdrop-filter: hue-rotate(260deg) contrast(2);
+  // box-shadow: inset 0px -2px 25px 2px #e817d8;
+
+
+  // yellow
+  background-image: radial-gradient(rgba(242, 247, 64, 0.53), rgba(197, 184, 95,0.49));
+  backdrop-filter: hue-rotate(
+305deg
+) contrast(2);
+  -webkit-backdrop-filter: hue-rotate(260deg) contrast(2);
+  box-shadow: inset 0px -2px 25px 2px #e8e517;
 }
 .tio-background-color{
   background-image: radial-gradient(rgba(0,128,0,.32941176470588235),rgba(4, 35, 4, 0.64));
   -webkit-backdrop-filter: hue-rotate(80deg) contrast(2);
   backdrop-filter: hue-rotate(80deg) contrast(2);
+  box-shadow: inset 0px -2px 25px 2px #549254;
 }
 .hali-background-color{
   background-image: radial-gradient(#71008080,#710080a6);
   -webkit-backdrop-filter: hue-rotate(210deg) contrast(2);
+  box-shadow: inset 0px -5px 25px 5px purple;
   backdrop-filter: hue-rotate( 
 195deg
 ) contrast(2);
@@ -170,10 +133,11 @@ left:0
 
 }
 .character-description{
-  padding:10px;
+  padding:25px;
+  margin:20px;
   border-width: 10px;
   border-style: solid;
-  height:0px;
+  height:200px;
   overflow:hidden;
 
   transition: height 2s;
@@ -200,3 +164,5 @@ left:0
 .character-description-hali{
   background-color: #f9ebf991;
 }
+
+
