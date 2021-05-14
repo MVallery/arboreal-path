@@ -32,7 +32,7 @@ const ArborealPath = props => {
         const lastElement = temp.pop();
         temp.unshift(lastElement)
         setCharacterList(temp)
-        let newBackgroundstyle = temp[1].name==='Tio'? 'tio-background-color' : temp[1].name==='Alim'? 'alim-background-color'  : 'hali-background-color'
+        let newBackgroundstyle = temp[1].name==='Tio'? 'tio-background-color' : temp[1].name==='Alim'? 'alim-background-color'  : 'hali-background-color';
         setBackgroundStyle(newBackgroundstyle)
     }
     const onRightClick = () => {
@@ -40,7 +40,6 @@ const ArborealPath = props => {
         const firstElement = temp.shift();
         temp.push(firstElement)
         setCharacterList(temp)
-        
         let newBackgroundstyle = temp[1].name==='Tio'? 'tio-background-color' : temp[1].name==='Alim'? 'alim-background-color'  : 'hali-background-color'
         setBackgroundStyle(newBackgroundstyle)
 
@@ -66,13 +65,22 @@ const ArborealPath = props => {
             characterDescription = 'character-description-hali'
         }
         return (
-            <CharacterCard characterList={characterList} characterDescription={characterDescription} character={character} cardBackground={cardBackground} pictureGlow ={pictureGlow} index={index} onRightClick={onRightClick} onLeftClick={onLeftClick}/>
+            <CharacterCard 
+                key={character.name} 
+                characterList={characterList} 
+                characterDescription={characterDescription} 
+                character={character} 
+                cardBackground={cardBackground} 
+                pictureGlow ={pictureGlow} 
+                index={index} 
+                onRightClick={onRightClick} 
+                onLeftClick={onLeftClick}/>
         )
-    })
+    }) 
     return (
         <React.Fragment>
             <div className="characters-main-container" id='characters' ref={props.arborealPathRef}>
-                <div className={`characters-container ${backgroundStyle}`}>
+                <div className={`characters-container ${backgroundStyle}`}> 
                     
                     {displayCharacterCards}
                 </div>

@@ -38,23 +38,16 @@
 }
 .tio-card-background {
   opacity:99;
-
   background-image: radial-gradient(#008000c7, #075d0724);
-  -webkit-backdrop-filter: hue-rotate(80deg) contrast(2);
-  backdrop-filter: hue-rotate(
-20deg
-) contrast(2);
+
 }
 .alim-card-background {
-  // background-image: radial-gradient(#e817e205, #b11c9f63);
   background-image: radial-gradient(rgba(242, 247, 64, 0.27), #e8e5174d);
 
 
 }
 .hali-card-background {
-  backdrop-filter: hue-rotate(
-    5deg
-    ) contrast(1);
+  background-color:rgba(88, 25, 88,0.57);
 }
 
 .characters-container {
@@ -65,7 +58,7 @@
   position:relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  transition: backdrop-filter 4s;
+  transition: backdrop-filter 2s;
   display: flex;
   cursor: hand;
   -webkit-box-align: start;
@@ -84,7 +77,8 @@
 
 
   // yellow
-  background-image: radial-gradient(rgba(242, 247, 64, 0.53), rgba(197, 184, 95,0.49));
+  background-color:$alim-trans-yellow;
+  transition:background-color 2s;
   backdrop-filter: hue-rotate(
 305deg
 ) contrast(2);
@@ -92,15 +86,17 @@
   box-shadow: inset 0px -2px 25px 2px #e8e517;
 }
 .tio-background-color{
-  background-image: radial-gradient(rgba(0,128,0,.32941176470588235),rgba(4, 35, 4, 0.64));
   -webkit-backdrop-filter: hue-rotate(80deg) contrast(2);
   backdrop-filter: hue-rotate(80deg) contrast(2);
+  background-color:$tio-trans-green;
+  transition:background-color 2s;
   box-shadow: inset 0px -2px 25px 2px #549254;
 }
 .hali-background-color{
-  background-image: radial-gradient(#71008080,#710080a6);
+  background-color:$hali-trans-purple;
   -webkit-backdrop-filter: hue-rotate(210deg) contrast(2);
   box-shadow: inset 0px -5px 25px 5px purple;
+  transition:background-color 2s;
   backdrop-filter: hue-rotate( 
 195deg
 ) contrast(2);
@@ -164,5 +160,3 @@ left:0
 .character-description-hali{
   background-color: #f9ebf991;
 }
-
-
