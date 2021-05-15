@@ -4,7 +4,7 @@ import {Link as RSLink} from 'react-scroll';
 
 import TwitterIcon from "../assets/images/twitter.png";
 import InstagramIcon from "../assets/images/instagram.png";
-import FancyUnderline from "../assets/images/fancy-underline.jpg";
+import FancyUnderline from "../assets/images/fancy-underline2.png";
 const NavBar = props => {
   const location = useLocation();
 

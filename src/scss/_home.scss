@@ -9,6 +9,8 @@
   height:100vh;
   position: relative;
   width: 100vw;
+  background-position: 53%;
+
   img{
     margin: 40px 0px 20px 20%;
     height:500px;
@@ -136,4 +138,27 @@
 @keyframes gradientAnimation {
   0% {background-position: left}
   100% {background-position: right}
+}
+
+@media(max-width:900px){
+  .home-container img{
+    height:350px;
+    margin-top:130px;
+  }
+}
+
+@media(max-width:600px){
+  .home-container {
+    img{
+    height:250px;
+    margin-top:170px;
+  }
+}
+  .home-book-title h1{
+    font-size:2.1rem;
+    padding-right:0px;
+  }
+  .home-book-title{
+    padding-top:90px;
+  }
 }

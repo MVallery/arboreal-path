@@ -15,6 +15,7 @@
   height: 100vh;
   position: relative;
   width: 100vw;
+  background-position: 53%;
 }
 
 .home-container img {
@@ -210,6 +211,27 @@
   }
 }
 
+@media (max-width: 900px) {
+  .home-container img {
+    height: 350px;
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container img {
+    height: 250px;
+    margin-top: 170px;
+  }
+  .home-book-title h1 {
+    font-size: 2.1rem;
+    padding-right: 0px;
+  }
+  .home-book-title {
+    padding-top: 90px;
+  }
+}
+
 .about-container {
   padding-top: 100px;
   height: 100vh;
@@ -240,13 +262,17 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  position: relative;
+  position: absolute;
   margin: 100px 10px 0px 10px;
   width: 500px;
   padding: 25px 5px 5px 5px;
   min-height: 450px;
   max-height: 1000px;
   height: 70vh;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -261,12 +287,10 @@
 }
 
 .inactive-style {
-  width: 0px;
-  height: 0px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transition: width 2s;
-  transition: width 2s;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 .character-container:hover {
@@ -275,7 +299,6 @@
 }
 
 .tio-card-background {
-  opacity: 99;
   background-image: radial-gradient(#008000c7, #075d0724);
 }
 
@@ -291,7 +314,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100%;
+  height: 90vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,6 +324,9 @@
   transition: backdrop-filter 2s, -webkit-backdrop-filter 2s;
   display: flex;
   cursor: hand;
+  width: 80vw;
+  -webkit-box-shadow: inset 0px -2px 100px 100px black;
+          box-shadow: inset 0px -2px 100px 100px black;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -308,14 +334,18 @@
   flex-wrap: wrap;
 }
 
+.characters-fade-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
 .alim-background-color {
-  background-color: rgba(242, 247, 64, 0.53);
+  background-color: #f2f7405c;
   -webkit-transition: background-color 2s;
   transition: background-color 2s;
   backdrop-filter: hue-rotate(305deg) contrast(2);
   -webkit-backdrop-filter: hue-rotate(260deg) contrast(2);
-  -webkit-box-shadow: inset 0px -2px 25px 2px #e8e517;
-          box-shadow: inset 0px -2px 25px 2px #e8e517;
 }
 
 .tio-background-color {
@@ -324,15 +354,11 @@
   background-color: rgba(0, 128, 0, 0.329412);
   -webkit-transition: background-color 2s;
   transition: background-color 2s;
-  -webkit-box-shadow: inset 0px -2px 25px 2px #549254;
-          box-shadow: inset 0px -2px 25px 2px #549254;
 }
 
 .hali-background-color {
   background-color: #710080a6;
   -webkit-backdrop-filter: hue-rotate(210deg) contrast(2);
-  -webkit-box-shadow: inset 0px -5px 25px 5px purple;
-          box-shadow: inset 0px -5px 25px 5px purple;
   -webkit-transition: background-color 2s;
   transition: background-color 2s;
   -webkit-backdrop-filter: hue-rotate(195deg) contrast(2);
@@ -389,7 +415,9 @@
   background-image: url(../assets/images/background-shadow-left.png);
   background-attachment: fixed;
   background-size: cover;
-  height: 102vh;
+  height: 90vh;
+  width: 80vw;
+  margin-left: 10vw;
 }
 
 .character-content {
@@ -409,21 +437,58 @@
   background-color: #f9ebf991;
 }
 
-@-webkit-keyframes tioToHali {
-  0% {
-    background-position: left;
+@media (max-width: 1200px) {
+  .characters-container {
+    width: 90vw;
   }
-  100% {
-    background-position: right;
+  .characters-main-container {
+    height: 90vh;
+    width: 90vw;
+    margin-left: 5vw;
   }
 }
 
-@keyframes tioToHali {
-  0% {
-    background-position: left;
+@media (max-width: 900px) {
+  .characters-main-container {
+    background-position: 25%;
+    width: 98vw;
+    margin-left: 1vw;
   }
-  100% {
-    background-position: right;
+  .characters-container {
+    width: 98vw;
+    -webkit-box-shadow: inset 0px -2px 50px 50px black;
+            box-shadow: inset 0px -2px 50px 50px black;
+  }
+}
+
+@media (max-width: 700px) {
+  .character-container {
+    width: 300px;
+  }
+  .character-content {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    margin-top: 0px;
+  }
+  .characters-container {
+    width: 100vw;
+    height: 95vh;
+    -webkit-box-shadow: inset 0px -2px 40px 30px black;
+            box-shadow: inset 0px -2px 40px 30px black;
+  }
+  .characters-main-container {
+    width: 100vw;
+    height: 95vh;
+  }
+  .character-description {
+    padding: 15px;
+    margin: 10px;
+    border-width: 8px;
+    height: 250px;
+  }
+  .characters-fade-container {
+    height: 95vh;
   }
 }
 
@@ -602,6 +667,36 @@
           box-shadow: 5px 5px 10px 4px black;
 }
 
+@media (max-width: 1000px) {
+  .world-map {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .world-map {
+    height: 50vh;
+  }
+  .world-main-container {
+    height: 80vh;
+  }
+  .world-main-container-gradient {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 650px) {
+  .world-map {
+    height: 35vh;
+  }
+  .world-main-container {
+    height: 70vh;
+  }
+  .world-main-container-gradient {
+    height: 70vh;
+  }
+}
+
 /* @import url('/assets/fonts/Constantine.tff'); */
 @font-face {
   font-family: Constantine;
@@ -610,6 +705,12 @@
 
 .App {
   text-align: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .img-header {
@@ -638,11 +739,6 @@
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.character-content {
-  width: 300px;
-  cursor: hand;
 }
 
 .main-div {

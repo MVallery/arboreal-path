@@ -79,11 +79,13 @@ const ArborealPath = props => {
     }) 
     return (
         <React.Fragment>
-            <div className="characters-main-container" id='characters' ref={props.arborealPathRef}>
+            <div className="characters-fade-container" id='characters' ref={props.arborealPathRef}>
+            <div className="characters-main-container">
                 <div className={`characters-container ${backgroundStyle}`}> 
                     
                     {displayCharacterCards}
                 </div>
+            </div>
             </div>
         </React.Fragment>
     );

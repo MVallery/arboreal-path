@@ -27,3 +27,31 @@
   box-shadow:5px 5px 10px 4px black;
 
 }
+@media(max-width:1000px){
+  .world-map{
+    height: 60vh;
+  }
+}
+@media(max-width:800px){
+  .world-map{
+    height:50vh;
+  }
+  .world-main-container{
+    height:80vh;
+  }
+  .world-main-container-gradient{
+    height:80vh;
+  }
+}
+@media(max-width:650px){
+  .world-map{
+    height:35vh;
+
+  }
+  .world-main-container{
+    height:70vh;
+  }
+  .world-main-container-gradient{
+    height:70vh;
+  }
+}
