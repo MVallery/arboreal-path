@@ -22,7 +22,10 @@ const CharacterCard = (props) => {
           style={props.characterStyle}
         >
           <span className='character-quote'>
-          {props.character.quote}<br/><br/>
+            <span className='quotation-marks'>“</span>
+          {props.character.quote}
+          <span className='quotation-marks'>”</span>
+          <br/><br/>
           </span>
           {props.character.description}
         </div>
@@ -47,7 +50,9 @@ const CharacterCard = (props) => {
           style={props.characterStyle}
         >
           <span className='character-quote'>
-          {props.character.quote}<br/><br/>
+          <span className='quotation-marks'>“</span>
+          {props.character.quote}
+          <span className='quotation-marks'>”</span>
           </span>
           {props.character.description}
 

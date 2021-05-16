@@ -467,6 +467,13 @@
      border-image: url(../assets/images/borderhali2.png) 70 repeat;
 }
 
+.quotation-marks {
+  font-size: 3rem;
+  line-height: 1.5rem;
+  position: relative;
+  top: 10px;
+}
+
 .characters-main-container {
   background-image: url(../assets/images/background-shadow-left.png);
   background-attachment: fixed;

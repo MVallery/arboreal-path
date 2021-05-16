@@ -12,6 +12,7 @@ const World = () => {
     console.log(description)
     if (desc === description){
       setAnchorEl(null)
+      setDescription(null)
     } else{
     setAnchorEl(e.currentTarget);
     setDescription(desc)
