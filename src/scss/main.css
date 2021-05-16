@@ -89,6 +89,7 @@
 .home-book-title h1 {
   text-align: "left";
   font-size: 3rem;
+  text-shadow: 2px 3px 5px #2e4a64;
   padding: 10px 20% 0px 20px;
   text-align: center;
   font-family: Constantine;
@@ -106,6 +107,20 @@
 
 .home-buy-now-container p {
   font-size: 1.2rem;
+}
+
+.home-buy-now-container button {
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px 5px #15152e;
+          box-shadow: 5px 5px 10px 5px #15152e;
+  opacity: 0.5;
+  margin: 10px;
+  width: 180px;
+}
+
+.home-buy-now-container button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .home-button-container {
@@ -233,15 +248,61 @@
 }
 
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 100px;
-  height: 100vh;
-  background-size: cover;
+  height: 80vh;
 }
 
 .about-container p {
   width: 40%;
   padding: 50px;
-  border-radius: 50%;
+}
+
+.about-container h1 {
+  padding: 0px;
+}
+
+.picture-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media-about {
+  width: 50px;
+  padding: 10px;
+}
+
+.social-media-about:hover {
+  cursor: pointer;
+  -webkit-filter: hue-rotate(250);
+          filter: hue-rotate(250);
+}
+
+.social-media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jason {
+  width: 300px;
 }
 
 @font-face {
@@ -264,11 +325,11 @@
           justify-content: flex-start;
   position: absolute;
   margin: 100px 10px 0px 10px;
-  width: 500px;
+  width: 555px;
   padding: 25px 5px 5px 5px;
   min-height: 450px;
   max-height: 1000px;
-  height: 70vh;
+  height: 75vh;
   z-index: 2;
   opacity: 1;
   -webkit-transition: opacity 2s;
@@ -293,17 +354,12 @@
   transition: opacity 2s;
 }
 
-.character-container:hover {
-  pointer-events: auto;
-  cursor: pointer;
-}
-
 .tio-card-background {
   background-image: radial-gradient(#008000c7, #075d0724);
 }
 
 .alim-card-background {
-  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #e8e5174d);
+  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #9e84008c);
 }
 
 .hali-card-background {
@@ -314,7 +370,7 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 90vh;
+  height: 95vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +397,7 @@
 }
 
 .alim-background-color {
-  background-color: #f2f7405c;
+  background-color: #dad90f6e;
   -webkit-transition: background-color 2s;
   transition: background-color 2s;
   backdrop-filter: hue-rotate(305deg) contrast(2);
@@ -399,11 +455,11 @@
 }
 
 .character-description {
-  padding: 25px;
-  margin: 20px;
+  padding: 10px;
+  margin: 0px 10px 10px 10px;
   border-width: 10px;
   border-style: solid;
-  height: 200px;
+  height: 288px;
   overflow: hidden;
   -webkit-transition: height 2s;
   transition: height 2s;
@@ -423,6 +479,16 @@
 .character-content {
   width: 300px;
   cursor: hand;
+}
+
+.character-quote {
+  font-style: italic;
+  font-family: Constantine;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+  display: block;
 }
 
 .character-description-alim {
@@ -624,9 +690,13 @@
 .social {
   width: 20px;
   height: 20px;
-  padding: 10%;
+  padding-top: 45px;
   display: block;
   cursor: hand;
+}
+
+.social img {
+  width: 100%;
 }
 
 .world-main-container {
@@ -661,20 +731,201 @@
   padding: 50px 0 0 0;
 }
 
-.world-map {
+.world-map-container {
   height: 70vh;
+  position: relative;
+}
+
+.world-map {
+  height: 100%;
   -webkit-box-shadow: 5px 5px 10px 4px black;
           box-shadow: 5px 5px 10px 4px black;
 }
 
+.map-locations {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: rgba(82, 46, 23, 0.849);
+}
+
+.map-locations:hover {
+  cursor: pointer;
+}
+
+.map-Gren-City {
+  top: 13%;
+  left: 31%;
+}
+
+.map-Wilton {
+  top: 24%;
+  left: 41%;
+}
+
+.map-Hillfarm {
+  top: 20%;
+  left: 24%;
+}
+
+.map-Meisha {
+  top: 38%;
+  left: 20%;
+}
+
+.map-Ahsiem {
+  top: 43%;
+  left: 22%;
+}
+
+.map-Mizmiz {
+  top: 63%;
+  left: 27.5%;
+}
+
+.map-Pinpin {
+  top: 72%;
+  left: 21.9%;
+}
+
+.map-Belsa {
+  top: 30%;
+  left: 37%;
+}
+
+.map-Tovaloreande-Sanctuary {
+  left: 37.5%;
+  top: 15%;
+}
+
+.map-Pasture-Downs {
+  top: 24%;
+  left: 17%;
+}
+
+.map-Mudplains {
+  top: 33%;
+  left: 17%;
+}
+
+.map-Last-Stand {
+  left: 28%;
+  top: 24%;
+}
+
+.map-Trade-Plains {
+  top: 23%;
+  left: 65%;
+}
+
+.map-Oressa {
+  top: 25%;
+  left: 70%;
+}
+
+.map-East-Peaks {
+  left: 73%;
+  top: 16%;
+}
+
+.map-Sky-Tower {
+  top: 26%;
+  left: 81%;
+}
+
+.map-Hearth {
+  top: 29%;
+  left: 75%;
+}
+
+.map-Und-dal {
+  top: 35%;
+  left: 70%;
+}
+
+.map-Stoneport {
+  top: 38%;
+  left: 81.5%;
+}
+
+.map-Strago {
+  top: 44%;
+  left: 74%;
+}
+
+.map-The-Lungs {
+  top: 35%;
+  left: 67%;
+}
+
+.map-Weeping-Pass {
+  top: 44%;
+  left: 69%;
+}
+
+.map-Clickclick-Dunes {
+  top: 70%;
+  left: 30%;
+}
+
+.map-Thunder-Trail {
+  top: 56%;
+  left: 82%;
+}
+
+.map-Rovilia {
+  top: 45%;
+  left: 88%;
+}
+
+.map-Skull-Landing {
+  top: 59%;
+  left: 87%;
+}
+
+.map-Phantasmal-Reef {
+  top: 70%;
+  left: 50%;
+}
+
+.map-Coveted-South {
+  left: 80%;
+  top: 90%;
+}
+
+.map-Iron-Swamp {
+  left: 38%;
+  top: 42%;
+}
+
+.map-East-Peaks {
+  left: 75%;
+  top: 20%;
+}
+
+.map-Spirit-Arboretum {
+  top: 28%;
+  left: 35%;
+}
+
+.description {
+  background-color: #652500e3;
+  padding: 20px;
+  width: 300px;
+  border: 4px solid black;
+  color: white;
+  opacity: 0.9;
+  position: absolute;
+}
+
 @media (max-width: 1000px) {
-  .world-map {
+  .world-map-container {
     height: 60vh;
   }
 }
 
 @media (max-width: 800px) {
-  .world-map {
+  .world-map-container {
     height: 50vh;
   }
   .world-main-container {
@@ -686,7 +937,7 @@
 }
 
 @media (max-width: 650px) {
-  .world-map {
+  .world-map-container {
     height: 35vh;
   }
   .world-main-container {

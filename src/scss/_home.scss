@@ -75,6 +75,7 @@
   h1{
     text-align: "left";
     font-size:3rem;
+    text-shadow: 2px 3px 5px $main-color;
     padding: 10px 20% 0px 20px;
     text-align: center;
     font-family: Constantine;
@@ -88,6 +89,17 @@
   display:flex;
   p{
     font-size:1.2rem;
+  }
+  button {
+    background-color:white;
+    box-shadow:5px 5px 10px 5px rgb(21, 21, 46);
+    opacity:0.5;
+    margin:10px;
+    width:180px;
+  }
+  button:hover{
+    cursor:pointer;
+    opacity:0.8;
   }
   
 }

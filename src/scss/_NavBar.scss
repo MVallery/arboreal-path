@@ -19,7 +19,7 @@
     display:flex;
     justify-content:center;
     overflow:hidden;
-    background-color: rgb(46, 74, 100);
+    background-color: $main-color;
     width:100%;
     align-items: flex-start;
   }
@@ -70,8 +70,10 @@
 .social {
   width:20px;
   height:20px;
-  padding:10%;
+  padding-top:45px;
   display:block;
   cursor:hand;
-  
+  img{
+    width:100%
+  }
 }

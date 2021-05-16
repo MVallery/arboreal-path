@@ -37,9 +37,9 @@ const NavBar = props => {
             <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>ABOUT</RSLink>
           </li>
           <li>
-          <a href="https://twitter.com">
+          <a href="https://twitter.com" className="social">
             <img
-              className="social"
+              
               border="0"
               alt="facebook"
               src={TwitterIcon}
@@ -48,9 +48,8 @@ const NavBar = props => {
         </li>
 
         <li>
-          <a href="https://instagram.com">
+          <a href="https://instagram.com" className="social">
             <img
-              className="social"
               border="0"
               alt="facebook"
               src={InstagramIcon}

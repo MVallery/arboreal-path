@@ -12,7 +12,7 @@ const CharacterCard = (props) => {
         <a>
           <img
             className="character-content"
-            style={{ ...props.pictureGlow, opacity: 0.85 }}
+            style={{ ...props.pictureGlow,  opacity:0.65}}
             src={props.character.image}
           ></img>
         </a>
@@ -21,6 +21,9 @@ const CharacterCard = (props) => {
           className={`character-description ${props.characterDescription}`}
           style={props.characterStyle}
         >
+          <span className='character-quote'>
+          {props.character.quote}<br/><br/>
+          </span>
           {props.character.description}
         </div>
       </div>
@@ -34,7 +37,7 @@ const CharacterCard = (props) => {
         <a>
           <img
             className="character-content"
-            style={{ ...props.pictureGlow, opacity: 0.85 }}
+            style={{ ...props.pictureGlow, opacity: 0.65 }}
             src={props.character.image}
           ></img>
         </a>
@@ -43,7 +46,11 @@ const CharacterCard = (props) => {
           className={`character-description ${props.characterDescription}`}
           style={props.characterStyle}
         >
+          <span className='character-quote'>
+          {props.character.quote}<br/><br/>
+          </span>
           {props.character.description}
+
         </div>
     </div>
     )

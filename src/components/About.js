@@ -1,15 +1,29 @@
 import React from 'react';
-import Jason from '../assets/images/jason.png';
+import Jason from '../assets/images/jason2.png';
+import Instagram from '../assets/images/instagram-about-blue.png';
+import Twitter from '../assets/images/twitter-about-blue.png';
+import Goodreads from '../assets/images/goodreads-about.png';
 
 const About = props => {
     return (
         <div id='about' ref= {props.aboutRef} className="about-container">
-<h1>Jason M. Vallery</h1>
-{/* <img className="jason" src={Jason} align="right"></img> */}
-<p>This is a paragraph about Jason. He is the coolest of them all. He knows how to play viddy, and how to write a booky book.
-    Sometimes he is a lame-o but sometimes he's the okayest.
-</p>
-</div>
+            <h1>ABOUT</h1>
+            <div className="picture-description-container">
+                <img className="jason" src={Jason} align="right"></img>
+                <p>
+                It'd be advisable to erase me from the internet, but until my fated erasure comes I'm content to play with my cats, delve into some video games, and write, write, write.<br/><br/>
+
+Creating characters, worlds, and stories has always been a favorite pastime of mine, from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer role-playing games, to short stories. Learning to apply those experiences towards writing a novel was a fun challenge and I look forward to continuing my journey as an author.                
+</p>   
+            </div>
+            <div className="social-media-container">
+                <img className="social-media-about" src={Instagram}></img>
+                <img className="social-media-about" src={Twitter}></img>
+                <img className="social-media-about" src={Goodreads}></img>
+
+            </div>
+
+        </div>
     );
   }
   

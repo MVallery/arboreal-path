@@ -1,6 +1,6 @@
 import React from 'react';
 import {Router, Route, Link, Switch } from "react-router-dom";
-import BookCover from '../assets/images/cover-header.png';
+import BookCover from '../assets/images/bookcover.jpg';
 import ArborealPath from './Characters';
 import {Link as RSLink} from 'react-scroll';
 
@@ -17,9 +17,8 @@ const Home= props=> {
             <h2>Available for pre-order soon</h2>
             <div className="home-buy-now-container">
               <p>Buy now:</p>
-            <button>A</button>
-            <button>BN</button>
-            <button>O</button>
+            <button>AMAZON</button>
+            <button>BARNES & NOBLE</button>
 
             </div>
             <div className='home-button-container'>
