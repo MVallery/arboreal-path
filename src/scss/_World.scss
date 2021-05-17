@@ -34,15 +34,22 @@
 }
 
 .map-locations{
-  width:38px;
-  height:30px;
-  position:absolute;
-  background-image:url(../assets/images/figleaf.png);
+
+  // background-image:url(../assets/images/figleaf2.png);
   background-size:cover;
+  width: 39px;
+  height: 50px;
+  position: absolute;
+  background-image: radial-gradient(#123110, #0a801f0f, transparent);
   // background-color: rgba(78, 64, 55, 0.849);
   &:hover{
     cursor:pointer;
-    filter:hue-rotate(60deg)
+    transform: translate(3px, 3px);
+    background-image: none;
+    filter: hue-rotate(300deg) brightness(1.7);  }
+  img{
+    width:38px;
+    height:30px;
   }
 }
 .map-Gren-City{

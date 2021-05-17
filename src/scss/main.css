@@ -805,17 +805,25 @@
 }
 
 .map-locations {
-  width: 38px;
-  height: 30px;
-  position: absolute;
-  background-image: url(../assets/images/figleaf.png);
   background-size: cover;
+  width: 39px;
+  height: 50px;
+  position: absolute;
+  background-image: radial-gradient(#123110, #0a801f0f, transparent);
 }
 
 .map-locations:hover {
   cursor: pointer;
-  -webkit-filter: hue-rotate(60deg);
-          filter: hue-rotate(60deg);
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+  background-image: none;
+  -webkit-filter: hue-rotate(300deg) brightness(1.7);
+          filter: hue-rotate(300deg) brightness(1.7);
+}
+
+.map-locations img {
+  width: 38px;
+  height: 30px;
 }
 
 .map-Gren-City {

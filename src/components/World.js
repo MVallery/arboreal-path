@@ -3,6 +3,8 @@ import WorldMap from '../assets/images/world-map2.jpg'
 import Popper from '@material-ui/core/Popper';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Fade from '@material-ui/core/Fade';
+import MapIcon from '../assets/images/figleaf2.png';
+import ImageGradient from 'material-ui/svg-icons/image/gradient';
 
 const World = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -35,7 +37,9 @@ const World = () => {
     console.log('handlelocation', locationList)
     const newLocationList = locationList.map(location=> {
       return(
-      <div key={location.name} className={`map-locations map-${location.name.replace(' ', '-')}`} onClick={(e)=>mapDescription(location.description,e)}></div>
+      <div key={location.name} className={`map-locations map-${location.name.replace(' ', '-')}`} onClick={(e)=>mapDescription(location.description,e)}>
+        <img src={MapIcon}/>
+      </div>
       )
     })
     console.log(newLocationList)
