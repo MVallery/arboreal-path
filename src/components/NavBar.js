@@ -28,13 +28,13 @@ const NavBar = props => {
           <li>
             <RSLink to="home" spy={true} smooth={true} offset={0} duration={500}>
               <div className="header-title-container">
-                <span className="header-title">Jason M. Vallery</span>
+                <span className="header-title">Arboreal Path</span>
                 <img src={FancyUnderline}></img>
               </div>
             </RSLink>
           </li>
           <li>
-            <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>ABOUT</RSLink>
+            <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>AUTHOR</RSLink>
           </li>
           <li>
           <a href="https://twitter.com" className="social">

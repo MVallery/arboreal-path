@@ -9,7 +9,7 @@
   display: -ms-flexbox;
   display: flex;
   background-image: url(../assets/images/empyrea-painting.jpg);
-  background-image: url(../assets/images/cover-zoom-characters.png);
+  background-image: url(../assets/images/cover-zoom-characters2.png);
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -19,7 +19,7 @@
 }
 
 .home-container img {
-  margin: 40px 0px 20px 20%;
+  margin-bottom: 10px;
   height: 500px;
   border-radius: 5px;
   -webkit-box-shadow: 10px 10px 10px #0d1217;
@@ -86,17 +86,29 @@
   border-bottom: 3px solid #385538;
 }
 
-.home-book-title h1 {
+.home-book-title h1, .home-book-title h2 {
   text-align: "left";
   font-size: 3rem;
   text-shadow: 2px 3px 5px #2e4a64;
-  padding: 10px 20% 0px 20px;
   text-align: center;
   font-family: Constantine;
 }
 
 .home-book-title h2 {
-  font-size: 1.2rem;
+  font-size: 2rem;
+}
+
+.home-book-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home-buy-now-container {
@@ -111,9 +123,9 @@
 
 .home-buy-now-container button {
   background-color: white;
+  height: 70px;
   -webkit-box-shadow: 5px 5px 10px 5px #15152e;
           box-shadow: 5px 5px 10px 5px #15152e;
-  opacity: 0.5;
   margin: 10px;
   width: 180px;
 }
@@ -263,8 +275,8 @@
 }
 
 .about-container p {
-  width: 40%;
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .about-container h1 {
@@ -279,9 +291,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .social-media-about {
@@ -305,6 +314,27 @@
   width: 300px;
 }
 
+@media (max-width: 700px) {
+  .jason {
+    width: 150px;
+    float: left;
+  }
+  .picture-description-container {
+    width: 100vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-container {
+    padding-top: 10px;
+    height: 100vh;
+  }
+  .about-container p {
+    padding: 0px;
+    padding-left: 5px;
+    width: auto;
+  }
+}
+
 @font-face {
   font-family: Constantine;
   src: url("../Constantine.ttf");
@@ -325,7 +355,7 @@
           justify-content: flex-start;
   position: absolute;
   margin: 100px 10px 0px 10px;
-  width: 555px;
+  width: 560px;
   padding: 25px 5px 5px 5px;
   min-height: 450px;
   max-height: 1000px;
@@ -359,7 +389,7 @@
 }
 
 .alim-card-background {
-  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #9e84008c);
+  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #8c71256b);
 }
 
 .hali-card-background {
@@ -397,7 +427,7 @@
 }
 
 .alim-background-color {
-  background-color: #dad90f6e;
+  background-color: #73730da1;
   -webkit-transition: background-color 2s;
   transition: background-color 2s;
   backdrop-filter: hue-rotate(305deg) contrast(2);
@@ -469,7 +499,7 @@
 
 .quotation-marks {
   font-size: 3rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   position: relative;
   top: 10px;
 }
@@ -536,7 +566,7 @@
 
 @media (max-width: 700px) {
   .character-container {
-    width: 300px;
+    width: 70vw;
   }
   .character-content {
     margin-top: 50px;
@@ -547,6 +577,7 @@
   .characters-container {
     width: 100vw;
     height: 95vh;
+    margin-top: 20px;
     -webkit-box-shadow: inset 0px -2px 40px 30px black;
             box-shadow: inset 0px -2px 40px 30px black;
   }
@@ -558,10 +589,34 @@
     padding: 15px;
     margin: 10px;
     border-width: 8px;
-    height: 250px;
+    height: 370px;
+  }
+  .character-quote {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .quotation-marks {
+    font-size: 2rem;
   }
   .characters-fade-container {
     height: 95vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .character-container {
+    width: 80vw;
+    height: 80vh;
+  }
+  .character-quote {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+  .quotation-marks {
+    line-height: 0.1;
+  }
+  .character-description {
+    font-size: 0.8rem;
   }
 }
 
@@ -750,19 +805,25 @@
 }
 
 .map-locations {
-  width: 20px;
-  height: 20px;
+  width: 38px;
+  height: 30px;
   position: absolute;
-  background-color: rgba(82, 46, 23, 0.849);
+  background-image: url(../assets/images/figleaf.png);
+  background-size: cover;
 }
 
 .map-locations:hover {
   cursor: pointer;
+  -webkit-filter: hue-rotate(60deg);
+          filter: hue-rotate(60deg);
 }
 
 .map-Gren-City {
   top: 13%;
   left: 31%;
+  background-image: url(../assets/images/spiral.png);
+  width: 30px;
+  height: 25px;
 }
 
 .map-Wilton {
@@ -923,6 +984,11 @@
   color: white;
   opacity: 0.9;
   position: absolute;
+}
+
+.map-icon {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 1000px) {

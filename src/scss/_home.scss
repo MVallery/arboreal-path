@@ -3,7 +3,7 @@
 .home-container {
   display:flex;
   background-image:url(../assets/images/empyrea-painting.jpg);
-  background-image:url(../assets/images/cover-zoom-characters.png);
+  background-image:url(../assets/images/cover-zoom-characters2.png);
   background-attachment: fixed;
   background-size: cover;
   height:100vh;
@@ -12,7 +12,7 @@
   background-position: 53%;
 
   img{
-    margin: 40px 0px 20px 20%;
+    margin-bottom:10px;
     height:500px;
     border-radius:5px;
     box-shadow: 10px 10px 10px rgb(13, 18, 23);
@@ -72,18 +72,22 @@
     border-bottom: 3px solid rgb(56, 85, 56);
 
   }
-  h1{
+  h1, h2{
     text-align: "left";
     font-size:3rem;
     text-shadow: 2px 3px 5px $main-color;
-    padding: 10px 20% 0px 20px;
     text-align: center;
     font-family: Constantine;
   }
   h2{
-    font-size:1.2rem;
+    font-size:2rem;
   }
 
+}
+.home-book-button-container{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
 }
 .home-buy-now-container{
   display:flex;
@@ -92,8 +96,8 @@
   }
   button {
     background-color:white;
+    height:70px;
     box-shadow:5px 5px 10px 5px rgb(21, 21, 46);
-    opacity:0.5;
     margin:10px;
     width:180px;
   }

@@ -8,7 +8,7 @@
   position: absolute;
   // border-image: url(../assets/images/borderhali2.png) 70 repeat;
   margin: 100px 10px 0px 10px;
-  width: 555px;
+  width: 560px;
   padding: 25px 5px 5px 5px;
   min-height:450px;
   max-height: 1000px;
@@ -39,7 +39,7 @@
 
 }
 .alim-card-background {
-  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #9e84008c);
+  background-image: radial-gradient(rgba(242, 247, 64, 0.27), #8c71256b);
 
 
 }
@@ -146,7 +146,7 @@ left:0
 }
 .quotation-marks{
   font-size: 3rem;
-  line-height: 1.5rem;
+  line-height: 1rem;
   position: relative;
   top: 10px;
 }
@@ -214,8 +214,8 @@ left:0
 
 @media(max-width:700px){
   .character-container{
-    width: 300px;
-  }
+    width: 70vw;
+    }
   .character-content{
     margin-top:50px;
     // height:80vh;
@@ -226,6 +226,7 @@ left:0
   .characters-container{
     width:100vw;
     height:95vh;
+    margin-top:20px;
     box-shadow:inset 0px -2px 40px 30px black;
   }
   .characters-main-container{
@@ -237,10 +238,33 @@ left:0
     padding:15px;
     margin:10px;
     border-width:8px;
-    height:250px;
+    height: 370px;
+  }
+  .character-quote{
+    font-size:1.2rem;
+    line-height: 1.5rem;
+  }
+  .quotation-marks{
+    font-size:2rem;
   }
   .characters-fade-container{
     height:95vh;
   }
   
+}
+@media(max-width:500px){
+  .character-container{
+    width: 80vw;
+    height: 80vh;
+  }
+  .character-quote{
+    font-size:0.9rem;
+    line-height:1rem;
+  }
+  .quotation-marks{
+    line-height: 0.1;
+  }
+  .character-description{
+    font-size:0.8rem;
+  }
 }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import WorldMap from '../assets/images/world-map.jpg'
+import WorldMap from '../assets/images/world-map2.jpg'
 import Popper from '@material-ui/core/Popper';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Fade from '@material-ui/core/Fade';

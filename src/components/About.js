@@ -10,10 +10,13 @@ const About = props => {
             <h1>ABOUT</h1>
             <div className="picture-description-container">
                 <img className="jason" src={Jason} align="right"></img>
-                <p>It'd be advisable to erase me from the internet, but until my fated erasure comes I'm content to play with my cats, delve into some video games, and write, write, write.<br/><br/>
+                <div style={{display:'flex', flexDirection:'column'}}>
+                <p className="paragraph-1">It'd be advisable to erase me from the internet, but until my fated erasure comes I'm content to play with my cats, delve into some video games, and write, write, write.</p><br/>
 
-                    Creating characters, worlds, and stories has always been a favorite pastime of mine, from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer role-playing games, to short stories. Learning to apply those experiences towards writing a novel was a fun challenge and I look forward to continuing my journey as an author.                
+                <p className="paragraph-2">Creating characters, worlds, and stories has always been a favorite pastime of mine, from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer role-playing games, to short stories. Learning to apply those experiences towards writing a novel was a fun challenge and I look forward to continuing my journey as an author.                
                 </p>   
+                </div>
+
             </div>
             <div className="social-media-container">
                 <img className="social-media-about" src={Instagram}></img>

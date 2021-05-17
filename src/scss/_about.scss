@@ -7,8 +7,8 @@
   height:80vh;
 
   p{
-    width:40%;
-    padding:50px;
+    padding-top:50px;
+    padding-left:50px;
     // background-image:radial-gradient(ellipse at center, rgb(160, 148, 148),transparent )
   }
   h1{
@@ -19,7 +19,6 @@
   display:flex;
   width:60vw;
   justify-content:center;
-  align-items:center;
 
 }
 .social-media-about{
@@ -36,4 +35,25 @@
 }
 .jason{
   width:300px;
+}
+
+@media(max-width:700px){
+  .jason{
+    width:150px;
+    float:left;
+  }
+  .picture-description-container{
+    width:100vw;
+    flex-wrap:wrap;
+  }
+  .about-container{
+    padding-top:10px;
+    height:100vh;
+    
+    p{
+      padding:0px;
+      padding-left:5px;
+      width:auto;
+    }
+  }
 }
