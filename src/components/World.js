@@ -8,28 +8,26 @@ import ImageGradient from 'material-ui/svg-icons/image/gradient';
 
 const World = () => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [description, setDescription] = useState(null)
-  const mapDescription = (desc, e) => {
-    console.log(desc)
-    console.log(description)
-    if (desc === description){
+  const [activeMapElement, setActiveMapElement] = useState(null)
+  const mapDescription = (location, e) => {
+    console.log(location)
+    console.log(e)
+    if (location === activeMapElement){
       setAnchorEl(null)
-      setDescription(null)
+      setActiveMapElement(null)
     } else{
     setAnchorEl(e.currentTarget);
-    setDescription(desc)
+    setActiveMapElement(location)
 
     }
     
   }
   const handleClickAway = (e) =>{
     console.log(e)
-    if (e===undefined){
+    if (e.target.className==='world-map'){
       setAnchorEl(null)
+    } 
 
-    } else{
-      mapDescription(description,e)
-    }
   }
   const open = Boolean(anchorEl);
 
@@ -37,7 +35,7 @@ const World = () => {
     console.log('handlelocation', locationList)
     const newLocationList = locationList.map(location=> {
       return(
-      <div key={location.name} className={`map-locations map-${location.name.replace(' ', '-')}`} onClick={(e)=>mapDescription(location.description,e)}>
+      <div key={location.name} className={`map-locations map-${location.name.replace(' ', '-')}`} onClick={(e)=>mapDescription(location,e)}>
         <img src={MapIcon}/>
       </div>
       )
@@ -81,9 +79,13 @@ const World = () => {
 
       <Popper open={open} anchorEl={anchorEl} transition>
         {({ TransitionProps}) => (
+          <ClickAwayListener onClickAway={handleClickAway}>
+
            <Fade {...TransitionProps} timeout={350}>
-            <div className='description'><p>{description}</p></div>
+            <div className='description'><h2>{activeMapElement.name}</h2><p>{activeMapElement.description}</p></div>
            </Fade>
+           </ClickAwayListener>
+
         )}
       </Popper>
       <div id="world" className="world-main-container">

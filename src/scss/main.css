@@ -812,7 +812,7 @@
   background-image: radial-gradient(#123110, #0a801f0f, transparent);
 }
 
-.map-locations:hover {
+.map-locations:hover, .map-locations :focus-within {
   cursor: pointer;
   -webkit-transform: translate(3px, 3px);
           transform: translate(3px, 3px);
@@ -992,6 +992,10 @@
   color: white;
   opacity: 0.9;
   position: absolute;
+}
+
+.description h2 {
+  font-family: Constantine;
 }
 
 .map-icon {
