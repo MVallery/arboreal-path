@@ -5,6 +5,7 @@
   background-image: url(../assets/images/background-painting.jpg);
   background-attachment: fixed;
   background-size: cover;
+  z-index:2;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   box-shadow: inset 5px 30px 50px 24px black;
 
@@ -15,6 +16,7 @@
   align-items: center;
   flex-direction: column;
   position:absolute;
+  z-index:2;
   width: 100vw;
   height: 110vh;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
