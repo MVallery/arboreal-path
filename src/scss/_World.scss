@@ -1,12 +1,12 @@
 
 .world-main-container{
-  height:100vh;
+  height:110vh;
   position:relative;
   background-image: url(../assets/images/background-painting.jpg);
   background-attachment: fixed;
   background-size: cover;
-
-  box-shadow: inset 5px 30px 50px 24px black
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
+  box-shadow: inset 5px 30px 50px 24px black;
 
 }
 .world-main-container-gradient{
@@ -16,7 +16,8 @@
   flex-direction: column;
   position:absolute;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.75), #652500);
     h1{
     color:white;

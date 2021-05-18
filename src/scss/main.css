@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap");
 @font-face {
   font-family: Constantine;
@@ -259,6 +260,15 @@
   }
 }
 
+.about-background-container {
+  background-color: #f5e9d49e;
+  height: 80vh;
+  padding-top: 50px;
+  margin-top: -10vh;
+  z-index: -1;
+  position: relative;
+}
+
 .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,23 +280,53 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
-  height: 80vh;
+  padding-top: 50px;
+  position: relative;
 }
 
 .about-container p {
-  padding-top: 50px;
   padding-left: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .about-container h1 {
   padding: 0px;
 }
 
+.about-container:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -15vw;
+  width: 50%;
+  height: 85vh;
+  background-image: linear-gradient(100deg, #cf7807, #ff9100);
+  -webkit-transform: skew(11deg);
+          transform: skew(11deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.about-paragraph-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .picture-description-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: 3;
   width: 60vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -296,6 +336,7 @@
 .social-media-about {
   width: 50px;
   padding: 10px;
+  z-index: 3;
 }
 
 .social-media-about:hover {
@@ -762,11 +803,13 @@
 }
 
 .world-main-container {
-  height: 100vh;
+  height: 110vh;
   position: relative;
   background-image: url(../assets/images/background-painting.jpg);
   background-attachment: fixed;
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   -webkit-box-shadow: inset 5px 30px 50px 24px black;
           box-shadow: inset 5px 30px 50px 24px black;
 }
@@ -784,7 +827,9 @@
           flex-direction: column;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.75), #652500);
 }
 

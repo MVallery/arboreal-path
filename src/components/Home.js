@@ -25,7 +25,17 @@ const Home= props=> {
           <div className="home-book-title">
           <h1> Arboreal Path </h1>
 
-            <p>This is a description of Arboreal Path. It's a great book that is about magic and nature and other things that are fun. The characters are cool.</p>
+            <p>
+            Air, water, earth, fire, nature. Humans are born gifted with one of these five elemental powers. Until an earth-rending Quake devastated the northern lands and blocked them from the mainland with phantom-infested waters for a half-millennia. Every generation since, less and less people are born with magic and the nature gift is bordering on extinction.<br/>
+
+Hali, a book-loving scholar specialized in ancient spells, is attempting to create a powerful rune to release her dead son and wife from the shadow spirit wearing their faces. With her magic eaten by the shadow, she must now teach somebody else her unique style of magic. <br/>
+
+Alim, a magicless warrior with an endless appetite, gets roped into learning Hali's magic. Though they can't wait to fulfill their dream of having magic of their own, attaining mastery will require Alim to pass the trials of the spirits.<br/>
+
+Tio, a socially anxious druid gifted with nature magic, discovers the source of magic is dying. He seeks to build a team to restore it, but will his druid-loathing country help or hinder?<br/>
+
+Three journeys collide to form an unlikely friendship. After breaking into the realm of mystical beasts and spirits, the bonds of their friendship are tested as each learns the cost of magic is never cheap.<br/>
+            </p>
             <h2> Preorder Now! </h2>
             <div className="home-buy-now-container">
             <button>AMAZON</button>
