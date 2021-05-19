@@ -68,13 +68,13 @@ export const mapLocationList = [
   },
   {
     name: "Oressa",
-    position:'right-start',
+    position:'left-start',
     description:
       "The only city in Thauma that did not evacuate due to the encroaching wastes. Being so close to Grenvel, it has always been more Grenvelian than Thaumic. Oressa acts as the primary city for both the mining company Sipherra and the mercenary company, the Dreamers. The people of Oressa have preferred isolation since being liberated from Diyan control.",
   },
   {
     name: "East Peaks",
-    position:'right-start',
+    position:'left-start',
     description:
       "Home to endless mountains and caverns, Sipherra has been extracting valuable minerals from East Peaks for a lifetime. Besides Sipherra's research and mining outposts, the area has no human presence, making it the perfect spot for destructive demonstrations of Sipherra's technology projects.",
   },
@@ -92,7 +92,7 @@ export const mapLocationList = [
   },
   {
     name: "Und dal Sylph",
-    position:'right-start',
+    position:'left-start',
     description:
       "Home to one of Thauma's most wealthy families, it is now locked down by an impenetrable wall of magic fog. It is thought to be hiding a cavalcade of enchanted artifacts worth more than all the money in Grenvel.",
   },
@@ -104,13 +104,13 @@ export const mapLocationList = [
   },
   {
     name: "Strago",
-    position:'right-start',
+    position:'left-start',
     description:
       "Former capital of Thauma. Since Strago sits outside the borders of Refulgent Wastes, the Dreamer mercenary company uses the abandoned city as the primary starting point for expeditions into the Wastes.",
   },
   {
     name: "The Lungs",
-    position:'right-start',
+    position:'left-start',
     description:
       "Twin lakes, discovered to look like human lungs after Thauma's Sky Tower and high-powered telescope were created.",
   },
@@ -128,7 +128,7 @@ export const mapLocationList = [
   },
   {
     name: "Weeping Pass",
-    position:'right-start',
+    position:'left-start',
     description:
       "Between the eerie whistling wind and the neighboring Phantasmal Reef and Refulgent Wastes, nobody willingly comes to Weeping Pass except for Dreamer mercenaries.",
   },

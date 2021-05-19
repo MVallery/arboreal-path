@@ -26,15 +26,25 @@ const Home= props=> {
           <h1> Arboreal Path </h1>
 
             <p>
-            Air, water, earth, fire, nature. Humans are born gifted with one of these five elemental powers. Until an earth-rending Quake devastated the northern lands and blocked them from the mainland with phantom-infested waters for a half-millennia. Every generation since, less and less people are born with magic and the nature gift is bordering on extinction.<br/>
+            {/* The cost of magic is never cheap.<br/><br/>
 
-Hali, a book-loving scholar specialized in ancient spells, is attempting to create a powerful rune to release her dead son and wife from the shadow spirit wearing their faces. With her magic eaten by the shadow, she must now teach somebody else her unique style of magic. <br/>
+Something Hali is all too familiar with. Renowned as a hero in her country, Hali had been seen as their only hope as a plague tore through the populace. Though her spell succeeded in curing the affliction, it had taken her unborn son in the process and created a monstrous shadow. Imprisoning the shadow inside a magical tattoo on her arm, Hali couldn’t contain its power before it killed her wife, adding another face to its collection.
+<br/><br/>
 
-Alim, a magicless warrior with an endless appetite, gets roped into learning Hali's magic. Though they can't wait to fulfill their dream of having magic of their own, attaining mastery will require Alim to pass the trials of the spirits.<br/>
+With her family unable to find peace, Hali has a single goal—set them free. But the shadow has stolen her magic and Hali must now depend on others for assistance.<br/>
+Alim—a former explorer of forgotten ruins who was born magicless—is roped into Hali’s plans with the promise of attaining the power of the stars.<br/>
+As one of the few remaining with nature magic, Tio may hold the key to breaking into the realm of mystical beasts and spirits to unlock Alim’s magic.<br/>
+As the three journeys collide, the bonds of their new friendship are tested as the world reminds them of the cost of magic.<br/> */}
 
-Tio, a socially anxious druid gifted with nature magic, discovers the source of magic is dying. He seeks to build a team to restore it, but will his druid-loathing country help or hinder?<br/>
 
-Three journeys collide to form an unlikely friendship. After breaking into the realm of mystical beasts and spirits, the bonds of their friendship are tested as each learns the cost of magic is never cheap.<br/>
+
+Magic is disappearing.<br/>
+Technology is rising.<br/><br/>
+
+Hali—a scholar of ancient magic—seeks to free her dead son and wife from the shadow monster trapped in her tattoo by any means necessary.<br/>
+Alim—a former explorer of forgotten ruins who was born magicless—is roped into Hali’s plans with the promise of attaining the power of the stars.<br/>
+Tio—one of the few remaining with nature magic—discovers the source of magic is dying and now must juggle his social anxieties with his mission as he creates a team to prevent it.<br/>
+After a chance encounter brings the three together, their shared goal becomes clear. Break into the realm of mystical beasts and spirits.
             </p>
             <h2> Preorder Now! </h2>
             <div className="home-buy-now-container">
