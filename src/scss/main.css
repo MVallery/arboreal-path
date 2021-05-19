@@ -877,7 +877,6 @@
 
 .world-map-container {
   height: 70vh;
-  width: 871px;
   position: relative;
 }
 
@@ -1110,6 +1109,14 @@
   .world-main-container-gradient {
     height: 80vh;
   }
+  .map-locations {
+    width: 33px;
+    height: 30px;
+  }
+  .map-locations img {
+    width: 28px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1121,6 +1128,14 @@
   }
   .world-main-container-gradient {
     height: 70vh;
+  }
+  .map-locations {
+    width: 28px;
+    height: 26px;
+  }
+  .map-locations img {
+    width: 24px;
+    height: 20px;
   }
 }
 
