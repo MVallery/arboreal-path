@@ -1,18 +1,31 @@
-import React, {useRef} from "react";
+import React, {useState, useRef} from "react";
 import { Link,  useLocation } from 'react-router-dom';
 import {Link as RSLink} from 'react-scroll';
-
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import MenuIcon from '@material-ui/icons/Menu';
 import TwitterIcon from "../assets/images/twitter.png";
 import InstagramIcon from "../assets/images/instagram.png";
 import FancyUnderline from "../assets/images/fancy-underline2.png";
+import IconButton from '@material-ui/core/IconButton';
+
 const NavBar = props => {
   const location = useLocation();
-
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false) 
   const myRef = useRef(null)
+  const toggleDrawer = (open) => (event) => {
+    console.log('hi')
+    if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
 
+    setDrawerIsOpen(open);
+    
+  };
   
-  return (
 
+
+  return (
+<React.Fragment>
 <div className="navbar-container">
           {/* <Link to="/contact">WORLD</Link> */}
           {location.pathname==='/'?
@@ -76,7 +89,42 @@ const NavBar = props => {
 
 
     </div>
-
+    <div className="mobile-menu-container">
+      <div style={{width:'48px'}}></div>
+      <li>
+        <RSLink to="home" spy={true} smooth={true} offset={0} duration={500}>
+          <div className="header-title-container">
+            <span className="header-title">Arboreal Path</span>
+            <img src={FancyUnderline}></img>
+          </div>
+        </RSLink>
+      </li>
+    <IconButton className="hamburger-button" onClick={toggleDrawer(true)}>            
+            <MenuIcon style={{color:'white'}}/>
+    </IconButton>
+    <SwipeableDrawer
+    anchor='top'
+    open={drawerIsOpen}
+    onClose={toggleDrawer(false)}
+    onOpen={toggleDrawer(true)}
+  >
+    <div className="mobile-menu-navigation" 
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+      role="presentation">
+          <li>
+            <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}>CHARACTERS</RSLink> 
+          </li>
+          <li>
+            <RSLink to="world" spy={true} smooth={true} offset={-50} duration={500}>WORLD</RSLink>
+          </li>
+          <li >
+            <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>AUTHOR</RSLink>
+          </li>
+    </div>
+  </SwipeableDrawer>
+    </div>
+    </React.Fragment>
   );
 };
 export default NavBar;
