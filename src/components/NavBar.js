@@ -13,7 +13,8 @@ const NavBar = props => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false) 
   const myRef = useRef(null)
   const toggleDrawer = (open) => (event) => {
-    console.log('hi')
+    console.log(open)
+    console.log(event)
     if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
@@ -22,7 +23,9 @@ const NavBar = props => {
     
   };
   
-
+const closeDrawer = () => {
+  toggleDrawer(false)
+}
 
   return (
 <React.Fragment>
@@ -113,13 +116,13 @@ const NavBar = props => {
       onKeyDown={toggleDrawer(false)}
       role="presentation">
           <li>
-            <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}>CHARACTERS</RSLink> 
+            <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}><div onClick={toggleDrawer(false)}>CHARACTERS</div></RSLink> 
           </li>
           <li>
-            <RSLink to="world" spy={true} smooth={true} offset={-50} duration={500}>WORLD</RSLink>
+            <RSLink to="world" spy={true} smooth={true} offset={-50} duration={1500}><div onClick={toggleDrawer(false)}>WORLD</div></RSLink>
           </li>
-          <li >
-            <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>AUTHOR</RSLink>
+          <li>
+            <RSLink to="about" spy={true} smooth={true} offset={0} duration={1500}><div onClick={toggleDrawer(false)}>AUTHOR</div></RSLink>
           </li>
     </div>
   </SwipeableDrawer>

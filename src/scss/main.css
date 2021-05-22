@@ -864,9 +864,9 @@
     height: 60px;
     top: 0;
     z-index: 10;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     overflow: hidden;
     background-color: #2e4a64;
   }
