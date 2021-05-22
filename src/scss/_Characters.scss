@@ -151,7 +151,7 @@ left:0
   top: 10px;
 }
 .characters-main-container{
-  background-image: url(../assets/images/background-shadow-left.png);
+  background-image: url(../assets/images/background-shadow-left3.jpg);
   background-attachment: fixed;
   background-size: cover;
   height:90vh;
@@ -181,6 +181,10 @@ left:0
 }
 .character-description-hali{
   background-color: #f9ebf991;
+}
+.characters-fade-container{
+  height: 103vh;
+
 }
 
 
@@ -248,6 +252,7 @@ left:0
   }
   .characters-fade-container{
     height:95vh;
+    
   }
   
 }

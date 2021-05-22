@@ -2,13 +2,19 @@
 .world-main-container{
   height:110vh;
   position:relative;
-  background-image: url(../assets/images/background-painting.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+  min-height:110vh;
   z-index:1;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   box-shadow: inset 5px 30px 50px 24px black;
+  overflow:hidden;
+    background-image: url(../assets/images/background-painting3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
 
+
+    will-change:transform;
+
+  
 }
 .world-main-container-gradient{
   display: flex;
@@ -27,7 +33,7 @@
   }
 }
 .world-map-container{
-  height: 70vh;
+  height: 85vh;
   position:relative;
 }
 .world-map{

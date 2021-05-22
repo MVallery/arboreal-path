@@ -10,7 +10,7 @@
   display: -ms-flexbox;
   display: flex;
   background-image: url(../assets/images/empyrea-painting.jpg);
-  background-image: url(../assets/images/cover-zoom-characters2.png);
+  background-image: url(../assets/images/cover-zoom-characters3.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -292,6 +292,10 @@
 
 .about-container h1 {
   padding: 0px;
+}
+
+.about-container h2 {
+  font-family: 'Roboto', sans-serif;
 }
 
 .about-container:before {
@@ -581,7 +585,7 @@
 }
 
 .characters-main-container {
-  background-image: url(../assets/images/background-shadow-left.png);
+  background-image: url(../assets/images/background-shadow-left3.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 90vh;
@@ -614,6 +618,10 @@
 
 .character-description-hali {
   background-color: #f9ebf991;
+}
+
+.characters-fade-container {
+  height: 103vh;
 }
 
 @media (max-width: 1200px) {
@@ -907,14 +915,17 @@
 .world-main-container {
   height: 110vh;
   position: relative;
-  background-image: url(../assets/images/background-painting.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+  min-height: 110vh;
   z-index: 1;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
-          clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   -webkit-box-shadow: inset 5px 30px 50px 24px black;
           box-shadow: inset 5px 30px 50px 24px black;
+  overflow: hidden;
+  background-image: url(../assets/images/background-painting3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
+  will-change: transform;
 }
 
 .world-main-container-gradient {
@@ -943,7 +954,7 @@
 }
 
 .world-map-container {
-  height: 70vh;
+  height: 85vh;
   position: relative;
 }
 
