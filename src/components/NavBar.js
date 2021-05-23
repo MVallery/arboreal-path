@@ -116,7 +116,7 @@ const closeDrawer = () => {
             <MenuIcon style={{color:'white'}}/>
     </IconButton>
     <SwipeableDrawer
-    anchor='top'
+    anchor='right'
     open={drawerIsOpen}
     onClose={toggleDrawer(false)}
     onOpen={toggleDrawer(true)}

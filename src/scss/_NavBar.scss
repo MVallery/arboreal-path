@@ -113,12 +113,13 @@
   .mobile-menu-navigation{
     background-color:$main-color;
     color:white;
-    height: 60vh;
     font-size:2rem;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 60vw;
+    height: 100vh;
     li{
       list-style:none;
       margin-top:10vh;
