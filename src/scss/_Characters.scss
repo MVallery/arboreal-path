@@ -12,7 +12,7 @@
   padding: 25px 5px 5px 5px;
   min-height:450px;
   max-height: 1000px;
-  height: 80vh;
+  height: 82vh;
   z-index:2;
   opacity:1;
   transition: opacity 2s;
@@ -69,9 +69,13 @@
 }
 .characters-fade-container{
   width:100vw;
-  height:100vh;
+  height:105vh;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   background-color: black;
+  z-index: 3;
+  position: relative;
 }
+
 .alim-background-color{
   //pink
   // background-image: radial-gradient(rgba(232, 23, 226,0.44),rgba(171, 97, 162, 0.55));
@@ -137,10 +141,12 @@ left:0
   margin:0px 10px 10px 10px;
   border-width: 10px;
   border-style: solid;
-  height:288px;
+  height:308px;
   overflow:hidden;
 
   transition: height 2s;
+  color: white;
+  font-size: 1.1rem;
   // border-color: grey;
   border-image: url(../assets/images/borderhali2.png) 70 repeat;
 }
@@ -174,18 +180,15 @@ left:0
 }
 
 .character-description-alim{
-  background-color: #f1dbdfb3
+  background-color: #c3a921ad
 }
 .character-description-tio{
-  background-color: rgba(174, 197, 174, 0.63)
+  background-color: rgba(46, 82, 46, 0.6)
 }
 .character-description-hali{
-  background-color: #f9ebf991;
+  background-color: #7d5c7d94;
 }
-.characters-fade-container{
-  height: 103vh;
 
-}
 
 
 

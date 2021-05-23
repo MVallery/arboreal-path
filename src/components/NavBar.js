@@ -5,6 +5,7 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import MenuIcon from '@material-ui/icons/Menu';
 import TwitterIcon from "../assets/images/twitter.png";
 import InstagramIcon from "../assets/images/instagram.png";
+import GoodreadsIcon from "../assets/images/goodreads-navbar.png";
 import FancyUnderline from "../assets/images/fancy-underline2.png";
 import IconButton from '@material-ui/core/IconButton';
 
@@ -53,7 +54,7 @@ const closeDrawer = () => {
             <RSLink to="about" spy={true} smooth={true} offset={0} duration={500}>AUTHOR</RSLink>
           </li>
           <li>
-          <a href="https://twitter.com" className="social">
+          <a href="https://twitter.com" className="social" style={{padding:'10px', width:'30px'}}>
             <img
               
               border="0"
@@ -67,8 +68,17 @@ const closeDrawer = () => {
           <a href="https://instagram.com" className="social">
             <img
               border="0"
-              alt="facebook"
+              alt="instagram"
               src={InstagramIcon}
+            ></img>
+          </a>
+        </li> 
+        <li>
+          <a href="https://goodreads.com" className="social" style={{width:'25px', padding:'12px'}}>
+            <img
+              border="0"
+              alt="facebook"
+              src={GoodreadsIcon}
             ></img>
           </a>
         </li> 

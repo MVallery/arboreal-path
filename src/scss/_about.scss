@@ -3,7 +3,7 @@
 .about-background-container{
   background-color:#f5e9d49e;
   // clip-path:polygon(0 0, 100% 0, 100% 100%, 15% 100%);
-  height:80vh;
+  height:85vh;
   padding-top:50px;
   margin-top: -10vh;
   position:relative;
@@ -31,11 +31,12 @@
 .about-container:before{
   content:"";
   position:absolute;
-  top: -10px;
+  top: -15px;
   left:-15vw;
   width:50%;
-  height:85vh;
-  background-image:linear-gradient(100deg, rgb(207, 120, 7), rgb(255, 145, 0));
+  height: 90vh;
+  background-color:#ff9100;
+  // background-image:linear-gradient(100deg, rgb(207, 120, 7), rgb(255, 145, 0));
   transform: skew(11deg);
   transform-origin:top;
 }
@@ -66,6 +67,9 @@
 }
 .jason{
   width:300px;
+  height: 300px;
+  border:30px solid #ff9100;
+  border-radius:50%;
 }
 
 
@@ -73,7 +77,8 @@
 @media(max-width:1200px){
   .jason{
     width:200px;
-    height:300px;
+    height:200px;
+    border-width:20px;
   
   }
   .picture-description-container{
@@ -93,14 +98,15 @@
   }
   .jason{
     width:150px;
-    height:200px;
+    height:150px;
+    border:none;
   }
   .about-background-container{
     height:85vh;
   }
   .about-container:before{
-    height:85vh;
-    top:0;
+    height: 87vh;
+    top: -5px
   }
   .about-container{
     // padding-top:10px;
@@ -115,10 +121,11 @@
 @media(max-width:500px){
   .jason{
     width:100px;
-    height:130px;
+    height:100px;
+    border:none;
   }
   .about-container:before{
-    top:-4px;
+    top:-9px;
     height:90vh;
   }
   .about-container{

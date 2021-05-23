@@ -43,17 +43,8 @@ const Home = (props) => {
         <div className="home-book-title-container">
           <div className="home-book-button-container">
             <img src={BookCover} align="left"></img>
-            <div className="home-button-container">
+            <div className="preview-button-container">
               <button>Preview</button>
-              <RSLink
-                to="characters"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                <button>Learn More</button>
-              </RSLink>
             </div>
           </div>
           <div className="home-book-title">
@@ -69,9 +60,18 @@ With her family unable to find peace, Hali has a single goal—set them free. Bu
 Alim—a former explorer of forgotten ruins who was born magicless—is roped into Hali’s plans with the promise of attaining the power of the stars.<br/>
 As one of the few remaining with nature magic, Tio may hold the key to breaking into the realm of mystical beasts and spirits to unlock Alim’s magic.<br/>
 As the three journeys collide, the bonds of their new friendship are tested as the world reminds them of the cost of magic.<br/> */}
-<p>The cost of magic is never cheap.</p><br/>
+<p className="book-description">The cost of magic is never cheap.</p>
 
-<p>Three unlikely friends collide in a quest to restore the world's dwindling magic.</p>
+<p className="book-description2">Three unlikely friends collide in a quest to restore the world's dwindling magic.</p>
+              <RSLink
+                to="characters"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                <p className="book-learn-more">Learn more</p>
+              </RSLink>
             
             <h2> Preorder Now! </h2>
             <div className="home-buy-now-container">

@@ -1,5 +1,5 @@
 import React from 'react';
-import Jason from '../assets/images/jason2.png';
+import Jason from '../assets/images/jason3.png';
 import Instagram from '../assets/images/instagram-about-blue.png';
 import Twitter from '../assets/images/twitter-about-blue.png';
 import Goodreads from '../assets/images/goodreads-about.png';
@@ -13,12 +13,21 @@ const About = props => {
             <div className="picture-description-container">
                 <img className="jason" src={Jason} align="right"></img>
                 <div className="about-paragraph-container">
-                <p className="paragraph-1">It'd be advisable to erase me from the internet, but until my fated erasure comes I'm content to play with my cats, 
-                delve into some video games, and write, write, write.</p>
+                <p className="paragraph-1">
+                It'd be advisable to erase me from the internet, but don't you dare try. 
+                I will do everything in my power to make sure you don't succeed. 
+                If that day ever comes I'll be content in exile, playing with my cats, 
+                delving into some video games, and catching up on books.
+                </p>
 
-                <p className="paragraph-2">Creating characters, worlds, and stories has always been a favorite pastime of mine, 
-                from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer role-playing games, to short stories. 
-                Learning to apply those experiences towards writing a novel was a fun challenge and I look forward to continuing my journey as an author.                
+
+
+                <p className="paragraph-2">
+                Creating characters, worlds, and stories has always been a favorite pastime of mine, 
+                from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer 
+                role-playing games, to short stories. Learning to apply those experiences towards 
+                writing was a fun and exciting challenge which has resulted in my first novel, Arboreal Path. 
+                I look forward to continuing my journey as an author!           
                 </p>   
                 </div>
 
