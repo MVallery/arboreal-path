@@ -162,6 +162,7 @@ left:0
   background-size: cover;
   height:90vh;
   width: 80vw;
+  margin-top: -10px;
   margin-left:10vw
 }
 .character-content {
@@ -274,5 +275,9 @@ left:0
   }
   .character-description{
     font-size:0.8rem;
+  }
+  .characters-fade-container{
+    height:102vh;
+    
   }
 }

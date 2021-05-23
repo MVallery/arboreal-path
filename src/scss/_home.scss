@@ -165,7 +165,7 @@
     width:100%;
     margin:5px;
     border-radius:5px;
-    &:hover,&:focus{
+    &:hover,&:focus-within{
       cursor:pointer;
       background-color: rgb(193, 193, 193);
     }
@@ -194,9 +194,17 @@
   display:flex;
   position:absolute;
   z-index:5;
-  margin-top: 46px;
-  margin-left: 8px;
-  width: 20%;
+  // margin-top: 46px;
+  // margin-left: 8px;
+  width: 244px
+}
+.open-up{
+  margin-top:-119px;
+  margin-left:8px;
+}
+.open-down{
+  margin-top:46px;
+  margin-left:8px;
 }
 .preview-dropdown-closed{
   display:none;
@@ -269,6 +277,9 @@
   .book-description2{
     font-size: 1.1rem;
   }
+  .preview-dropdown-open{
+    width:190px;
+  }
 }
 
 
@@ -296,6 +307,9 @@
 
 @media(max-width:630px){
   .home-container {
+    height:120vh;
+    background-image:url(../assets/images/cover-zoom-characters-mobile.png);
+    background-position:53%;
     img{
     height:230px;
     margin-top:10px;
@@ -305,6 +319,9 @@
     font-size:1.7rem;
   }
 }
+  .home-gradient{
+    height:120vh;
+  }
   .home-book-title h1{
     font-size:2.1rem;
     padding-right:0px;

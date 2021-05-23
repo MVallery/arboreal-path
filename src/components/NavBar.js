@@ -38,7 +38,7 @@ const closeDrawer = () => {
             <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}>CHARACTERS</RSLink> 
           </li>
           <li>
-            <RSLink to="world" spy={true} smooth={true} offset={-50} duration={500}>WORLD</RSLink>
+            <RSLink to="world" spy={true} smooth={true} offset={70} duration={500}>WORLD</RSLink>
           </li>
 
 
@@ -129,7 +129,7 @@ const closeDrawer = () => {
             <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}><div onClick={toggleDrawer(false)}>CHARACTERS</div></RSLink> 
           </li>
           <li>
-            <RSLink to="world" spy={true} smooth={true} offset={-50} duration={1500}><div onClick={toggleDrawer(false)}>WORLD</div></RSLink>
+            <RSLink to="world" spy={true} smooth={true} offset={0} duration={1500}><div onClick={toggleDrawer(false)}>WORLD</div></RSLink>
           </li>
           <li>
             <RSLink to="about" spy={true} smooth={true} offset={0} duration={1500}><div onClick={toggleDrawer(false)}>AUTHOR</div></RSLink>

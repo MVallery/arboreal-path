@@ -209,7 +209,7 @@
   border-radius: 5px;
 }
 
-.preview-button-container button:hover, .preview-button-container button:focus {
+.preview-button-container button:hover, .preview-button-container button:focus-within {
   cursor: pointer;
   background-color: #c1c1c1;
 }
@@ -242,9 +242,17 @@
   display: flex;
   position: absolute;
   z-index: 5;
+  width: 244px;
+}
+
+.open-up {
+  margin-top: -119px;
+  margin-left: 8px;
+}
+
+.open-down {
   margin-top: 46px;
   margin-left: 8px;
-  width: 20%;
 }
 
 .preview-dropdown-closed {
@@ -371,6 +379,9 @@
   .book-description2 {
     font-size: 1.1rem;
   }
+  .preview-dropdown-open {
+    width: 190px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -402,6 +413,11 @@
 }
 
 @media (max-width: 630px) {
+  .home-container {
+    height: 120vh;
+    background-image: url(../assets/images/cover-zoom-characters-mobile.png);
+    background-position: 53%;
+  }
   .home-container img {
     height: 230px;
     margin-top: 10px;
@@ -409,6 +425,9 @@
   .home-container h2 {
     padding-top: 30px;
     font-size: 1.7rem;
+  }
+  .home-gradient {
+    height: 120vh;
   }
   .home-book-title h1 {
     font-size: 2.1rem;
@@ -594,7 +613,7 @@
     border: none;
   }
   .about-container:before {
-    top: -9px;
+    top: -12px;
     height: 90vh;
   }
   .about-container p {
@@ -789,6 +808,7 @@
   background-size: cover;
   height: 90vh;
   width: 80vw;
+  margin-top: -10px;
   margin-left: 10vw;
 }
 
@@ -896,6 +916,9 @@
   }
   .character-description {
     font-size: 0.8rem;
+  }
+  .characters-fade-container {
+    height: 102vh;
   }
 }
 
@@ -1185,161 +1208,6 @@
   height: 30px;
 }
 
-.map-Gren-City {
-  top: 13%;
-  left: 31%;
-}
-
-.map-Wilton {
-  top: 24%;
-  left: 41%;
-}
-
-.map-Hillfarm {
-  top: 20%;
-  left: 24%;
-}
-
-.map-Meisha {
-  top: 38%;
-  left: 20%;
-}
-
-.map-Ahsiem {
-  top: 43%;
-  left: 22%;
-}
-
-.map-Mizmiz {
-  top: 63%;
-  left: 27.5%;
-}
-
-.map-Pinpin {
-  top: 72%;
-  left: 21.9%;
-}
-
-.map-Belsa {
-  top: 30%;
-  left: 37%;
-}
-
-.map-Tovaloreande-Sanctuary {
-  left: 37.5%;
-  top: 15%;
-}
-
-.map-Pasture-Downs {
-  top: 24%;
-  left: 17%;
-}
-
-.map-Mudplains {
-  top: 33%;
-  left: 17%;
-}
-
-.map-Last-Stand {
-  left: 28%;
-  top: 24%;
-}
-
-.map-Trade-Plains {
-  top: 23%;
-  left: 65%;
-}
-
-.map-Oressa {
-  top: 25%;
-  left: 70%;
-}
-
-.map-East-Peaks {
-  left: 73%;
-  top: 16%;
-}
-
-.map-Sky-Tower {
-  top: 26%;
-  left: 81%;
-}
-
-.map-Hearth {
-  top: 29%;
-  left: 75%;
-}
-
-.map-Und-dal {
-  top: 35%;
-  left: 70%;
-}
-
-.map-Stoneport {
-  top: 38%;
-  left: 81.5%;
-}
-
-.map-Strago {
-  top: 44%;
-  left: 74%;
-}
-
-.map-The-Lungs {
-  top: 35%;
-  left: 67%;
-}
-
-.map-Weeping-Pass {
-  top: 44%;
-  left: 69%;
-}
-
-.map-Clickclick-Dunes {
-  top: 70%;
-  left: 30%;
-}
-
-.map-Thunder-Trail {
-  top: 56%;
-  left: 82%;
-}
-
-.map-Rovilia {
-  top: 45%;
-  left: 88%;
-}
-
-.map-Skull-Landing {
-  top: 59%;
-  left: 87%;
-}
-
-.map-Phantasmal-Reef {
-  top: 70%;
-  left: 50%;
-}
-
-.map-Coveted-South {
-  left: 80%;
-  top: 90%;
-}
-
-.map-Iron-Swamp {
-  left: 38%;
-  top: 42%;
-}
-
-.map-East-Peaks {
-  left: 75%;
-  top: 20%;
-}
-
-.map-Spirit-Arboretum {
-  top: 28%;
-  left: 35%;
-}
-
 .description {
   background-color: #652500e3;
   padding: 20px;
@@ -1398,10 +1266,10 @@
     height: 35vh;
   }
   .world-main-container {
-    height: 70vh;
+    height: 80vh;
   }
   .world-main-container-gradient {
-    height: 70vh;
+    height: 80vh;
   }
   .map-locations {
     width: 28px;
@@ -1509,5 +1377,155 @@ h2 {
 
 .header-title-container:hover {
   cursor: pointer;
+}
+
+.map-Gren-City {
+  top: 11%;
+  left: 26%;
+}
+
+.map-Hillfarm {
+  top: 20.5%;
+  left: 19%;
+}
+
+.map-Pasture-Downs {
+  top: 24.5%;
+  left: 11.5%;
+}
+
+.map-Mudplains {
+  top: 30%;
+  left: 12.5%;
+}
+
+.map-Meisha {
+  top: 35%;
+  left: 14.8%;
+}
+
+.map-Belsa {
+  top: 29.5%;
+  left: 35%;
+}
+
+.map-Spirit-Arboretum {
+  top: 26.8%;
+  left: 25.8%;
+}
+
+.map-Last-Stand {
+  top: 23%;
+  left: 27%;
+}
+
+.map-Tovaloreande-Sanctuary {
+  top: 18%;
+  left: 33%;
+}
+
+.map-Wilton {
+  top: 24.5%;
+  left: 36%;
+}
+
+.map-Trade-Plains {
+  top: 26.5%;
+  left: 58.5%;
+}
+
+.map-Oressa {
+  top: 24.5%;
+  left: 68.8%;
+}
+
+.map-East-Peaks {
+  top: 15%;
+  left: 72.2%;
+}
+
+.map-Sky-Tower {
+  top: 22.5%;
+  left: 77.5%;
+}
+
+.map-Hearth {
+  top: 30.8%;
+  left: 71%;
+}
+
+.map-Und-dal {
+  top: 33.8%;
+  left: 69.3%;
+}
+
+.map-Stoneport {
+  top: 34.3%;
+  left: 77.3%;
+}
+
+.map-Strago {
+  top: 40.7%;
+  left: 70.4%;
+}
+
+.map-The-Lungs {
+  top: 31%;
+  left: 64%;
+}
+
+.map-Ahsiem {
+  top: 45.3%;
+  left: 16.7%;
+}
+
+.map-Iron-Swamp {
+  top: 38.3%;
+  left: 32.6%;
+}
+
+.map-Weeping-Pass {
+  top: 43.5%;
+  left: 66.2%;
+}
+
+.map-Mizmiz {
+  top: 65%;
+  left: 22.4%;
+}
+
+.map-Pinpin {
+  top: 74%;
+  left: 16.7%;
+}
+
+.map-Clickclick-Dunes {
+  top: 72.5%;
+  left: 24.8%;
+}
+
+.map-Thunder-Trail {
+  top: 53.8%;
+  left: 78.5%;
+}
+
+.map-Rovilia {
+  top: 42.5%;
+  left: 85%;
+}
+
+.map-Skull-Landing {
+  top: 56%;
+  left: 83%;
+}
+
+.map-Phantasmal-Reef {
+  top: 88%;
+  left: 21%;
+}
+
+.map-Coveted-South {
+  top: 90%;
+  left: 60%;
 }
 /*# sourceMappingURL=main.css.map */

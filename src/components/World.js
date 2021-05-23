@@ -23,7 +23,7 @@ const World = () => {
     }
   }
   const handleClickAway = (e) =>{
-    if (e.target.className==='world-map'){
+    if (!e.target.className.includes('map-locations')){
       setAnchorEl(null)
       setActiveMapElement(null)
     } 
