@@ -194,18 +194,13 @@
   display:flex;
   position:absolute;
   z-index:5;
+  margin-top: 47px;
+  margin-left: 8px;
   // margin-top: 46px;
   // margin-left: 8px;
   width: 244px
 }
-.open-up{
-  margin-top:-119px;
-  margin-left:8px;
-}
-.open-down{
-  margin-top:46px;
-  margin-left:8px;
-}
+
 .preview-dropdown-closed{
   display:none;
 }
@@ -365,5 +360,13 @@
   }
   .amazon{
     line-height:40px;
+  }
+  .open-up{
+    margin-top:-119px;
+    margin-left:8px;
+  }
+  .open-down{
+    margin-top:46px;
+    margin-left:8px;
   }
 }

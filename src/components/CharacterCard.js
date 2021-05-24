@@ -14,6 +14,7 @@ const CharacterCard = (props) => {
             className="character-content"
             style={{ ...props.pictureGlow,  opacity:0.65}}
             src={props.character.image}
+            alt='character picture'
           ></img>
         </a>
         <div

@@ -14,7 +14,7 @@ const About = props => {
                 <img className="jason" src={Jason} align="right"></img>
                 <div className="about-paragraph-container">
                 <p className="paragraph-1">
-                It'd be advisable to erase me from the internet, but don't you dare try. 
+                It'd probably be advisable to erase me from the internet, but don't you dare try. 
                 I will do everything in my power to make sure you don't succeed. 
                 If that day ever comes I'll be content in exile, playing with my cats, 
                 delving into some video games, and catching up on books.
@@ -33,9 +33,9 @@ const About = props => {
 
             </div>
             <div className="social-media-container">
-                <img className="social-media-about" src={Instagram}></img>
-                <img className="social-media-about" src={Twitter}></img>
-                <img className="social-media-about" src={Goodreads}></img>
+                <img className="social-media-about" src={Instagram} alt='instagram'></img>
+                <img className="social-media-about" src={Twitter} alt='twitter'></img>
+                <img className="social-media-about" src={Goodreads} alt='goodreads'></img>
 
             </div>
 

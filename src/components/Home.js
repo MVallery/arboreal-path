@@ -12,7 +12,7 @@ const Home = (props) => {
       setPreviewDropdown({...previewDropdown, class:'preview-dropdown-closed', backgroundColor:'white'})
   }
   const handleRetailClickAway = (e) => {
-    if (retailDropdown.class==='preview-dropdown-open'){
+    if (retailDropdown.class==='retail-dropdown-open'){
       if (!e.target.className.includes('retail')){
         setRetailDropdown({...retailDropdown, class:'retail-dropdown-closed', backgroundColor:'white'})
       }

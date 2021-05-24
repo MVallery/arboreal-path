@@ -58,7 +58,7 @@ const closeDrawer = () => {
             <img
               
               border="0"
-              alt="facebook"
+              alt="twitter"
               src={TwitterIcon}
             ></img>
           </a>
@@ -77,7 +77,7 @@ const closeDrawer = () => {
           <a href="https://goodreads.com" className="social" style={{width:'25px', padding:'12px'}}>
             <img
               border="0"
-              alt="facebook"
+              alt="goodreads"
               src={GoodreadsIcon}
             ></img>
           </a>
@@ -141,25 +141,3 @@ const closeDrawer = () => {
   );
 };
 export default NavBar;
-
-        {/* <li>
-          <a href="https://twitter.com">
-            <img
-              className="social"
-              border="0"
-              alt="facebook"
-              src={TwitterIcon}
-            ></img>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://instagram.com">
-            <img
-              className="social"
-              border="0"
-              alt="facebook"
-              src={InstagramIcon}
-            ></img>
-          </a>
-        </li> */}
