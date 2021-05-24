@@ -6,15 +6,15 @@ import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import { Link as RSLink } from "react-scroll";
 
 const Home = (props) => {
-  const [previewDropdown, setPreviewDropdown] = useState({class:'preview-dropdown-closed', position:'open-down', backgroundColor:'white'})
-  const[retailDropdown, setRetailDropdown] = useState({class:'retail-dropdown-closed', backgroundColor:'white'})
+  const [previewDropdown, setPreviewDropdown] = useState({class:'preview-dropdown-closed', position:'open-down', backgroundColor:null})
+  const[retailDropdown, setRetailDropdown] = useState({class:'retail-dropdown-closed', backgroundColor:null})
   const handlePreviewClickAway = (e) =>{
-      setPreviewDropdown({...previewDropdown, class:'preview-dropdown-closed', backgroundColor:'white'})
+      setPreviewDropdown({...previewDropdown, class:'preview-dropdown-closed', backgroundColor:null})
   }
   const handleRetailClickAway = (e) => {
     if (retailDropdown.class==='retail-dropdown-open'){
       if (!e.target.className.includes('retail')){
-        setRetailDropdown({...retailDropdown, class:'retail-dropdown-closed', backgroundColor:'white'})
+        setRetailDropdown({...retailDropdown, class:'retail-dropdown-closed', backgroundColor:null})
       }
     }
 
@@ -27,7 +27,7 @@ const Home = (props) => {
       if (previewDropdown.class === 'preview-dropdown-closed'){
         setPreviewDropdown({...previewDropdown, class:'preview-dropdown-open', position:position, backgroundColor:'#c7c7c7'})
       } else{
-        setPreviewDropdown({...previewDropdown, class:'preview-dropdown-closed', position:position, backgroundColor:'white'})
+        setPreviewDropdown({...previewDropdown, class:'preview-dropdown-closed', position:position, backgroundColor:null})
       }
 
 
@@ -36,15 +36,15 @@ const Home = (props) => {
     if (retailDropdown.class === 'retail-dropdown-closed'){
       setRetailDropdown({...retailDropdown, class:'retail-dropdown-open', backgroundColor:'#c7c7c7'})
     } else {
-      setRetailDropdown({...retailDropdown, class:'retail-dropdown-closed', backgroundColor:'white'})
+      setRetailDropdown({...retailDropdown, class:'retail-dropdown-closed', backgroundColor:null})
     }
   }
 
   return (
     <div id="home" ref={props.homeRef} className="home-container" >
       <div className="home-gradient">
-        <div className="home-book-title-container">
-          <div className="home-book-button-container">
+        <div className="home-content-container">
+          <div className="home-cover-preview-container">
             <img src={BookCover} align="left"></img>
             <div className="preview-button-container">
               <ClickAwayListener onClickAway={handlePreviewClickAway}>
@@ -59,7 +59,7 @@ const Home = (props) => {
               </div>
             </div>
           </div>
-          <div className="home-book-title">
+          <div className="home-description-retailer-container">
             <h1> Arboreal Path </h1>
 
               <p className="book-description">The cost of magic is never cheap.</p>
@@ -77,13 +77,14 @@ const Home = (props) => {
               </RSLink>
             
             <h2> Preorder Now! </h2>
-            <div className="home-buy-now-container">
+            <div className="home-retailer-container">
               <a className="retail-link amazon" href="https://www.amazon.com/" target="_blank">AMAZON</a>
               <a className="retail-link" href="https://www.barnesandnoble.com/" target="_blank">BARNES & NOBLE</a>
               <div className="retail-dropdown-container">
                 <ClickAwayListener onClickAway={handleRetailClickAway}>
-                  <button className="retail-link retail-button" onClick={toggleRetailDropdown} style={{backgroundColor:retailDropdown.backgroundColor}}>OTHER RETAILERS
-                    <i className="fa fa-caret-down fa-fw"></i>
+                  <button className="retail-link retail-button" onClick={toggleRetailDropdown} style={{backgroundColor:retailDropdown.backgroundColor}}>
+                    <span style={{textAlign:'center'}}>OTHER RETAILERS</span>
+                    <i className="fa fa-caret-down fa-fw" style={{position:'absolute'}}></i>
                   </button>
                 </ClickAwayListener>
             

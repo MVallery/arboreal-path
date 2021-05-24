@@ -7,25 +7,23 @@ import CharacterCard from './CharacterCard';
 const ArborealPath = props => {
     const [characterList, setCharacterList] = useState([
         {name:'Tio', 
-            description: `One of the last to be born with the gift of nature magic, Tio tasks himself with the lofty goal of 
-                solving the mystery behind nature magic's disappearance. Instead he finds nature magic isn't alone. Soon, all magic 
-                will be gone. Tio abandons his preferred life of solitude, juggling his social anxieties with his mission as he builds 
-                a team to prevent magic from disappearing.`,
+            description: 
+                `One of the last born with the gift of nature magic, Tio tasks himself with solving the mystery behind why his 
+                people's magic is disappearing. When he discovers the other elements will soon meet the same fate, Tio abandons 
+                his preferred life of solitude and juggles his social anxieties with his mission as he builds a team to restore magic.`,
             quote: ` That's your one hug. Don't come at me again or you're getting headbutted.`,
             image:Tio},
         {name:'Hali', 
-            description:`Cleansing the deadly, magic-eating plague ravaging her country didn't go as planned. Hali's cure 
-                only twisted the plague into a monstrous shadow. First it killed her unborn son, then her wife, adding their 
-                faces to the shadow's collection as a permanent reminder of her failure. With the shadow trapped in a tattoo 
-                on Hali's arm, she is dead set on freeing her family. But with the shadow absorbing Hali's magic, she must find 
-                somebody else to learn how to fuel her spell.`,
+            description:
+            `Nobody is more familiar with the hidden costs of magic than Hali. When her spell to cure a deadly, magic-eating plague 
+            creates a monster that takes her unborn son and then her wife, Hali imprisons the monster in a magical tattoo. With the 
+            monster sapping her magic, she must now teach somebody else how to fuel her forbidden spell and give her family peace.`,
             quote:` I’d much rather be on a beach with a good novel. Or at least holed up in Wilton’s dinky excuse for a library.`,
             image:Hali}, 
         {name:'Alim', 
-            description: `After an early retirement from collecting artifacts in a forgotten country's ruins, Alim learns of a librarian 
-                giving lessons on ancient magic despite being born magicless. Wishing to make a difference for people without having magic 
-                of their own, Alim seeks the teacher out only to get roped into a special type of magic. In order for Alim to master calling 
-                upon the power of the stars, they must break into the realm of spirits and mystical beasts.`,
+            description: 
+            `Born magicless, Alim has always dreamed of having magic of their own. When they learn such a dream is not as impossible 
+            as it seemed, Alim is ready to break into the realm of spirits and mystical beasts to master calling upon the power of the stars.`,
             quote:` Don't like crowds? Let me be your bulwark. Point me in the right direction and I'll cut a path for you.`,
             image:Alim}]);
 

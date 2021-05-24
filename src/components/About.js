@@ -15,19 +15,17 @@ const About = props => {
                 <div className="about-paragraph-container">
                 <p className="paragraph-1">
                 It'd probably be advisable to erase me from the internet, but don't you dare try. 
-                I will do everything in my power to make sure you don't succeed. 
-                If that day ever comes I'll be content in exile, playing with my cats, 
-                delving into some video games, and catching up on books.
+                I will do everything in my power to make sure you don't succeed. If that day ever 
+                comes I'll be content in exile, playing with my cats, delving into some video games, and catching up on books.
                 </p>
 
 
 
                 <p className="paragraph-2">
                 Creating characters, worlds, and stories has always been a favorite pastime of mine, 
-                from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer 
-                role-playing games, to short stories. Learning to apply those experiences towards 
-                writing was a fun and exciting challenge which has resulted in my first novel, Arboreal Path. 
-                I look forward to continuing my journey as an author!           
+                from text-based role-playing games, multi-user dungeons (MUDs), massively multiplayer role-playing games, 
+                to short stories. Learning to apply those experiences towards writing was a fun and exciting challenge 
+                which has resulted in my first novel, Arboreal Path. I look forward to continuing my journey as an author!         
                 </p>   
                 </div>
 
