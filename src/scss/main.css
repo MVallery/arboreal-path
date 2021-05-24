@@ -16,7 +16,7 @@
   height: 110vh;
   position: relative;
   width: 100vw;
-  background-position: 53%;
+  background-position: 73%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
           clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
 }
@@ -385,6 +385,9 @@
 }
 
 @media (max-width: 900px) {
+  .home-container {
+    background-position: 80%;
+  }
   .home-container img {
     height: 300px;
   }
