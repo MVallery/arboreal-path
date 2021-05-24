@@ -54,7 +54,7 @@ const closeDrawer = () => {
             <RSLink to="about" spy={true} smooth={true} offset={0} duration={1500}>AUTHOR</RSLink>
           </li>
           <li>
-          <a href="https://instagram.com" className="social instagram" style={{padding:'15px 2px', width:'23px'}}>
+          <a href="https://instagram.com" className="social instagram" style={{padding:'15px 2px 14px 2px', width:'23px'}}>
             <img
               border="0"
               alt="instagram"
@@ -73,7 +73,7 @@ const closeDrawer = () => {
           </a>
         </li>
         <li>
-          <a href="https://goodreads.com" className="social" style={{width:'25px', padding:'13.5px 2px'}}>
+          <a href="https://goodreads.com" className="social" style={{width:'25px', padding:'13.5px 2px 14px 2px'}}>
             <img
               border="0"
               alt="goodreads"
@@ -85,7 +85,7 @@ const closeDrawer = () => {
         :
         <ul>
         <li>
-          <Link to="/">
+          <Link to="/" exact>
             <div className="header-title-container">
               <span className="header-title">Jason M. Vallery</span>
               <img src={FancyUnderline}></img>

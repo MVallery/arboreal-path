@@ -1,0 +1,66 @@
+.presskit-main-container{
+  padding-top:80px;
+  h1{
+    font-weight: normal
+  }
+}
+.presskit-about-background-container{
+  height:100vh;
+}
+.presskit-about-container{
+  &:before{
+    height: 110vh;
+    position:absolute;
+    z-index:0;
+  }
+}
+.presskit-picture-description-container{
+  width: 70vw;
+
+}
+
+
+.author-content-section{
+  display:flex;
+  flex-direction: column;
+  padding-left: 50px;
+  p{
+    padding:0px;
+    margin:0px;
+  }
+  h3{
+    font-family:Constantine;
+  }
+}
+.author-photo-links-container{
+  display:flex;
+  flex-direction: column;
+}
+.presskit-arborealpath-container{
+  background-color: $main-color;
+  color:white;
+  font-family:Constantine;
+  display: flex;
+  height:100vh;
+  position:relative;
+  padding:50px;
+}
+.bookcover-links-container{
+  display:flex;
+  flex-direction:column;
+  img{
+    width:300px;
+  }
+}
+.arborealpath-content-container{
+  display:flex;
+  flex-direction:column;
+  padding:70px;
+}
+.arborealpath-section-container{
+  display:flex;
+}
+.arborealpath-links-section{
+  padding-left:30px;
+
+}
