@@ -6,6 +6,8 @@
 }
 .presskit-about-background-container{
   height:100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
+  z-index: 5;
 }
 .presskit-about-container{
   &:before{
@@ -30,6 +32,9 @@
   }
   h3{
     font-family:Constantine;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom:2px;
   }
 }
 .author-photo-links-container{
@@ -43,11 +48,15 @@
   display: flex;
   height:100vh;
   position:relative;
-  padding:50px;
+  padding: 0px 50px;
+  margin-top: -50px;
+  z-index: 1;
+  position: relative
 }
 .bookcover-links-container{
   display:flex;
   flex-direction:column;
+  justify-content: center;
   img{
     width:300px;
   }

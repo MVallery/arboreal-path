@@ -83,11 +83,11 @@ const closeDrawer = () => {
         </li> 
         </ul>
         :
-        <ul>
+        <ul style={{backgroundColor:'#243749'}}>
         <li>
           <Link to="/" exact>
             <div className="header-title-container">
-              <span className="header-title">Jason M. Vallery</span>
+              <span className="header-title">Arboreal Path</span>
               <img src={FancyUnderline}></img>
             </div>
           </Link>

@@ -1,8 +1,5 @@
 import React from 'react';
 import Jason from '../assets/images/jason3.png';
-import Instagram from '../assets/images/instagram-about-blue.png';
-import Twitter from '../assets/images/twitter-about-blue.png';
-import Goodreads from '../assets/images/goodreads-about.png';
 import BookCover from "../assets/images/bookcover.jpg";
 import { withRouter } from "react-router-dom";
 
@@ -65,43 +62,43 @@ function Presskit(props) {
                 <p>
                     <h1>Arboreal Path</h1>
                 <span style={{color:'orange', fontSize:'1.7rem'}}>The cost of magic is never cheap.</span><br/>
-Something Hali’s all too familiar with. Renowned as a hero in her country, 
-the populace looks to Hali for protection from a devastating plague. Though her 
-spell cures the affliction, it also takes her unborn son, twisting him and the plague 
-into a monstrous shadow. Hali imprisons the shadow inside a magical tattoo on her 
-arm but can’t fully contain its power before it kills her wife, adding another face 
-to its collection.<br/><br/>
+                    Something Hali’s all too familiar with. Renowned as a hero in her country, 
+                    the populace looks to Hali for protection from a devastating plague. Though her 
+                    spell cures the affliction, it also takes her unborn son, twisting him and the plague 
+                    into a monstrous shadow. Hali imprisons the shadow inside a magical tattoo on her 
+                    arm but can’t fully contain its power before it kills her wife, adding another face 
+                    to its collection.<br/><br/>
 
-Now cursed with an unending life, she finds unexpected friendship in Alim—a magicless 
-explorer with an insatiable appetite—and Tio—a socially awkward druid—as she attempts 
-to free her family. Caught up in Tio’s quest to restore the world’s dwindling magic, Hali 
-finds herself at a crossroads. <br/><br/>
+                    Now cursed with an unending life, she finds unexpected friendship in Alim—a magicless 
+                    explorer with an insatiable appetite—and Tio—a socially awkward druid—as she attempts 
+                    to free her family. Caught up in Tio’s quest to restore the world’s dwindling magic, Hali 
+                    finds herself at a crossroads. <br/><br/>
 
-Once again, the world calls upon her to be a hero. Does she still have the resolve to answer, 
-knowing what it might cost? Who will be sacrificed this time?<br/><br/>
+                    Once again, the world calls upon her to be a hero. Does she still have the resolve to answer, 
+                    knowing what it might cost? Who will be sacrificed this time?<br/><br/>
                 </p>
             </div>
             <div className="arborealpath-section-container">
                 <div className="arborealpath-about-section">
                     <h3>About Arboreal Path</h3>
                     <p>
-Author: Jason M Vallery<br/>
-Genre: Epic Fantasy<br/>
-Category: Adult<br/>
-Page Count: 400<br/><br/>
+                        Author: Jason M Vallery<br/>
+                        Genre: Epic Fantasy<br/>
+                        Category: Adult<br/>
+                        Page Count: 400<br/><br/>
 
-Content Warning<br/>
-People with sensitivities to the following <br/>
-subjects may find Arboreal Path difficult to read:<br/>
-Suicide<br/>
-Death of an unborn child<br/>
-Loss of life partner<br/>
-Combat involving animals<br/><br/>
+                        Content Warning<br/>
+                        People with sensitivities to the following <br/>
+                        subjects may find Arboreal Path difficult to read:<br/>
+                        Suicide<br/>
+                        Death of an unborn child<br/>
+                        Loss of life partner<br/>
+                        Combat involving animals<br/><br/>
 
-ISBN<br/>
-978-1-7347479-1-1 (paperback)<br/>
-978-1-7347479-2-8 (ebook)<br/>
-978-1-7347479-0-4 (hardback)<br/><br/>
+                        ISBN<br/>
+                        978-1-7347479-1-1 (paperback)<br/>
+                        978-1-7347479-2-8 (ebook)<br/>
+                        978-1-7347479-0-4 (hardback)<br/><br/>
                     </p>
                 </div>
                 <div className="arborealpath-links-section">
@@ -116,15 +113,15 @@ ISBN<br/>
                     <p>
                     Read the first 3 Chapters!<br/><br/>
 
-Website: https://arborealpath.com/<br/><br/><br/>
+                    Website: https://arborealpath.com/<br/><br/><br/>
 
-Reviews:
-6 out of 5 stars. <br/><br/>
+                    Reviews:
+                    6 out of 5 stars. <br/><br/>
 
-“Nine months of pregnancy
-finally paid off” <br/>
+                    “Nine months of pregnancy
+                    finally paid off” <br/>
 
-- Jason’s Mom
+                    - Jason’s Mom
                     </p>
                 </div>
             </div>
