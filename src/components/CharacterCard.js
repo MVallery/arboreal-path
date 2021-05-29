@@ -8,6 +8,8 @@ const CharacterCard = (props) => {
       >
       <a className="prev" onClick={ () => {props.onLeftClick()}}><p className="arrow-name">{props.characterList[0].name}</p>&#10094;</a>
       <a className="next" onClick={ () => {props.onRightClick()}}><p className="arrow-name">{props.characterList[2].name}</p>&#10095;</a>
+        <div className="character-img-description-container">
+          <div className="flex-column image-name-container">
         <h1>{props.character.name}</h1>
         <a>
           <img
@@ -17,6 +19,8 @@ const CharacterCard = (props) => {
             alt='character picture'
           ></img>
         </a>
+        </div>
+
         <div
           id="expanded-text"
           className={`character-description ${props.characterDescription}`}
@@ -30,6 +34,8 @@ const CharacterCard = (props) => {
           </span>
           {props.character.description}
         </div>
+        </div>
+
       </div>
     ) 
   } else {

@@ -388,7 +388,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (min-height: 500px) {
   .home-container {
     background-position: 80%;
   }
@@ -461,7 +461,7 @@
     width: 140px;
   }
   .retail-link {
-    padding: 5px;
+    padding: 8px;
     height: 50px;
     width: 130px;
   }
@@ -469,7 +469,83 @@
     padding-top: 0px;
   }
   .amazon {
-    line-height: 40px;
+    line-height: 35px;
+  }
+  .open-up {
+    margin-top: -119px;
+    margin-left: 8px;
+  }
+  .open-down {
+    margin-top: 46px;
+    margin-left: 8px;
+  }
+}
+
+@media (max-height: 500px) {
+  .home-container {
+    background-position: 80%;
+  }
+  .home-container img {
+    height: 230px;
+    margin-top: 10px;
+  }
+  .home-content-container {
+    padding: 70px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-cover-preview-container {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .preview-button-container {
+    width: 160px;
+  }
+  .bookdescription2 {
+    margin-right: 20px;
+  }
+  h2 {
+    padding-top: 30px;
+    font-size: 1.7rem;
+  }
+  .home-description-retailer-container {
+    padding-top: 10px;
+    width: 100vw;
+  }
+  .home-description-retailer-container h1 {
+    font-size: 2.1rem;
+    padding-right: 0px;
+  }
+  .home-description-retailer-container h2 {
+    padding-top: 10px;
+  }
+  .book-description {
+    font-size: 1.5rem;
+  }
+  .book-description2 {
+    font-size: 1.1rem;
+  }
+  .home-retailer-cotainer button {
+    height: 50px;
+  }
+  .home-description-retailer-container {
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  .preview-button-container {
+    width: 140px;
+  }
+  .retail-link {
+    padding: 8px;
+    height: 50px;
+    width: 130px;
+  }
+  .retail-button {
+    padding-top: 0px;
+  }
+  .amazon {
+    line-height: 35px;
   }
   .open-up {
     margin-top: -119px;
@@ -649,6 +725,49 @@
   }
   .picture-description-container {
     padding-left: 0px;
+  }
+}
+
+@media (max-height: 500px) {
+  .about-background-container {
+    height: 100vh;
+    margin-top: -108px;
+  }
+  .about-container h1 {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+  }
+  .about-container h2 {
+    font-size: 1.2rem;
+    padding-bottom: 0;
+  }
+  .about-container p {
+    font-size: 0.8rem;
+    padding-left: 10px;
+    margin: 3px 0;
+  }
+  .about-container::before {
+    height: 110vh;
+    width: 30%;
+  }
+  .picture-description-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-left: 8px;
+    max-width: 95vw;
+  }
+  .jason {
+    border: 10px solid #ff9100;
+  }
+  .about-paragraph-container {
+    font-size: 0.8rem;
+  }
+  .social-media-about {
+    width: 30px;
   }
 }
 
@@ -950,6 +1069,45 @@
   }
   .characters-fade-container {
     height: 102vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .character-img-description-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .characters-fade-container {
+    height: 120vh;
+  }
+  .characters-main-container {
+    height: 120vh;
+  }
+  .characters-container {
+    height: 120vh;
+  }
+  .character-container {
+    width: 90vw;
+    margin-top: 40px;
+    height: 120vh;
+  }
+  .image-name-container {
+    margin-left: 25px;
+  }
+  .character-content {
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+  }
+  .character-description {
+    font-size: 0.8rem;
+    margin-right: 65px;
+    margin-left: 0px;
+  }
+  .character-quote {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -1321,6 +1479,19 @@
   }
 }
 
+@media (max-height: 500px) {
+  .world-main-container, .world-main-container-gradient {
+    height: 120vh;
+  }
+  .world-main-container h1, .world-main-container-gradient h1 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  .world-map-container {
+    height: 70vh;
+  }
+}
+
 /* @import url('/assets/fonts/Constantine.tff'); */
 @font-face {
   font-family: Constantine;
@@ -1410,6 +1581,22 @@ h2 {
 
 .header-title-container:hover {
   cursor: pointer;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .map-Gren-City {

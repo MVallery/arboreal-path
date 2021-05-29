@@ -133,3 +133,15 @@
     }
   }
 }
+@media(max-height:500px){
+  .world-main-container, .world-main-container-gradient{
+    height:120vh;
+    h1{
+      font-size:1.3rem;
+      margin-bottom:5px;
+    }
+  }
+  .world-map-container{
+    height:70vh;
+  }
+}
