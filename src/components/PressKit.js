@@ -1,6 +1,6 @@
 import React from 'react';
 import Jason from '../assets/images/jason3.jpg';
-import BookCover from "../assets/images/bookcover.jpg";
+import BookCover from "../assets/images/cover-3d.png";
 import { withRouter } from "react-router-dom";
 
 function Presskit(props) {

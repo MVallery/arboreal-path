@@ -10,7 +10,6 @@ import HomeCharactersTransition from './components/HomeCharactersTransition'
 import Characters from './components/Characters';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import ArcaneMoose from './assets/images/arcanemooselogo.png'
 import './scss/main.css'
 const App = () =>{
   return (
