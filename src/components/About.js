@@ -1,5 +1,5 @@
 import React from 'react';
-import Jason from '../assets/images/jason3.png';
+import Jason from '../assets/images/jason3.jpg';
 import Instagram from '../assets/images/instagram-about-blue.png';
 import Twitter from '../assets/images/twitter-about-blue.png';
 import Goodreads from '../assets/images/goodreads-about.png';

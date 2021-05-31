@@ -9,7 +9,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../assets/images/empyrea-painting.jpg);
   background-image: url(../assets/images/cover-zoom-characters3.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -152,8 +151,6 @@
   margin-bottom: 10px;
   height: 400px;
   border-radius: 5px;
-  -webkit-box-shadow: 10px 10px 10px #0d1217;
-          box-shadow: 10px 10px 10px #0d1217;
 }
 
 .home-retailer-container {
@@ -710,9 +707,14 @@
 }
 
 @media (max-width: 500px) {
+  .about-background-container {
+    min-height: 100vh;
+    height: auto;
+  }
   .about-container:before {
     top: -12px;
-    height: 90vh;
+    width: -21vh;
+    height: calc(100% + 12px);
   }
   .about-container p {
     font-size: 0.9rem;
