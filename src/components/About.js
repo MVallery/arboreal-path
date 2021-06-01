@@ -31,9 +31,9 @@ const About = props => {
 
             </div>
             <div className="social-media-container">
-                <img className="social-media-about" src={Instagram} alt='instagram'></img>
-                <img className="social-media-about" src={Twitter} alt='twitter'></img>
-                <img className="social-media-about" src={Goodreads} alt='goodreads'></img>
+                <a href="https://www.goodreads.com/jasonmvallery" target="_blank"><img className="social-media-about" src={Goodreads} alt='goodreads'></img></a>
+                <a href="https://twitter.com/JasonMVallery" target="_blank"><img className="social-media-about" src={Twitter} alt='twitter'></img></a>
+                <a href="https://www.instagram.com/jasonmvallery" target="_blank"><img className="social-media-about" src={Instagram} alt='instagram'></img></a>
 
             </div>
 

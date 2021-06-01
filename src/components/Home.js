@@ -77,8 +77,8 @@ const Home = (props) => {
             
             <h2> Preorder Now! </h2>
             <div className="home-retailer-container">
-              <a className="retail-link amazon" href="https://www.amazon.com/gp/product/B0966LGD9L?tag=" target="_blank">AMAZON</a>
-              <a className="retail-link" href="https://www.barnesandnoble.com/w/arboreal-path-jason-m-vallery/1139604352?ean=9781734747928&st=AFF&2sid=Draft2Digital_7968444_NA&sourceId=AFFDraft2Digital" target="_blank">BARNES & NOBLE</a>
+              <a className="retail-link amazon" href="https://books2read.com/u/mqgPxd?store=amazon" target="_blank">AMAZON</a>
+              <a className="retail-link" href="https://books2read.com/u/mqgPxd?store=bn" target="_blank">BARNES & NOBLE</a>
               <div className="retail-dropdown-container">
                 <ClickAwayListener onClickAway={handleRetailClickAway}>
                   <button className="retail-link retail-button" onClick={toggleRetailDropdown} style={{backgroundColor:retailDropdown.backgroundColor}}>
@@ -88,7 +88,7 @@ const Home = (props) => {
                 </ClickAwayListener>
             
                 <div className={`dropdown-menu ${retailDropdown.class}`}>
-                  <a className="retail" href="https://www.kobo.com/us/en/ebook/arboreal-path" target="_blank">Kobo Ebooks</a>
+                  <a className="retail" href="https://books2read.com/u/mqgPxd?store=kobo" target="_blank">Kobo Ebooks</a>
                   <a className="retail" href="https://www.booktopia.com.au/arboreal-path-jason-m-vallery/ebook/9781734747928.html" target="_blank">Booktopia</a>
                   <a className="retail" href="https://www.chapters.indigo.ca/en-ca/books/arboreal-path/9781734747928-item.html" target="_blank">Indigo</a>
                 </div>

@@ -46,16 +46,16 @@ const NavBar = props => {
               <RSLink to="about" spy={true} smooth={true} offset={0} duration={1500}>AUTHOR</RSLink>
             </li>
             <li>
-            <a href="https://instagram.com" className="social instagram" style={{padding:'15px 2px 14px 2px', width:'23px'}}>
+            <a href="https://www.goodreads.com/jasonmvallery" className="social" target="_blank" style={{width:'25px', padding:'13.5px 2px 14px 2px'}}>
               <img
                 border="0"
-                alt="instagram"
-                src={InstagramIcon}
+                alt="goodreads"
+                src={GoodreadsIcon}
               ></img>
             </a>
           </li> 
-            <li>
-            <a href="https://twitter.com" className="social" style={{padding:'14px 2px', width:'30px'}}>
+          <li>
+            <a href="https://twitter.com/JasonMVallery" className="social" target="_blank" style={{padding:'14px 2px', width:'30px'}}>
               <img
                 
                 border="0"
@@ -65,13 +65,13 @@ const NavBar = props => {
             </a>
           </li>
           <li>
-            <a href="https://goodreads.com" className="social" style={{width:'25px', padding:'13.5px 2px 14px 2px'}}>
-              <img
-                border="0"
-                alt="goodreads"
-                src={GoodreadsIcon}
-              ></img>
-            </a>
+            <a href="https://www.instagram.com/jasonmvallery" className="social instagram" target="_blank" style={{padding:'15px 2px 14px 2px', width:'23px'}}>
+                <img
+                  border="0"
+                  alt="instagram"
+                  src={InstagramIcon}
+                ></img>
+              </a>
           </li> 
         </ul>
         :
