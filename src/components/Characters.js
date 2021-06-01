@@ -53,7 +53,6 @@ const ArborealPath = props => {
             cardBackground = 'tio-card-background'
             characterDescription = 'character-description-tio'
         } else if (character.name==='Alim'){
-            pictureGlow = {backgroundImage: 'radial-gradient(#ea26ae, #e817e214, transparent)'};
             pictureGlow = {backgroundImage: 'radial-gradient(#e0dd15, rgba(232, 23, 226, 0.08), transparent)'}
             cardBackground = 'alim-card-background'
             characterDescription = 'character-description-alim'
@@ -80,7 +79,6 @@ const ArborealPath = props => {
             <div className="characters-fade-container" id='characters' ref={props.arborealPathRef}>
             <div className="characters-main-container">
                 <div className={`characters-container ${backgroundStyle}`}> 
-                    
                     {displayCharacterCards}
                 </div>
             </div>

@@ -1,10 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import WorldMap from '../assets/images/map.jpg'
 import Popper from '@material-ui/core/Popper';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Fade from '@material-ui/core/Fade';
 import MapIcon from '../assets/images/figleaf2.png';
-import ImageGradient from 'material-ui/svg-icons/image/gradient';
 import {mapLocationList} from './worldMapLocations';
 
 const World = () => {

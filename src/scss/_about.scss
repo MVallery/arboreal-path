@@ -2,7 +2,6 @@
 
 .about-background-container{
   background-color:#f5e9d4;
-  // clip-path:polygon(0 0, 100% 0, 100% 100%, 15% 100%);
   height:85vh;
   padding-top:50px;
   margin-top: -10vh;
@@ -19,7 +18,6 @@
     font-weight:700;
     font-size:1.1rem;
     font-family:'Roboto', sans-serif;
-    // background-image:radial-gradient(ellipse at center, rgb(160, 148, 148),transparent )
   }
   h1{
     padding:0px;
@@ -36,7 +34,6 @@
   width:47%;
   height: 90vh;
   background-color:#ff9100;
-  // background-image:linear-gradient(100deg, rgb(207, 120, 7), rgb(255, 145, 0));
   transform: skew(11deg);
   transform-origin:top;
 }
@@ -121,7 +118,6 @@
     top: -5px
   }
   .about-container{
-    // padding-top:10px;
     
     p{
       padding-right:20px;

@@ -74,40 +74,26 @@
   background-color: black;
   z-index: 3;
   position: relative;
+  padding-bottom: 5vh;
 }
 
 .alim-background-color{
-  //pink
-  // background-image: radial-gradient(rgba(232, 23, 226,0.44),rgba(171, 97, 162, 0.55));
-  // backdrop-filter: hue-rotate(260deg) contrast(2);
-  // -webkit-backdrop-filter: hue-rotate(260deg) contrast(2);
-  // box-shadow: inset 0px -2px 25px 2px #e817d8;
-
-
-  // yellow
   background-color:$alim-trans-yellow;
   transition:background-color 2s;
-  backdrop-filter: hue-rotate(
-305deg
-) contrast(2);
+  backdrop-filter: hue-rotate(305deg) contrast(2);
   -webkit-backdrop-filter: hue-rotate(260deg) contrast(2);
-  // box-shadow: inset 0px -2px 25px 2px #e8e517;
 }
 .tio-background-color{
   -webkit-backdrop-filter: hue-rotate(80deg) contrast(2);
   backdrop-filter: hue-rotate(80deg) contrast(2);
   background-color:$tio-trans-green;
   transition:background-color 2s;
-  // box-shadow: inset 0px -2px 25px 2px #549254;
 }
 .hali-background-color{
   background-color:$hali-trans-purple;
   -webkit-backdrop-filter: hue-rotate(210deg) contrast(2);
-  // box-shadow: inset 0px -5px 25px 5px purple;
   transition:background-color 2s;
-  backdrop-filter: hue-rotate( 
-195deg
-) contrast(2);
+  backdrop-filter: hue-rotate( 195deg) contrast(2);
 }
 
 .prev, .next {
@@ -161,6 +147,7 @@ left:0
   background-image: url(../assets/images/background-shadow-left3.jpg);
   background-attachment: fixed;
   background-size: cover;
+  padding-bottom: 5vh;
   height:100vh;
   width: 80vw;
   margin-top: -10px;
@@ -189,10 +176,6 @@ left:0
 }
 .character-description-hali{
   background-color: #7d5c7d94;
-}
-
-.character-img-description-container{
-
 }
 
 
@@ -227,12 +210,8 @@ left:0
 }
 
 @media(max-width:700px){
-  // .character-container{
-  //   width: 70vw;
-  //   }
   .character-content{
     margin-top:50px;
-    // height:80vh;
     width: 200px;
     height: 200px;
     margin-top:0px;
@@ -269,7 +248,6 @@ left:0
 @media(max-width:500px){
   .character-container{
     width: 80vw;
-    // height: auto;
     margin-top:50px;
     h1{
       font-size:1.8rem;

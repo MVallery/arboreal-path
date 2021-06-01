@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { Router, Route, Link, Switch } from "react-router-dom";
 import BookCover from "../assets/images/cover-3d.png";
 
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';

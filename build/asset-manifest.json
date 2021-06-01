@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.88512573.chunk.css",
-    "main.js": "/static/js/main.4200facf.chunk.js",
-    "main.js.map": "/static/js/main.4200facf.chunk.js.map",
+    "main.css": "/static/css/main.8a06e734.chunk.css",
+    "main.js": "/static/js/main.893c2dac.chunk.js",
+    "main.js.map": "/static/js/main.893c2dac.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.63ca18b4.js",
     "runtime-main.js.map": "/static/js/runtime-main.63ca18b4.js.map",
     "static/css/2.e4b89e5a.chunk.css": "/static/css/2.e4b89e5a.chunk.css",
@@ -12,18 +12,18 @@
     "static/js/3.6a83cd2d.chunk.js.map": "/static/js/3.6a83cd2d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e4b89e5a.chunk.css.map": "/static/css/2.e4b89e5a.chunk.css.map",
-    "static/css/main.88512573.chunk.css.map": "/static/css/main.88512573.chunk.css.map",
+    "static/css/main.8a06e734.chunk.css.map": "/static/css/main.8a06e734.chunk.css.map",
     "static/js/2.940c8b10.chunk.js.LICENSE.txt": "/static/js/2.940c8b10.chunk.js.LICENSE.txt",
-    "static/media/Alim2y.0dabc86f.png": "/static/media/Alim2y.0dabc86f.png",
+    "static/media/Alim2y.293311e0.png": "/static/media/Alim2y.293311e0.png",
     "static/media/main.css": "/static/media/cover-zoom-characters3.9b46b32b.jpg",
-    "static/media/Hali2.21af7e8f.png": "/static/media/Hali2.21af7e8f.png",
-    "static/media/Tio2.a8540517.png": "/static/media/Tio2.a8540517.png",
-    "static/media/cover-3d.535aef0e.png": "/static/media/cover-3d.535aef0e.png",
+    "static/media/Hali2.94d84cad.png": "/static/media/Hali2.94d84cad.png",
+    "static/media/Tio2.e2a71a6e.png": "/static/media/Tio2.e2a71a6e.png",
+    "static/media/cover-3d.a85b6601.png": "/static/media/cover-3d.a85b6601.png",
     "static/media/fancyunderline2.48b82ddc.png": "/static/media/fancyunderline2.48b82ddc.png",
     "static/media/figleaf2.d1de4849.png": "/static/media/figleaf2.d1de4849.png",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/goodreads-navbar.fc002442.png": "/static/media/goodreads-navbar.fc002442.png",
-    "static/media/jason3.82999d2a.jpg": "/static/media/jason3.82999d2a.jpg",
+    "static/media/jason3.d36fc1c0.jpg": "/static/media/jason3.d36fc1c0.jpg",
     "static/media/logo.103b5fa1.svg": "/static/media/logo.103b5fa1.svg",
     "static/media/map.1681270a.jpg": "/static/media/map.1681270a.jpg",
     "static/media/twitter.e8b83be6.png": "/static/media/twitter.e8b83be6.png"
@@ -32,7 +32,7 @@
     "static/js/runtime-main.63ca18b4.js",
     "static/css/2.e4b89e5a.chunk.css",
     "static/js/2.940c8b10.chunk.js",
-    "static/css/main.88512573.chunk.css",
-    "static/js/main.4200facf.chunk.js"
+    "static/css/main.8a06e734.chunk.css",
+    "static/js/main.893c2dac.chunk.js"
   ]
 }
