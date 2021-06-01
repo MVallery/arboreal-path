@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a06e734.chunk.css",
-    "main.js": "/static/js/main.893c2dac.chunk.js",
-    "main.js.map": "/static/js/main.893c2dac.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.63ca18b4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.63ca18b4.js.map",
+    "main.css": "/static/css/main.e626eeb6.chunk.css",
+    "main.js": "/static/js/main.a9d13269.chunk.js",
+    "main.js.map": "/static/js/main.a9d13269.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9c6c732c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9c6c732c.js.map",
     "static/css/2.e4b89e5a.chunk.css": "/static/css/2.e4b89e5a.chunk.css",
-    "static/js/2.940c8b10.chunk.js": "/static/js/2.940c8b10.chunk.js",
-    "static/js/2.940c8b10.chunk.js.map": "/static/js/2.940c8b10.chunk.js.map",
-    "static/js/3.6a83cd2d.chunk.js": "/static/js/3.6a83cd2d.chunk.js",
-    "static/js/3.6a83cd2d.chunk.js.map": "/static/js/3.6a83cd2d.chunk.js.map",
+    "static/js/2.45480ae0.chunk.js": "/static/js/2.45480ae0.chunk.js",
+    "static/js/2.45480ae0.chunk.js.map": "/static/js/2.45480ae0.chunk.js.map",
+    "static/js/3.3b23e64b.chunk.js": "/static/js/3.3b23e64b.chunk.js",
+    "static/js/3.3b23e64b.chunk.js.map": "/static/js/3.3b23e64b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e4b89e5a.chunk.css.map": "/static/css/2.e4b89e5a.chunk.css.map",
-    "static/css/main.8a06e734.chunk.css.map": "/static/css/main.8a06e734.chunk.css.map",
-    "static/js/2.940c8b10.chunk.js.LICENSE.txt": "/static/js/2.940c8b10.chunk.js.LICENSE.txt",
+    "static/css/main.e626eeb6.chunk.css.map": "/static/css/main.e626eeb6.chunk.css.map",
+    "static/js/2.45480ae0.chunk.js.LICENSE.txt": "/static/js/2.45480ae0.chunk.js.LICENSE.txt",
     "static/media/Alim2y.293311e0.png": "/static/media/Alim2y.293311e0.png",
     "static/media/main.css": "/static/media/cover-zoom-characters3.9b46b32b.jpg",
     "static/media/Hali2.94d84cad.png": "/static/media/Hali2.94d84cad.png",
@@ -29,10 +29,10 @@
     "static/media/twitter.e8b83be6.png": "/static/media/twitter.e8b83be6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.63ca18b4.js",
+    "static/js/runtime-main.9c6c732c.js",
     "static/css/2.e4b89e5a.chunk.css",
-    "static/js/2.940c8b10.chunk.js",
-    "static/css/main.8a06e734.chunk.css",
-    "static/js/main.893c2dac.chunk.js"
+    "static/js/2.45480ae0.chunk.js",
+    "static/css/main.e626eeb6.chunk.css",
+    "static/js/main.a9d13269.chunk.js"
   ]
 }
