@@ -152,10 +152,12 @@ left:0
   margin-top: -10px;
   margin-left:10vw
 }
-.character-content {
+.character-img {
   width: 300px;
-
-  cursor: hand;
+  width: 318px;
+}
+.image-name-container{
+  height: 350px;
 }
 .character-quote{
   font-style:italic;
@@ -209,7 +211,7 @@ left:0
 }
 
 @media(max-width:700px){
-  .character-content{
+  .character-img{
     margin-top:50px;
     width: 200px;
     height: 200px;
@@ -297,7 +299,7 @@ left:0
 .image-name-container{
   margin-left:25px;
 }
-.character-content{
+.character-img{
   width: 150px;
   height: 150px;
   margin-left: 30px;
