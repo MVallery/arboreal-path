@@ -1,8 +1,6 @@
 import React from 'react';
 
 const CharacterCard = (props) => {
-  let inactive
-
   let left;
   let right;
   if (props.character.name==='Tio'){

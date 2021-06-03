@@ -21,22 +21,25 @@
   }
   h1{
     padding:0px;
+    z-index:5;
   }
   h2{
+    z-index:5;
     font-family: 'Roboto', sans-serif;
   }
+  &::before{
+    content:"";
+    position:absolute;
+    top: -50vh;
+    left:-35vw;
+    width:47%;
+    height: calc(85vh + 50vh);
+    background-color:#ff9100;
+    transform: skew(11deg);
+    transform-origin:top;
+  }
 }
-.about-container:before{
-  content:"";
-  position:absolute;
-  top: -15px;
-  left:-15vw;
-  width:47%;
-  height: 90vh;
-  background-color:#ff9100;
-  transform: skew(11deg);
-  transform-origin:top;
-}
+
 .about-paragraph-container {
   display:flex;
   flex-direction:column;
@@ -80,6 +83,9 @@
   }
 }
 @media(max-width:1200px){
+  .about-background-container{
+    height:100vh;
+  }
   .jason{
     width:200px;
     height:200px;
@@ -93,9 +99,8 @@
     padding-left: 50px
   }
   .about-container:before{
-    left:-20vh;
     width:50%;
-
+    height: calc(100vh + 50vh)
   }
 }
 
@@ -112,12 +117,11 @@
     border:none;
   }
   .about-background-container{
-    height:85vh;
+    min-height: 75vh;
+    max-height: 200vh;
+    height:auto;
   }
-  .about-container:before{
-    height: 87vh;
-    top: -5px
-  }
+
   .about-container{
     
     p{
@@ -125,17 +129,17 @@
       width:auto;
       font-size:1rem;
     }
+    &::before{
+      top: -50vh;
+      left: -50vw;
+      width: 60vw;
+      height: calc(100% + 51vh + 40px);
+    }
   }
 }
 @media(max-width:500px){
   .about-background-container{
-    min-height:100vh;
-    height:auto;
-  }
-  .about-container:before{
-    top:-12px;
-    width:-21vh;
-    height:calc(100% + 12px);
+
   }
   .about-container{
     p{
@@ -147,13 +151,25 @@
     h2{
       font-size:1.2rem;
     }
+    &::before{
+      left: -65vw;
+      width: 50vw;
+      height: calc(100% + 50vh + 50px);
+    }
   }
   .picture-description-container{
     padding-left:0px;
   }
+  
 }
 
-
+@media(max-width:400px){
+  .about-container:before{
+    left:-85vw;
+    width: 60vw;
+    
+  }
+}
 
 @media(max-height:500px){
   .about-background-container{
