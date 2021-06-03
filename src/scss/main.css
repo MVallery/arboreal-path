@@ -698,8 +698,8 @@
         flex-wrap: wrap;
   }
   .jason {
-    width: 150px;
-    height: 150px;
+    width: 30vw;
+    height: 30vw;
     border: none;
   }
   .about-background-container {
@@ -718,7 +718,7 @@
 
 @media (max-width: 500px) {
   .about-container p {
-    font-size: 0.9rem;
+    font-size: 3vw;
   }
   .about-container h1 {
     font-size: 1.5rem;
@@ -732,6 +732,9 @@
   }
   .picture-description-container {
     padding-left: 0px;
+  }
+  .social-media-about {
+    width: 10vw;
   }
 }
 

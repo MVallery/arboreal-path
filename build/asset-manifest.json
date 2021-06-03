@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e45f9a3.chunk.css",
+    "main.css": "/static/css/main.e997ca5c.chunk.css",
     "main.js": "/static/js/main.777fed38.chunk.js",
     "main.js.map": "/static/js/main.777fed38.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9c6c732c.js",
@@ -12,7 +12,7 @@
     "static/js/3.3b23e64b.chunk.js.map": "/static/js/3.3b23e64b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.e4b89e5a.chunk.css.map": "/static/css/2.e4b89e5a.chunk.css.map",
-    "static/css/main.4e45f9a3.chunk.css.map": "/static/css/main.4e45f9a3.chunk.css.map",
+    "static/css/main.e997ca5c.chunk.css.map": "/static/css/main.e997ca5c.chunk.css.map",
     "static/js/2.ed35577c.chunk.js.LICENSE.txt": "/static/js/2.ed35577c.chunk.js.LICENSE.txt",
     "static/media/Alim2y.293311e0.png": "/static/media/Alim2y.293311e0.png",
     "static/media/main.css": "/static/media/cover-zoom-characters3.9b46b32b.jpg",
@@ -32,7 +32,7 @@
     "static/js/runtime-main.9c6c732c.js",
     "static/css/2.e4b89e5a.chunk.css",
     "static/js/2.ed35577c.chunk.js",
-    "static/css/main.4e45f9a3.chunk.css",
+    "static/css/main.e997ca5c.chunk.css",
     "static/js/main.777fed38.chunk.js"
   ]
 }
