@@ -52,6 +52,8 @@
 }
 .header-title{
   padding:0px;
+  color:white;
+  text-decoration:none;
   margin:0px;
   font-family: 'Constantine'; 
   font-size:20px;
@@ -109,6 +111,9 @@
     background-color: $main-color;
     li{
       list-style:none;
+    }
+    a{
+      text-decoration:none;
     }
   }
   .mobile-menu-navigation{

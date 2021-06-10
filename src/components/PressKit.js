@@ -12,9 +12,9 @@ function Presskit(props) {
             <h2>Jason M. Vallery</h2>
             <div className="picture-description-container presskit-picture-description-container">
                 <div className="author-photo-links-container">
-                <img className="jason" src={Jason} align="right"></img>
-                <a href="/AuthorFull2.jpg" target="_blank">High Resolution Photo</a>
-                <a href="/AuthorSmall2.jpg" target="_blank">Low Resolution Photo</a>
+                <img className="jason" src={Jason} align="right" alt="Author Image-Jason M. Vallery"></img>
+                <a href="/AuthorFull2.jpg" target="_blank" rel="noreferrer">High Resolution Photo</a>
+                <a href="/AuthorSmall2.jpg" target="_blank" rel="noreferrer">Low Resolution Photo</a>
                 </div>
                 <div className="about-paragraph-container author-content-section">
                 
@@ -33,11 +33,11 @@ function Presskit(props) {
                 to short stories. Learning to apply those experiences towards writing was a fun and exciting challenge 
                 which has resulted in my first novel, Arboreal Path. I look forward to continuing my journey as an author!         
                 </p>   <br/>
-                <div style={{fontFamily:'Constantine'}}>
+                <div className="author-sub-section">
                 <h3>AUTHOR LINKS</h3>
-                Website: <a href="HTTPS://jasonmvallery.com" target="_blank">HTTPS://jasonmvallery.com</a><br/>
-                Twitter: <a href="HTTPS://twitter.com/jasonmvallery" target="_blank">HTTPS://twitter.com/jasonmvallery</a><br/>
-                Instagram: <a href="HTTPS://instagram.com/jasonmvallery" target="_blank">HTTPS://instagram.com/jasonmvallery</a><br/><br/>
+                Website: <a href="HTTPS://jasonmvallery.com" target="_blank" rel="noreferrer">HTTPS://jasonmvallery.com</a><br/>
+                Twitter: <a href="HTTPS://twitter.com/jasonmvallery" target="_blank" rel="noreferrer">HTTPS://twitter.com/jasonmvallery</a><br/>
+                Instagram: <a href="HTTPS://instagram.com/jasonmvallery" target="_blank" rel="noreferrer">HTTPS://instagram.com/jasonmvallery</a><br/><br/>
 
                 Aboreal Path Presskit<br/>
 
@@ -54,8 +54,8 @@ function Presskit(props) {
         <div className="presskit-arborealpath-container">
             <div className="bookcover-links-container">
                 <img src={BookCover} alt='Aboreal Path Cover'/>
-                <a href="/APCoverFull.jpg" target="_blank">High Resolution Photo</a>
-                <a href="/APCoverSmall.jpg" target="_blank">Low Resolution Photo</a>
+                <a href="/APCoverFull.jpg" target="_blank" rel="noreferrer">High Resolution Photo</a>
+                <a href="/APCoverSmall.jpg" target="_blank" rel="noreferrer">Low Resolution Photo</a>
             </div>
             <div className="arborealpath-content-container">
             <div className="arborealpath-description">
@@ -105,18 +105,18 @@ function Presskit(props) {
                     <h3>Links</h3>
                     <p>
                         Stores:<br/>
-                        <a href="https://books2read.com/u/mqgPxd?store=amazon" target="_blank">Amazon</a> <br/>
-                        <a href="https://books2read.com/u/mqgPxd?store=bn" target="_blank">Barnes & Noble</a><br/>
-                        <a href="https://books2read.com/u/mqgPxd?store=kobo" target="_blank">Kobo Ebooks</a><br/>
-                        <a href="https://www.booktopia.com.au/arboreal-path-jason-m-vallery/ebook/9781734747928.html" target="_blank">Booktopia</a><br/>
-                        <a href="https://www.chapters.indigo.ca/en-ca/books/arboreal-path/9781734747928-item.html" target="_blank">Indigo</a><br/>
+                        <a href="https://books2read.com/u/mqgPxd?store=amazon" target="_blank" rel="noreferrer">Amazon</a> <br/>
+                        <a href="https://books2read.com/u/mqgPxd?store=bn" target="_blank" rel="noreferrer">Barnes & Noble</a><br/>
+                        <a href="https://books2read.com/u/mqgPxd?store=kobo" target="_blank" rel="noreferrer">Kobo Ebooks</a><br/>
+                        <a href="https://www.booktopia.com.au/arboreal-path-jason-m-vallery/ebook/9781734747928.html" target="_blank" rel="noreferrer">Booktopia</a><br/>
+                        <a href="https://www.chapters.indigo.ca/en-ca/books/arboreal-path/9781734747928-item.html" target="_blank" rel="noreferrer">Indigo</a><br/>
                     </p><br/>
                     <p>
                     Read the first 3 Chapters!<br/>
-                    <a href="Arboreal_Path_Print_Preview.pdf" target="_blank">Download PDF</a><br/>
-                    <a href="Arboreal_Path_eBook_Preview.epub" target="_blank">Download Epub</a><br/>
+                    <a href="Arboreal_Path_Print_Preview.pdf" target="_blank" rel="noreferrer">Download PDF</a><br/>
+                    <a href="Arboreal_Path_eBook_Preview.epub" target="_blank" rel="noreferrer">Download Epub</a><br/>
 
-                    Website: <a href="https://arborealpath.com" target="_blank">https://arborealpath.com</a><br/><br/><br/>
+                    Website: <a href="https://arborealpath.com" target="_blank" rel="noreferrer">https://arborealpath.com</a><br/><br/><br/>
 
                     Reviews:
                     6 out of 5 stars. <br/><br/>

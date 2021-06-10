@@ -23,19 +23,40 @@ const NavBar = props => {
   
   return (
     <React.Fragment>
-    <div className="navbar-container">
-        {location.pathname==='/'?
+      <div className="navbar-container">
+        {location.pathname === "/" ? (
           <ul>
             <li>
-              <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}>CHARACTERS</RSLink> 
+              <RSLink
+                to="characters"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+              >
+                CHARACTERS
+              </RSLink>
             </li>
             <li>
-              <RSLink to="world" spy={true} smooth={true} offset={70} duration={1500}>WORLD</RSLink>
+              <RSLink
+                to="world"
+                spy={true}
+                smooth={true}
+                offset={70}
+                duration={1500}
+              >
+                WORLD
+              </RSLink>
             </li>
 
-
             <li>
-              <RSLink to="home" spy={true} smooth={true} offset={0} duration={1500}>
+              <RSLink
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
                 <div className="header-title-container">
                   <span className="header-title">Arboreal Path</span>
                   <img src={FancyUnderline}></img>
@@ -43,39 +64,94 @@ const NavBar = props => {
               </RSLink>
             </li>
             <li>
-              <RSLink to="about" spy={true} smooth={true} offset={0} duration={1500}>AUTHOR</RSLink>
+              <RSLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                AUTHOR
+              </RSLink>
             </li>
             <li>
-            <a href="https://www.goodreads.com/jasonmvallery" className="social" target="_blank" style={{width:'25px', padding:'13.5px 2px 14px 2px'}}>
-              <img
-                border="0"
-                alt="goodreads"
-                src={GoodreadsIcon}
-              ></img>
-            </a>
-          </li> 
-          <li>
-            <a href="https://twitter.com/JasonMVallery" className="social" target="_blank" style={{padding:'14px 2px', width:'30px'}}>
-              <img
-                
-                border="0"
-                alt="twitter"
-                src={TwitterIcon}
-              ></img>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/jasonmvallery" className="social instagram" target="_blank" style={{padding:'15px 2px 14px 2px', width:'23px'}}>
-                <img
-                  border="0"
-                  alt="instagram"
-                  src={InstagramIcon}
-                ></img>
+              <a
+                href="https://www.goodreads.com/jasonmvallery"
+                className="social"
+                target="_blank"
+                style={{ width: "25px", padding: "13.5px 2px 14px 2px" }}
+              >
+                <img border="0" alt="goodreads" src={GoodreadsIcon}></img>
               </a>
-          </li> 
-        </ul>
-        :
-        <ul style={{backgroundColor:'#243749'}}>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/JasonMVallery"
+                className="social"
+                target="_blank"
+                style={{ padding: "14px 2px", width: "30px" }}
+              >
+                <img border="0" alt="twitter" src={TwitterIcon}></img>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/jasonmvallery"
+                className="social instagram"
+                target="_blank"
+                style={{ padding: "15px 2px 14px 2px", width: "23px" }}
+              >
+                <img border="0" alt="instagram" src={InstagramIcon}></img>
+              </a>
+            </li>
+          </ul>
+        ) : (
+          <ul style={{ backgroundColor: "#243749" }}>
+            <li>
+              <Link to="/" exact>
+                <div className="header-title-container">
+                  <span className="header-title">Arboreal Path</span>
+                  <img src={FancyUnderline}></img>
+                </div>
+              </Link>
+            </li>
+          </ul>
+        )}
+      </div>
+
+      <div
+        className="mobile-menu-container"
+        style={
+          location.pathname === "/presskit"
+            ? { backgroundColor: "#243749" }
+            : null
+        }
+      >
+        {location.pathname === "/" ? (
+          <React.Fragment>
+            <div style={{ width: "48px" }}></div>
+            <li>
+              <RSLink
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                <div className="header-title-container">
+                  <span className="header-title">Arboreal Path</span>
+                  <img src={FancyUnderline}></img>
+                </div>
+              </RSLink>
+            </li>
+            <IconButton
+              className="hamburger-button"
+              onClick={toggleDrawer(true)}
+            >
+              <MenuIcon style={{ color: "white" }} />
+            </IconButton>
+          </React.Fragment>
+        ) : (
           <li>
             <Link to="/" exact>
               <div className="header-title-container">
@@ -83,45 +159,60 @@ const NavBar = props => {
                 <img src={FancyUnderline}></img>
               </div>
             </Link>
-          </li>  
-        </ul>      
-        }
-    </div>
+          </li>
+        )}
+        {/* :
+    <ul style={{backgroundColor:'#243749'}}>
 
-    <div className="mobile-menu-container">
-      <div style={{width:'48px'}}></div>
-      <li>
-        <RSLink to="home" spy={true} smooth={true} offset={0} duration={1500}>
-          <div className="header-title-container">
-            <span className="header-title">Arboreal Path</span>
-            <img src={FancyUnderline}></img>
+    </ul>    */}
+        
+        <SwipeableDrawer
+          anchor="right"
+          open={drawerIsOpen}
+          onClose={toggleDrawer(false)}
+          onOpen={toggleDrawer(true)}
+        >
+          <div
+            className="mobile-menu-navigation"
+            onClick={toggleDrawer(false)}
+            onKeyDown={toggleDrawer(false)}
+            role="presentation"
+          >
+            <li>
+              <RSLink
+                to="characters"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+              >
+                <div onClick={toggleDrawer(false)}>CHARACTERS</div>
+              </RSLink>
+            </li>
+            <li>
+              <RSLink
+                to="world"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                <div onClick={toggleDrawer(false)}>WORLD</div>
+              </RSLink>
+            </li>
+            <li>
+              <RSLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1500}
+              >
+                <div onClick={toggleDrawer(false)}>AUTHOR</div>
+              </RSLink>
+            </li>
           </div>
-        </RSLink>
-      </li>
-    <IconButton className="hamburger-button" onClick={toggleDrawer(true)}>            
-            <MenuIcon style={{color:'white'}}/>
-    </IconButton>
-    <SwipeableDrawer
-      anchor='right'
-      open={drawerIsOpen}
-      onClose={toggleDrawer(false)}
-      onOpen={toggleDrawer(true)}
-    >
-    <div className="mobile-menu-navigation" 
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
-      role="presentation">
-          <li>
-            <RSLink to="characters" spy={true} smooth={true} offset={-50} duration={1500}><div onClick={toggleDrawer(false)}>CHARACTERS</div></RSLink> 
-          </li>
-          <li>
-            <RSLink to="world" spy={true} smooth={true} offset={0} duration={1500}><div onClick={toggleDrawer(false)}>WORLD</div></RSLink>
-          </li>
-          <li>
-            <RSLink to="about" spy={true} smooth={true} offset={0} duration={1500}><div onClick={toggleDrawer(false)}>AUTHOR</div></RSLink>
-          </li>
-      </div>
-    </SwipeableDrawer>
+        </SwipeableDrawer>
       </div>
     </React.Fragment>
   );
