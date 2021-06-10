@@ -44,7 +44,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10% 10% 0 10%;
+  padding: 5% 10% 0 10%;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -238,7 +238,7 @@
   height: 70px;
   margin: 10px;
   border-radius: 5px;
-  width: 180px;
+  width: 190px;
   border: none;
   text-align: center;
   padding-top: 25.5px;
@@ -253,6 +253,7 @@
 
 .retail-button {
   padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .retail-button:hover {
@@ -683,11 +684,17 @@
     padding-left: 50px;
   }
   .about-container p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .about-container::before {
     width: 60vw;
     left: -40vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-container p {
+    font-size: 2.3vw;
   }
 }
 
@@ -702,9 +709,6 @@
     height: 30vw;
     border: none;
   }
-  .about-background-container {
-    height: calc(85vh - 50px);
-  }
   .about-container p {
     padding-right: 20px;
     width: auto;
@@ -717,6 +721,9 @@
 }
 
 @media (max-width: 500px) {
+  .about-background-container {
+    height: 84vh;
+  }
   .about-container p {
     font-size: 3vw;
   }
@@ -729,6 +736,7 @@
   .about-container::before {
     left: -65vw;
     width: 50vw;
+    height: calc(84vh + 50vh);
   }
   .picture-description-container {
     padding-left: 0px;
@@ -981,7 +989,7 @@
 }
 
 .image-name-container {
-  height: 350px;
+  height: auto;
 }
 
 .character-quote {
@@ -1043,6 +1051,7 @@
   .characters-container {
     width: 100vw;
     height: 95vh;
+    margin: 70px 10px 0px 10px;
     -webkit-box-shadow: inset 0px -2px 40px 30px black;
             box-shadow: inset 0px -2px 40px 30px black;
   }
@@ -1091,9 +1100,6 @@
   }
   .characters-fade-container {
     height: 102vh;
-  }
-  .image-name-container {
-    height: 230px;
   }
 }
 
@@ -1784,15 +1790,26 @@ h2 {
 
 .presskit-about-background-container {
   height: 100vh;
+  height: calc(110vh + 50px);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
           clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   z-index: 5;
 }
 
+.presskit-about-container {
+  height: calc(110vh + 50px);
+}
+
 .presskit-about-container:before {
   height: 110vh;
+  height: calc(110vh + 250px);
   position: absolute;
   z-index: 0;
+  top: -10vh;
+}
+
+.presskit-about-container a {
+  color: black;
 }
 
 .presskit-picture-description-container {
@@ -1839,12 +1856,16 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 130vh;
   position: relative;
   padding: 0px 50px;
   margin-top: -50px;
   z-index: 1;
   position: relative;
+}
+
+.presskit-arborealpath-container a {
+  color: white;
 }
 
 .bookcover-links-container {

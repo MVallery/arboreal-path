@@ -6,14 +6,21 @@
 }
 .presskit-about-background-container{
   height:100vh;
+  height: calc(110vh + 50px);
   clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 100%, 0 95%);
   z-index: 5;
 }
 .presskit-about-container{
+  height: calc(110vh + 50px);
   &:before{
     height: 110vh;
+    height: calc(110vh + 250px);
     position:absolute;
     z-index:0;
+    top: -10vh;
+  }
+  a {
+    color:black;
   }
 }
 .presskit-picture-description-container{
@@ -46,12 +53,15 @@
   color:white;
   font-family:Constantine;
   display: flex;
-  height:100vh;
+  height:130vh;
   position:relative;
   padding: 0px 50px;
   margin-top: -50px;
   z-index: 1;
-  position: relative
+  position: relative;
+  a {
+    color:white;
+  }
 }
 .bookcover-links-container{
   display:flex;

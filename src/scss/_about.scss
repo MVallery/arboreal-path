@@ -104,7 +104,7 @@
   }
   .about-container{
     p{
-      font-size:1rem;
+      font-size: 1.2rem;
     }
     &::before{
     width:60vw;
@@ -112,7 +112,13 @@
   }
 }
 }
-
+@media(max-width:850px){
+  .about-container{
+    p{
+      font-size: 2.3vw;
+    }
+  }
+}
 
 @media(max-width:700px){
 
@@ -126,12 +132,12 @@
     border:none;
   }
   .about-background-container{
-    height: calc(85vh - 50px)
   }
 
   .about-container{
     
     p{
+
       padding-right:20px;
       width:auto;
     }
@@ -144,6 +150,7 @@
 }
 @media(max-width:500px){
   .about-background-container{
+    height:84vh;
 
   }
   .about-container{
@@ -159,6 +166,7 @@
     &::before{
       left: -65vw;
       width: 50vw;
+      height:calc(84vh + 50vh)
     }
   }
   .picture-description-container{

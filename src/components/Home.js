@@ -20,7 +20,7 @@ const Home = (props) => {
   }
   const togglePreviewDropdown = (e) => {
     let position = 'open-down';
-    if(window.pageYOffset<116){ //checks if button is too close to bottom of screen
+    if(window.pageYOffset<200){ //checks if button is too close to bottom of screen
       position = 'open-up'
     } 
       if (previewDropdown.class === 'preview-dropdown-closed'){
@@ -47,14 +47,14 @@ const Home = (props) => {
             <img src={BookCover} align="left"></img>
             <div className="preview-button-container">
               <ClickAwayListener onClickAway={handlePreviewClickAway}>
-              <button onClick={togglePreviewDropdown}style={{backgroundColor:previewDropdown.backgroundColor}}>Preview
+              <button onClick={togglePreviewDropdown}style={{backgroundColor:previewDropdown.backgroundColor}}>Preview Ch 1-3
               <i className="fa fa-caret-down fa-fw"></i>
               </button>
               </ClickAwayListener>
               <div className={`dropdown-menu ${previewDropdown.class} ${previewDropdown.position}`}>
-                <a>Link 1</a>
-                <a>Link 2</a>
-                <a>Link 3</a>
+                <a href="Arboreal_Path_Print_Preview.pdf" target="_blank">Download PDF</a>
+                <a href="Arboreal_Path_eBook_Preview.epub" target="_blank">Download Epub</a>
+                {/* <a>Link 3</a> */}
               </div>
             </div>
           </div>

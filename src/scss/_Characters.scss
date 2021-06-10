@@ -157,7 +157,7 @@ left:0
   width: 318px;
 }
 .image-name-container{
-  height: 350px;
+  height: auto;
 }
 .character-quote{
   font-style:italic;
@@ -220,6 +220,8 @@ left:0
   .characters-container{
     width:100vw;
     height:95vh;
+    margin: 70px 10px 0px 10px;
+
     box-shadow:inset 0px -2px 40px 30px black;
   }
   .characters-main-container{
@@ -275,10 +277,7 @@ left:0
     height:102vh;
     
   }
-  .image-name-container{
-    height:230px;
 
-  }
   
 }
 @media(max-height:500px){

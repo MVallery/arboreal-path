@@ -38,7 +38,7 @@
   width:100vw;
   height: 70%;
   justify-content: center;
-  padding: 10% 10% 0 10%;
+  padding: 5% 10% 0 10%;
   align-content: center;
 }
 .home-description-retailer-container{
@@ -197,7 +197,7 @@
   height:70px;
   margin:10px;
   border-radius:5px;
-  width:180px;
+  width:190px;
   border:none;
   text-align:center;
   padding-top: 25.5px;
@@ -209,7 +209,8 @@
   }
 }
 .retail-button{
-padding-top:0px;
+  padding-top:0px;
+  padding-bottom: 0px;
 &:hover{
   cursor:pointer;
   background-color: rgb(193, 193, 193);
